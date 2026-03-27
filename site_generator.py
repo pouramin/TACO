@@ -499,6 +499,7 @@ def site_nav(config: dict) -> str:
     <nav>
       <a href="{root_url('')}">Home</a>
       <a href="{root_url('archive/')}">Archive</a>
+      <a href="{root_url('about/')}">About</a>
       <a href="{root_url('rss.xml')}">RSS</a>
     </nav>
   </div>
@@ -698,6 +699,92 @@ def make_archive_page(config: dict, posts: List[dict]) -> str:
     )
 
 
+def make_about_page(config: dict) -> str:
+    title = f"About | {config['site_name']}"
+    description = (
+        "How the TACO Pressure Index works: live inputs, daily scoring logic, regime thresholds, "
+        "and what the composite score is designed to measure."
+    )
+    body = f'''
+{site_nav(config)}
+<main class="wrap about-layout">
+  <section class="post-card">
+    <p class="eyebrow">Methodology</p>
+    <h1>About the TACO Pressure Index</h1>
+    <p class="lede">This site publishes one daily reading built from real market data. The goal is not to predict policy decisions with certainty. The goal is to track how much multi-factor market pressure is building at any given moment.</p>
+
+    <section class="grid-two">
+      <div class="panel">
+        <h2>What data goes into the index</h2>
+        <p>The model pulls four public series: the S&amp;P 500, the U.S. 2-year Treasury yield, 5-year breakeven inflation, and the VIX. The site keeps only dates where all four series are available together, then computes one daily score from that aligned history.</p>
+      </div>
+      <div class="panel">
+        <h2>What the score is trying to capture</h2>
+        <p>The framework treats falling equities, rising front-end rates, rising inflation expectations, and higher volatility as signs of growing market stress. When more of those signals worsen at the same time, the composite score rises.</p>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>How scoring works</h2>
+      <div class="metrics-grid methodology-grid">
+        <article class="metric-card">
+          <h3>1) Equity pressure</h3>
+          <p>The model looks at the 5-session drop in the S&amp;P 500.</p>
+          <p class="metric-meta">A 5% drop maps to 100. A 2.5% drop maps to 50. Little or no drawdown keeps this component low.</p>
+        </article>
+        <article class="metric-card">
+          <h3>2) Rates pressure</h3>
+          <p>The model looks at the 5-session increase in the U.S. 2-year Treasury yield, measured in basis points.</p>
+          <p class="metric-meta">A 25 bp rise maps to 100. A 12.5 bp rise maps to 50.</p>
+        </article>
+        <article class="metric-card">
+          <h3>3) Inflation pressure</h3>
+          <p>The model looks at the 5-session increase in 5-year breakeven inflation.</p>
+          <p class="metric-meta">A 20 bp rise maps to 100. A 10 bp rise maps to 50.</p>
+        </article>
+        <article class="metric-card">
+          <h3>4) Volatility pressure</h3>
+          <p>The VIX component combines two ideas: the current VIX level and the change versus 5 sessions ago.</p>
+          <p class="metric-meta">That means volatility pressure can rise because volatility is already high, because it jumped suddenly, or because both happened together.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="grid-two">
+      <div class="panel">
+        <h2>Composite score</h2>
+        <p>Each component is converted to a 0-100 score. The final daily reading is the simple average of the four component scores.</p>
+        <div class="formula-box">Composite Score = average(equity, rates, inflation, volatility)</div>
+      </div>
+      <div class="panel">
+        <h2>Regime labels</h2>
+        <ul class="regime-list">
+          <li><strong>LOW</strong>: 0 to below 25</li>
+          <li><strong>ELEVATED</strong>: 25 to below 50</li>
+          <li><strong>HIGH</strong>: 50 to below 75</li>
+          <li><strong>EXTREME</strong>: 75 to 100</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>How to interpret the site</h2>
+      <p>A higher score does not mean a policy reversal must happen. It means the market backdrop is putting more stress on the system across several channels at once. This is a custom heuristic model designed for monitoring pressure, not an official Deutsche Bank model and not a guaranteed forecast of political behavior.</p>
+    </section>
+  </section>
+</main>
+{footer(config)}
+'''
+    return html_page(
+        config=config,
+        title=title,
+        description=description,
+        body=body,
+        canonical=abs_url(config, 'about/'),
+        og_image=abs_url(config, 'assets/home-og.svg'),
+    )
+
+
 def write_text(path: Path, content: str) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(content, encoding="utf-8")
@@ -759,8 +846,10 @@ def build_site(config: dict, history: List[dict]) -> None:
         write_text(post_dir / "index.html", make_post_page(config, post, recent_history))
 
     (SITE_DIR / "archive").mkdir(parents=True, exist_ok=True)
+    (SITE_DIR / "about").mkdir(parents=True, exist_ok=True)
     write_text(SITE_DIR / "index.html", make_index_page(config, posts))
     write_text(SITE_DIR / "archive" / "index.html", make_archive_page(config, posts))
+    write_text(SITE_DIR / "about" / "index.html", make_about_page(config))
     write_text(SITE_DIR / "assets" / "style.css", STYLE_CSS)
     write_text(SITE_DIR / "assets" / "x-mark.svg", X_MARK_SVG)
     write_text(SITE_DIR / "robots.txt", f"User-agent: *\nAllow: /\nSitemap: {config['site_url']}/sitemap.xml\n")
@@ -815,7 +904,7 @@ def make_feed_json(config: dict, posts: List[dict]) -> dict:
 
 
 def make_sitemap(config: dict, posts: List[dict]) -> str:
-    urls = [f"{config['site_url']}/", f"{config['site_url']}/archive/"]
+    urls = [f"{config['site_url']}/", f"{config['site_url']}/archive/", f"{config['site_url']}/about/"]
     urls.extend(f"{config['site_url']}/posts/{p['date']}/" for p in posts)
     nodes = "\n".join(f"  <url><loc>{xml_escape(u)}</loc></url>" for u in urls)
     return f'''<?xml version="1.0" encoding="UTF-8"?>
@@ -881,6 +970,11 @@ main { padding: 36px 0 60px; }
 .grid-two { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
 .chart-section { margin-top: 20px; }
 .post-list { display: grid; gap: 18px; }
+.about-layout { display: grid; gap: 24px; }
+.methodology-grid { grid-template-columns: repeat(2, 1fr); }
+.formula-box { margin-top: 16px; padding: 16px 18px; border-radius: 18px; background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.08); color: var(--text); font-weight: 700; }
+.regime-list { margin: 0; padding-left: 20px; color: var(--muted); }
+.regime-list li { margin: 8px 0; }
 .post-list-item { padding: 22px; background: rgba(255,255,255,.03); border: 1px solid rgba(255,255,255,.06); border-radius: 22px; }
 .post-list-date { margin: 0 0 8px; color: var(--accent-2); font-size: 13px; text-transform: uppercase; letter-spacing: .12em; }
 .metrics-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }

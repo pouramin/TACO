@@ -41,6 +41,11 @@ main { padding: 36px 0 60px; }
 .grid-two { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
 .chart-section { margin-top: 20px; }
 .post-list { display: grid; gap: 18px; }
+.about-layout { display: grid; gap: 24px; }
+.methodology-grid { grid-template-columns: repeat(2, 1fr); }
+.formula-box { margin-top: 16px; padding: 16px 18px; border-radius: 18px; background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.08); color: var(--text); font-weight: 700; }
+.regime-list { margin: 0; padding-left: 20px; color: var(--muted); }
+.regime-list li { margin: 8px 0; }
 .post-list-item { padding: 22px; background: rgba(255,255,255,.03); border: 1px solid rgba(255,255,255,.06); border-radius: 22px; }
 .post-list-date { margin: 0 0 8px; color: var(--accent-2); font-size: 13px; text-transform: uppercase; letter-spacing: .12em; }
 .metrics-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
