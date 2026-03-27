@@ -402,7 +402,9 @@ def svg_line_chart(points: List[Tuple[str, float]], title: str, subtitle: str, w
 
 
 def svg_bar_chart(items: List[Tuple[str, float]], title: str, subtitle: str, width: int = 960, height: int = 430) -> str:
-    margin = {"l": 170, "r": 25, "t": 60, "b": 40}
+    max_label_len = max((len(label) for label, _ in items), default=18)
+    left_margin = min(340, max(220, int(max_label_len * 8.0)))
+    margin = {"l": left_margin, "r": 25, "t": 60, "b": 40}
     chart_w = width - margin["l"] - margin["r"]
     chart_h = height - margin["t"] - margin["b"]
     bar_gap = 18
@@ -422,10 +424,12 @@ def svg_bar_chart(items: List[Tuple[str, float]], title: str, subtitle: str, wid
         y = margin["t"] + idx * (bar_h + bar_gap)
         bar_w = chart_w * clamp(val) / 100.0
         color = PALETTE["good"] if val < 25 else PALETTE["warn"] if val < 60 else PALETTE["bad"]
-        svg.append(f'<text x="{margin["l"] - 14}" y="{y + bar_h/2 + 5:.2f}" text-anchor="end" fill="{PALETTE["text"]}" font-family="Inter, Arial, sans-serif" font-size="14">{xml_escape(label)}</text>')
+        label_x = margin["l"] - 16
+        value_x = min(width - margin["r"] - 6, margin["l"] + bar_w + 8)
+        svg.append(f'<text x="{label_x}" y="{y + bar_h/2 + 5:.2f}" text-anchor="end" fill="{PALETTE["text"]}" font-family="Inter, Arial, sans-serif" font-size="14">{xml_escape(label)}</text>')
         svg.append(f'<rect x="{margin["l"]}" y="{y:.2f}" width="{chart_w:.2f}" height="{bar_h:.2f}" rx="10" fill="{PALETTE["panel"]}" stroke="{PALETTE["border"]}"/>')
         svg.append(f'<rect x="{margin["l"]}" y="{y:.2f}" width="{bar_w:.2f}" height="{bar_h:.2f}" rx="10" fill="{color}"/>')
-        svg.append(f'<text x="{margin["l"] + bar_w + 8:.2f}" y="{y + bar_h/2 + 5:.2f}" fill="{PALETTE["text"]}" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600">{val:.2f}</text>')
+        svg.append(f'<text x="{value_x:.2f}" y="{y + bar_h/2 + 5:.2f}" fill="{PALETTE["text"]}" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600">{val:.2f}</text>')
     svg.append('</svg>')
     return "\n".join(svg)
 
@@ -547,7 +551,6 @@ def make_post_page(config: dict, post: dict, recent_history: List[dict]) -> str:
 {site_nav(config)}
 <main class="wrap post-layout">
   <article class="post-card">
-    <p class="eyebrow">Automated live-data post</p>
     <h1>{xml_escape(post['title'])}</h1>
     <p class="lede">{xml_escape(post['hero_summary'])}</p>
 
