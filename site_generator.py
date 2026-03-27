@@ -13,7 +13,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from statistics import mean
 from typing import Dict, List, Tuple
-from urllib.request import urlopen
+from urllib.request import Request, urlopen
 from zoneinfo import ZoneInfo
 from xml.sax.saxutils import escape as xml_escape
 
@@ -116,9 +116,16 @@ def fred_csv_url(series_id: str) -> str:
     return f"https://fred.stlouisfed.org/graph/fredgraph.csv?id={series_id}"
 
 
-def fetch_csv(url: str) -> str:
-    with urlopen(url, timeout=30) as r:
-        return r.read().decode("utf-8")
+def fetch_csv(url: str, retries: int = 3) -> str:
+    last_exc = None
+    for attempt in range(retries):
+        try:
+            req = Request(url, headers={"User-Agent": "Mozilla/5.0 (compatible; TACO-Bot/1.0; +https://freeiran.it)"})
+            with urlopen(req, timeout=30) as r:
+                return r.read().decode("utf-8")
+        except Exception as exc:
+            last_exc = exc
+    raise RuntimeError(f"Failed to fetch {url}: {last_exc}")
 
 
 def parse_fred_csv(raw: str) -> List[Point]:
@@ -140,13 +147,25 @@ def fetch_series(config: dict) -> Dict[str, List[Point]]:
     out = {}
     for key, meta in config["series"].items():
         raw = fetch_csv(fred_csv_url(meta["id"]))
-        out[key] = parse_fred_csv(raw)
+        points = parse_fred_csv(raw)
+        if not points:
+            raise RuntimeError(f"No valid rows parsed for series '{key}' ({meta['id']}).")
+        out[key] = points
     return out
 
 
 def align_series(series: Dict[str, List[Point]], lookback_days: int) -> List[dict]:
     maps = {k: {p.date: p.value for p in pts} for k, pts in series.items()}
-    common_dates = sorted(set.intersection(*(set(m.keys()) for m in maps.values())))
+    if not maps:
+        raise RuntimeError("No series were loaded.")
+    date_sets = [set(m.keys()) for m in maps.values() if m]
+    if len(date_sets) != len(maps):
+        empty = [k for k, m in maps.items() if not m]
+        raise RuntimeError(f"Some series were empty after parsing: {', '.join(empty)}")
+    common_dates = sorted(set.intersection(*date_sets)) if date_sets else []
+    if not common_dates:
+        lengths = ', '.join(f"{k}={len(v)}" for k, v in maps.items())
+        raise RuntimeError(f"No overlapping dates across live series ({lengths}).")
     common_dates = common_dates[-lookback_days:]
     rows = []
     for d in common_dates:
@@ -284,6 +303,33 @@ def make_description(date: str, score: float, regime: str, drivers: Dict[str, di
 
 def post_title(date: str, score: float, regime: str) -> str:
     return f"{date} TACO Pressure Index Update: {regime.title()} at {score:.2f}"
+
+
+def load_cached_history() -> List[dict] | None:
+    path = DATA_DIR / "history.json"
+    if not path.exists():
+        return None
+    try:
+        with path.open("r", encoding="utf-8") as f:
+            data = json.load(f)
+        if isinstance(data, list) and data:
+            return data
+    except Exception:
+        return None
+    return None
+
+
+def validate_history(history: List[dict]) -> None:
+    if not history:
+        raise RuntimeError("No historical rows available to build the site.")
+    required_top = {"date", "score", "regime", "drivers"}
+    required_drivers = {"equity", "rates", "inflation", "volatility"}
+    for row in history:
+        missing = required_top - set(row.keys())
+        if missing:
+            raise RuntimeError(f"Cached history is missing keys: {sorted(missing)}")
+        if set(row["drivers"].keys()) != required_drivers:
+            raise RuntimeError("Cached history does not contain the expected driver blocks.")
 
 
 def json_dump(path: Path, data) -> None:
@@ -830,18 +876,38 @@ def main(argv: List[str]) -> int:
     config = load_config()
     ensure_dirs()
 
+    history = None
+    used_cache = False
     try:
         series = fetch_series(config)
         rows = align_series(series, config["lookback_days"])
         history = compute_history(rows)
+        validate_history(history)
+    except Exception as exc:
+        cached = load_cached_history()
+        if cached:
+            try:
+                validate_history(cached)
+                history = cached
+                used_cache = True
+                print(f"WARNING: live fetch/build input failed; using cached real history instead. Cause: {exc}", file=sys.stderr)
+            except Exception as cache_exc:
+                print(f"ERROR: live fetch failed ({exc}) and cache was invalid ({cache_exc})", file=sys.stderr)
+                return 1
+        else:
+            print(f"ERROR: live fetch failed and no cached history exists. Cause: {exc}", file=sys.stderr)
+            return 1
+
+    try:
         build_site(config, history)
     except Exception as exc:
-        print(f"ERROR: {exc}", file=sys.stderr)
+        print(f"ERROR: site build failed: {exc}", file=sys.stderr)
         return 1
 
     tz = ZoneInfo(config.get("timezone", "UTC"))
     now = datetime.now(tz)
-    print(f"Built {config['site_name']} with {len(history)} daily posts at {now.isoformat()}")
+    source_label = "cached history" if used_cache else "live data"
+    print(f"Built {config['site_name']} with {len(history)} daily posts from {source_label} at {now.isoformat()}")
     return 0
 
 

@@ -1,0 +1,46 @@
+{
+  "date": "2026-03-27",
+  "score": 50,
+  "regime": "HIGH",
+  "drivers": {
+    "equity": {
+      "label": "S&P 500 equity pressure",
+      "raw": 4.0,
+      "unit": "% 5-session drop",
+      "score": 45,
+      "latest_value": 5003,
+      "latest_date": "2026-03-27",
+      "note": "n"
+    },
+    "rates": {
+      "label": "2Y Treasury rate pressure",
+      "raw": 5.0,
+      "unit": "bps 5-session increase",
+      "score": 35,
+      "latest_value": 4.3,
+      "latest_date": "2026-03-27",
+      "note": "n"
+    },
+    "inflation": {
+      "label": "Inflation expectations pressure",
+      "raw": 6.0,
+      "unit": "bps 5-session increase",
+      "score": 25,
+      "latest_value": 2.8,
+      "latest_date": "2026-03-27",
+      "note": "n"
+    },
+    "volatility": {
+      "label": "VIX volatility pressure",
+      "raw": 18,
+      "unit": "index level",
+      "score": 50,
+      "latest_value": 18,
+      "latest_date": "2026-03-27",
+      "note": "n"
+    }
+  },
+  "title": "2026-03-27 TACO Pressure Index Update: High at 50.00",
+  "description": "Automated market-pressure update for 2026-03-27: the TACO Pressure Index closed at 50.00/100, signaling a high pressure regime as volatility and equity stress shaped the daily read. Includes charts, a component breakdown, and a narrative summary.",
+  "hero_summary": "The daily signal helps separate noise from persistent multi-factor stress. On 2026-03-27, the score printed 50.00/100 in the high regime, with volatility and equity stress doing most of the work."
+}
