@@ -1,0 +1,10 @@
+{
+  "site_name": "TACO | Trump Always Chickens Out",
+  "site_tagline": "A live-data daily tracker of market pressure, financial stress, and TACO-style retreat conditions.",
+  "site_url": "https://freeiran.it",
+  "author": "Amin Pour Abdollahi",
+  "timezone": "Europe/Rome",
+  "posts_to_show_on_home": 12,
+  "lookback_days": 180,
+  "chart_days": 90
+}
