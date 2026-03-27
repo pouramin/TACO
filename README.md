@@ -2,7 +2,7 @@
 
 A static English-language website that publishes **one automated post per day** using **live public market data**.
 
-The site is designed for GitHub Actions + Cloudflare Pages and includes:
+The site is designed for scheduled static publishing and includes:
 
 - a dated article page every day
 - a unique SEO-friendly description for each post
@@ -41,27 +41,11 @@ This project is **live-data only**.
 python site_generator.py
 ```
 
-## Deploy with GitHub + Cloudflare Pages
+## Deploy
 
-### 1) Push to GitHub
-Create a new GitHub repo and push this project.
+Publish the generated `site` directory on your preferred static hosting setup.
 
-### 2) Connect to Cloudflare Pages
-In Cloudflare Pages:
-
-- connect the GitHub repository
-- framework preset: **None**
-- build command: leave empty
-- output directory: `site`
-
-Because the generated files are committed into the repository, Pages only needs to publish the `site/` folder.
-
-### 3) Daily automation
-The workflow file is already included:
-
-`.github/workflows/daily-build.yml`
-
-It runs on **push**, on a **daily schedule**, and on **manual dispatch**. It rebuilds the site with live data, commits the updated output, and pushes the result. Cloudflare Pages redeploys automatically after that push.
+The included workflow can rebuild the site on a daily schedule and refresh the generated output automatically.
 
 ## Domain and branding
 

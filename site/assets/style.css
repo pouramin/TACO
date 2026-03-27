@@ -51,7 +51,20 @@ main { padding: 36px 0 60px; }
 .metric-meta { color: var(--muted); margin: 6px 0; }
 .site-footer { border-top: 1px solid rgba(255,255,255,.08); padding: 28px 0 36px; color: var(--muted); }
 .footer-inner { display: flex; justify-content: space-between; gap: 20px; }
+.footer-centered { justify-content: center; align-items: center; }
+.x-logo-link { display: inline-flex; align-items: center; justify-content: center; width: 58px; height: 58px; border-radius: 999px; background: rgba(255,255,255,.03); border: 1px solid rgba(255,255,255,.08); box-shadow: var(--shadow); transition: transform .15s ease, border-color .15s ease, background .15s ease; }
+.x-logo-link:hover { text-decoration: none; transform: translateY(-2px); border-color: rgba(127,177,255,.55); background: rgba(127,177,255,.08); }
+.x-logo { width: 22px; height: 22px; display: block; border: 0; border-radius: 0; }
+.footer-centered { justify-content: center; align-items: center; }
+.x-logo-link { display: inline-flex; align-items: center; justify-content: center; width: 58px; height: 58px; border-radius: 999px; background: rgba(255,255,255,.03); border: 1px solid rgba(255,255,255,.08); box-shadow: var(--shadow); transition: transform .15s ease, border-color .15s ease, background .15s ease; }
+.x-logo-link:hover { text-decoration: none; transform: translateY(-2px); border-color: rgba(127,177,255,.55); background: rgba(127,177,255,.08); }
+.x-logo { width: 22px; height: 22px; display: block; border: 0; border-radius: 0; }
+.footer-centered { justify-content: center; align-items: center; }
+.x-logo-link { display: inline-flex; align-items: center; justify-content: center; width: 58px; height: 58px; border-radius: 999px; background: rgba(255,255,255,.03); border: 1px solid rgba(255,255,255,.08); box-shadow: var(--shadow); transition: transform .15s ease, border-color .15s ease, background .15s ease; }
+.x-logo-link:hover { text-decoration: none; transform: translateY(-2px); border-color: rgba(127,177,255,.55); background: rgba(127,177,255,.08); }
+.x-logo { width: 22px; height: 22px; display: block; border: 0; border-radius: 0; }
 @media (max-width: 840px) {
   .hero-grid, .grid-two, .metrics-grid { grid-template-columns: 1fr; }
   .footer-inner, .nav-row { flex-direction: column; align-items: flex-start; }
+  .footer-centered { align-items: center; }
 }

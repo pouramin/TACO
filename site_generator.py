@@ -450,6 +450,15 @@ def svg_og_card(title: str, subtitle: str, score: float, regime: str, width: int
 </svg>'''
 
 
+def root_url(path: str) -> str:
+    path = path.lstrip("/")
+    return f"/{path}" if path else "/"
+
+
+def abs_url(config: dict, path: str) -> str:
+    return f"{config["site_url"].rstrip("/")}/{path.lstrip("/")}"
+
+
 def html_page(*, config: dict, title: str, description: str, body: str, canonical: str, og_image: str, extra_head: str = "") -> str:
     return f'''<!doctype html>
 <html lang="{config['language']}">
@@ -468,8 +477,8 @@ def html_page(*, config: dict, title: str, description: str, body: str, canonica
   <meta name="twitter:title" content="{xml_escape(title)}">
   <meta name="twitter:description" content="{xml_escape(description)}">
   <meta name="twitter:image" content="{xml_escape(og_image)}">
-  <link rel="alternate" type="application/rss+xml" title="{xml_escape(config['site_name'])}" href="{xml_escape(config['site_url'])}/rss.xml">
-  <link rel="stylesheet" href="{xml_escape(config['site_url'])}/assets/style.css">
+  <link rel="alternate" type="application/rss+xml" title="{xml_escape(config['site_name'])}" href="{xml_escape(root_url('rss.xml'))}">
+  <link rel="stylesheet" href="{xml_escape(root_url('assets/style.css'))}">
   {extra_head}
 </head>
 <body>
@@ -482,11 +491,11 @@ def site_nav(config: dict) -> str:
     return f'''
 <header class="site-header">
   <div class="wrap nav-row">
-    <a class="brand" href="{config['site_url']}/">{xml_escape(config['site_name'])}</a>
+    <a class="brand" href="{root_url('')}">{xml_escape(config['site_name'])}</a>
     <nav>
-      <a href="{config['site_url']}/">Home</a>
-      <a href="{config['site_url']}/archive/">Archive</a>
-      <a href="{config['site_url']}/rss.xml">RSS</a>
+      <a href="{root_url('')}">Home</a>
+      <a href="{root_url('archive/')}">Archive</a>
+      <a href="{root_url('rss.xml')}">RSS</a>
     </nav>
   </div>
 </header>
@@ -496,17 +505,18 @@ def site_nav(config: dict) -> str:
 def footer(config: dict) -> str:
     return f'''
 <footer class="site-footer">
-  <div class="wrap footer-inner">
-    <p>{xml_escape(config['site_name'])} — {xml_escape(config['site_tagline'])}</p>
-    <p>Automated static site, rebuilt daily and ready for Cloudflare Pages.</p>
+  <div class="wrap footer-inner footer-centered">
+    <a class="x-logo-link" href="https://x.com/pouraminam" target="_blank" rel="noopener noreferrer" aria-label="Follow on X">
+      <img class="x-logo" src="{root_url('assets/x-mark.svg')}" alt="">
+    </a>
   </div>
 </footer>
 '''
 
 
 def make_post_page(config: dict, post: dict, recent_history: List[dict]) -> str:
-    post_url = f"{config['site_url']}/posts/{post['date']}/"
-    og_url = f"{post_url}og.svg"
+    post_url = abs_url(config, f"posts/{post['date']}/")
+    og_url = abs_url(config, f"posts/{post['date']}/og.svg")
     json_ld = json.dumps({
         "@context": "https://schema.org",
         "@type": "BlogPosting",
@@ -601,7 +611,7 @@ def make_index_page(config: dict, posts: List[dict]) -> str:
         items.append(f'''
         <article class="post-list-item">
           <p class="post-list-date">{xml_escape(post['date'])}</p>
-          <h3><a href="{config['site_url']}/posts/{post['date']}/">{xml_escape(post['title'])}</a></h3>
+          <h3><a href="{root_url(f"posts/{post['date']}/")}">{xml_escape(post['title'])}</a></h3>
           <p>{xml_escape(post['description'])}</p>
         </article>
         ''')
@@ -610,7 +620,6 @@ def make_index_page(config: dict, posts: List[dict]) -> str:
 {site_nav(config)}
 <main class="wrap home-layout">
   <section class="hero-home">
-    <p class="eyebrow">English live-data macro site</p>
     <h1>{xml_escape(config['site_name'])}</h1>
     <p class="lede">{xml_escape(config['site_tagline'])}</p>
     <div class="hero-grid">
@@ -618,12 +627,12 @@ def make_index_page(config: dict, posts: List[dict]) -> str:
       <div class="hero-stat"><span>Regime</span><strong>{xml_escape(latest['regime'])}</strong></div>
       <div class="hero-stat"><span>Latest post</span><strong>{xml_escape(latest['date'])}</strong></div>
     </div>
-    <p><a class="button" href="{config['site_url']}/posts/{latest['date']}/">Read today’s post</a></p>
+    <p><a class="button" href="{root_url(f"posts/{latest['date']}/")}">Read today’s post</a></p>
   </section>
 
   <section class="chart-section">
     <h2>Latest 90-session score history</h2>
-    <img src="{config['site_url']}/assets/latest-score-history.svg" alt="Composite score history chart">
+    <img src="{root_url('assets/latest-score-history.svg')}" alt="Composite score history chart">
   </section>
 
   <section class="grid-two">
@@ -632,8 +641,8 @@ def make_index_page(config: dict, posts: List[dict]) -> str:
       <p>One new post per day with a dated headline, a unique SEO-friendly description, a market summary, and freshly generated charts based on live public data.</p>
     </div>
     <div class="panel">
-      <h2>How it updates</h2>
-      <p>GitHub Actions runs the generator on a daily schedule. Cloudflare Pages automatically redeploys the static output after the workflow commits the new files.</p>
+      <h2>How to read it</h2>
+      <p>The composite score ranges from 0 to 100 and is grouped into LOW, ELEVATED, HIGH, and EXTREME regimes. Higher readings mean broader pressure across equities, front-end rates, inflation expectations, and volatility.</p>
     </div>
   </section>
 
@@ -650,8 +659,8 @@ def make_index_page(config: dict, posts: List[dict]) -> str:
         title=config["site_name"],
         description=desc,
         body=body,
-        canonical=f"{config['site_url']}/",
-        og_image=f"{config['site_url']}/assets/home-og.svg",
+        canonical=abs_url(config, '/'),
+        og_image=abs_url(config, 'assets/home-og.svg'),
     )
 
 
@@ -661,7 +670,7 @@ def make_archive_page(config: dict, posts: List[dict]) -> str:
         items.append(f'''
         <article class="post-list-item">
           <p class="post-list-date">{xml_escape(post['date'])} • {xml_escape(post['regime'])}</p>
-          <h3><a href="{config['site_url']}/posts/{post['date']}/">{xml_escape(post['title'])}</a></h3>
+          <h3><a href="{root_url(f"posts/{post['date']}/")}">{xml_escape(post['title'])}</a></h3>
           <p>{xml_escape(post['description'])}</p>
         </article>
         ''')
@@ -681,8 +690,8 @@ def make_archive_page(config: dict, posts: List[dict]) -> str:
         title=f"Archive | {config['site_name']}",
         description=f"Archive of automated daily posts from {config['site_name']}.",
         body=body,
-        canonical=f"{config['site_url']}/archive/",
-        og_image=f"{config['site_url']}/assets/home-og.svg",
+        canonical=abs_url(config, 'archive/'),
+        og_image=abs_url(config, 'assets/home-og.svg'),
     )
 
 
@@ -750,6 +759,7 @@ def build_site(config: dict, history: List[dict]) -> None:
     write_text(SITE_DIR / "index.html", make_index_page(config, posts))
     write_text(SITE_DIR / "archive" / "index.html", make_archive_page(config, posts))
     write_text(SITE_DIR / "assets" / "style.css", STYLE_CSS)
+    write_text(SITE_DIR / "assets" / "x-mark.svg", X_MARK_SVG)
     write_text(SITE_DIR / "robots.txt", f"User-agent: *\nAllow: /\nSitemap: {config['site_url']}/sitemap.xml\n")
     write_text(SITE_DIR / "_headers", "/*\n  Cache-Control: public, max-age=300\n")
     write_text(SITE_DIR / "rss.xml", make_rss(config, posts[:30]))
@@ -812,6 +822,19 @@ def make_sitemap(config: dict, posts: List[dict]) -> str:
 '''
 
 
+X_MARK_SVG = """
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="g" x1="12" y1="10" x2="52" y2="54" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#9ec6ff"/>
+      <stop offset="1" stop-color="#8ef0c1"/>
+    </linearGradient>
+  </defs>
+  <path d="M13 12h11.6l11.1 15.4L48 12h4L37.5 28.5 53 52H41.4L29.1 34.7 13.8 52H9.7l17.5-19.9L13 12Zm14.1 4.1h-6l21.8 31.8h6L27.1 16.1Z" fill="url(#g)"/>
+</svg>
+"""
+
+
 STYLE_CSS = """
 :root {
   --bg: #08101f;
@@ -865,9 +888,14 @@ main { padding: 36px 0 60px; }
 .metric-meta { color: var(--muted); margin: 6px 0; }
 .site-footer { border-top: 1px solid rgba(255,255,255,.08); padding: 28px 0 36px; color: var(--muted); }
 .footer-inner { display: flex; justify-content: space-between; gap: 20px; }
+.footer-centered { justify-content: center; align-items: center; }
+.x-logo-link { display: inline-flex; align-items: center; justify-content: center; width: 58px; height: 58px; border-radius: 999px; background: rgba(255,255,255,.03); border: 1px solid rgba(255,255,255,.08); box-shadow: var(--shadow); transition: transform .15s ease, border-color .15s ease, background .15s ease; }
+.x-logo-link:hover { text-decoration: none; transform: translateY(-2px); border-color: rgba(127,177,255,.55); background: rgba(127,177,255,.08); }
+.x-logo { width: 22px; height: 22px; display: block; border: 0; border-radius: 0; }
 @media (max-width: 840px) {
   .hero-grid, .grid-two, .metrics-grid { grid-template-columns: 1fr; }
   .footer-inner, .nav-row { flex-direction: column; align-items: flex-start; }
+  .footer-centered { align-items: center; }
 }
 """
 
