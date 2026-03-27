@@ -456,7 +456,7 @@ def root_url(path: str) -> str:
 
 
 def abs_url(config: dict, path: str) -> str:
-    return f"{config["site_url"].rstrip("/")}/{path.lstrip("/")}"
+    return f"{config['site_url'].rstrip('/')}/{path.lstrip('/')}"
 
 
 def html_page(*, config: dict, title: str, description: str, body: str, canonical: str, og_image: str, extra_head: str = "") -> str:
