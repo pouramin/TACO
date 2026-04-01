@@ -121,41 +121,96 @@ def fred_csv_url(series_id: str) -> str:
 
 def fetch_csv(url: str, retries: int = 3) -> str:
     last_exc = None
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+        "Accept": "text/csv,application/csv,text/plain;q=0.9,*/*;q=0.8",
+        "Accept-Language": "en-US,en;q=0.9",
+        "Cache-Control": "no-cache",
+        "Pragma": "no-cache",
+    }
     for attempt in range(retries):
         try:
-            req = Request(url, headers={"User-Agent": "Mozilla/5.0 (compatible; TACO-Bot/1.0; +https://freeiran.it)"})
+            req = Request(url, headers=headers)
             with urlopen(req, timeout=30) as r:
-                return r.read().decode("utf-8")
+                payload = r.read()
+                try:
+                    return payload.decode("utf-8-sig")
+                except UnicodeDecodeError:
+                    return payload.decode("latin-1")
         except Exception as exc:
             last_exc = exc
     raise RuntimeError(f"Failed to fetch {url}: {last_exc}")
 
 
 def parse_fred_csv(raw: str) -> List[Point]:
-    rows = csv.DictReader(raw.splitlines())
-    points = []
-    for row in rows:
-        date = row.get("DATE")
-        val = next((v for k, v in row.items() if k != "DATE"), None)
-        if not date or val in (None, ".", ""):
-            continue
+    # FRED CSV responses can occasionally include a UTF-8 BOM, leading blank
+    # lines, or slightly different header casing. Parse defensively instead of
+    # assuming the first line is exactly: DATE,<SERIES_ID>
+    raw = raw.lstrip("\ufeff")
+    normalized = raw.replace("\r\n", "\n").replace("\r", "\n")
+    lines = [line.strip() for line in normalized.split("\n") if line.strip()]
+    if not lines:
+        return []
+
+    date_re = re.compile(r"^\d{4}-\d{2}-\d{2}$")
+
+    header_idx = None
+    date_col = 0
+    value_col = 1
+    for i, line in enumerate(lines[:10]):
         try:
-            points.append(Point(date=date, value=float(val)))
+            row = next(csv.reader([line]))
+        except Exception:
+            continue
+        if not row:
+            continue
+        lowered = [c.strip().lower() for c in row]
+        if "date" in lowered:
+            header_idx = i
+            date_col = lowered.index("date")
+            non_date_cols = [idx for idx, name in enumerate(lowered) if idx != date_col]
+            value_col = non_date_cols[0] if non_date_cols else 1
+            break
+
+    start_idx = header_idx + 1 if header_idx is not None else 0
+    points: List[Point] = []
+    for line in lines[start_idx:]:
+        try:
+            row = next(csv.reader([line]))
+        except Exception:
+            continue
+        if len(row) < 2:
+            continue
+
+        d = row[date_col].strip() if date_col < len(row) else row[0].strip()
+        v = row[value_col].strip() if value_col < len(row) else row[1].strip()
+
+        if not date_re.match(d):
+            continue
+        if v in (None, ".", ""):
+            continue
+
+        v = v.replace(",", "")
+        try:
+            points.append(Point(date=d, value=float(v)))
         except ValueError:
             continue
     return points
 
-
 def fetch_series(config: dict) -> Dict[str, List[Point]]:
     out = {}
     for key, meta in config["series"].items():
-        raw = fetch_csv(fred_csv_url(meta["id"]))
+        url = fred_csv_url(meta["id"])
+        raw = fetch_csv(url)
         points = parse_fred_csv(raw)
         if not points:
-            raise RuntimeError(f"No valid rows parsed for series '{key}' ({meta['id']}).")
+            preview = raw[:180].replace("\n", " ").replace("\r", " ").strip()
+            raise RuntimeError(
+                f"No valid rows parsed for series '{key}' ({meta['id']}). URL={url}. "
+                f"Response preview: {preview!r}"
+            )
         out[key] = points
     return out
-
 
 def align_series(series: Dict[str, List[Point]], lookback_days: int) -> List[dict]:
     maps = {k: {p.date: p.value for p in pts} for k, pts in series.items()}
