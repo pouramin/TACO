@@ -1,6 +1,6 @@
 {
   "date": "2026-01-16",
-  "score": 19.86,
+  "score": 21.39,
   "regime": "LOW",
   "drivers": {
     "equity": {
@@ -14,21 +14,21 @@
     },
     "rates": {
       "label": "2Y Treasury rate pressure",
-      "raw": 5.0,
-      "unit": "bps 5-session increase",
-      "score": 20.0,
+      "raw": "3.59% level, +5.00 bp vs 5 sessions",
+      "unit": "60% level + 40% change",
+      "score": 23.73,
       "latest_value": 3.59,
       "latest_date": "2026-01-16",
-      "note": "A rise in front-end yields can tighten financial conditions."
+      "note": "Rates pressure reflects both the current 2Y level and any fresh 5-session rise."
     },
     "inflation": {
       "label": "Inflation expectations pressure",
-      "raw": 7.0,
-      "unit": "bps 5-session increase",
-      "score": 35.0,
+      "raw": "2.39% level, +7.00 bp vs 5 sessions",
+      "unit": "60% level + 40% change",
+      "score": 37.4,
       "latest_value": 2.3899999999999997,
       "latest_date": "2026-01-16",
-      "note": "Higher breakevens imply more inflation pressure."
+      "note": "Inflation pressure reflects both the breakeven level and any fresh 5-session rise."
     },
     "volatility": {
       "label": "VIX volatility pressure",
@@ -40,7 +40,7 @@
       "note": "Higher implied volatility usually means greater market stress."
     }
   },
-  "title": "2026-01-16 TACO Pressure Index Update: Low at 19.86",
-  "description": "New daily signal for 2026-01-16: the TACO Pressure Index closed at 19.86/100, signaling a low pressure regime as inflation expectations and front-end rate pressure shaped the daily read. Read the charts, latest moves, and a concise market interpretation.",
-  "hero_summary": "This custom framework combines equities, front-end rates, inflation expectations, and volatility into one daily score. On 2026-01-16, the score printed 19.86/100 in the low regime, with inflation expectations and front-end rate pressure doing most of the work."
+  "title": "2026-01-16 TACO Pressure Index Update: Low at 21.39",
+  "description": "New daily signal for 2026-01-16: the TACO Pressure Index closed at 21.39/100, signaling a low pressure regime as inflation expectations and front-end rate pressure shaped the daily read. Read the charts, latest moves, and a concise market interpretation.",
+  "hero_summary": "This custom framework combines equities, front-end rates, inflation expectations, and volatility into one daily score. On 2026-01-16, the score printed 21.39/100 in the low regime, with inflation expectations and front-end rate pressure doing most of the work."
 }

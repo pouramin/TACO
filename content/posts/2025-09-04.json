@@ -1,6 +1,6 @@
 {
   "date": "2025-09-04",
-  "score": 2.93,
+  "score": 13.46,
   "regime": "LOW",
   "drivers": {
     "equity": {
@@ -14,21 +14,21 @@
     },
     "rates": {
       "label": "2Y Treasury rate pressure",
-      "raw": 0.0,
-      "unit": "bps 5-session increase",
-      "score": 0.0,
+      "raw": "3.59% level, +0.00 bp vs 5 sessions",
+      "unit": "60% level + 40% change",
+      "score": 15.73,
       "latest_value": 3.59,
       "latest_date": "2025-09-04",
-      "note": "A rise in front-end yields can tighten financial conditions."
+      "note": "Rates pressure reflects both the current 2Y level and any fresh 5-session rise."
     },
     "inflation": {
       "label": "Inflation expectations pressure",
-      "raw": 0.0,
-      "unit": "bps 5-session increase",
-      "score": 0.0,
+      "raw": "2.44% level, -6.00 bp vs 5 sessions",
+      "unit": "60% level + 40% change",
+      "score": 26.4,
       "latest_value": 2.44,
       "latest_date": "2025-09-04",
-      "note": "Higher breakevens imply more inflation pressure."
+      "note": "Inflation pressure reflects both the breakeven level and any fresh 5-session rise."
     },
     "volatility": {
       "label": "VIX volatility pressure",
@@ -40,7 +40,7 @@
       "note": "Higher implied volatility usually means greater market stress."
     }
   },
-  "title": "2025-09-04 TACO Pressure Index Update: Low at 2.93",
-  "description": "New daily signal for 2025-09-04: the TACO Pressure Index closed at 2.93/100, signaling a low pressure regime as volatility and equity stress shaped the daily read. See the chart pack, score regime, and what drove the latest reading.",
-  "hero_summary": "It is not a forecast of policy decisions; it is a structured way to monitor pressure building across markets. On 2025-09-04, the score printed 2.93/100 in the low regime, with volatility and equity stress doing most of the work."
+  "title": "2025-09-04 TACO Pressure Index Update: Low at 13.46",
+  "description": "New daily signal for 2025-09-04: the TACO Pressure Index closed at 13.46/100, signaling a low pressure regime as inflation expectations and front-end rate pressure shaped the daily read. See the chart pack, score regime, and what drove the latest reading.",
+  "hero_summary": "It is not a forecast of policy decisions; it is a structured way to monitor pressure building across markets. On 2025-09-04, the score printed 13.46/100 in the low regime, with inflation expectations and front-end rate pressure doing most of the work."
 }

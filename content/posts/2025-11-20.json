@@ -1,6 +1,6 @@
 {
   "date": "2025-11-20",
-  "score": 31.74,
+  "score": 40.5,
   "regime": "ELEVATED",
   "drivers": {
     "equity": {
@@ -14,21 +14,21 @@
     },
     "rates": {
       "label": "2Y Treasury rate pressure",
-      "raw": 0.0,
-      "unit": "bps 5-session increase",
-      "score": 0.0,
+      "raw": "3.55% level, -3.00 bp vs 5 sessions",
+      "unit": "60% level + 40% change",
+      "score": 14.67,
       "latest_value": 3.55,
       "latest_date": "2025-11-20",
-      "note": "A rise in front-end yields can tighten financial conditions."
+      "note": "Rates pressure reflects both the current 2Y level and any fresh 5-session rise."
     },
     "inflation": {
       "label": "Inflation expectations pressure",
-      "raw": 0.0,
-      "unit": "bps 5-session increase",
-      "score": 0.0,
+      "raw": "2.34% level, -3.00 bp vs 5 sessions",
+      "unit": "60% level + 40% change",
+      "score": 20.4,
       "latest_value": 2.34,
       "latest_date": "2025-11-20",
-      "note": "Higher breakevens imply more inflation pressure."
+      "note": "Inflation pressure reflects both the breakeven level and any fresh 5-session rise."
     },
     "volatility": {
       "label": "VIX volatility pressure",
@@ -40,7 +40,7 @@
       "note": "Higher implied volatility usually means greater market stress."
     }
   },
-  "title": "2025-11-20 TACO Pressure Index Update: Elevated at 31.74",
-  "description": "New daily signal for 2025-11-20: the TACO Pressure Index closed at 31.74/100, signaling a elevated pressure regime as volatility and equity stress shaped the daily read. Includes charts, a component breakdown, and a narrative summary.",
-  "hero_summary": "The daily signal helps separate noise from persistent multi-factor stress. On 2025-11-20, the score printed 31.74/100 in the elevated regime, with volatility and equity stress doing most of the work."
+  "title": "2025-11-20 TACO Pressure Index Update: Elevated at 40.50",
+  "description": "New daily signal for 2025-11-20: the TACO Pressure Index closed at 40.50/100, signaling a elevated pressure regime as volatility and equity stress shaped the daily read. Includes charts, a component breakdown, and a narrative summary.",
+  "hero_summary": "The daily signal helps separate noise from persistent multi-factor stress. On 2025-11-20, the score printed 40.50/100 in the elevated regime, with volatility and equity stress doing most of the work."
 }

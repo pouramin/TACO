@@ -1,7 +1,7 @@
 {
   "date": "2026-02-03",
-  "score": 21.97,
-  "regime": "LOW",
+  "score": 26.82,
+  "regime": "ELEVATED",
   "drivers": {
     "equity": {
       "label": "S&P 500 equity pressure",
@@ -14,21 +14,21 @@
     },
     "rates": {
       "label": "2Y Treasury rate pressure",
-      "raw": 4.0,
-      "unit": "bps 5-session increase",
-      "score": 16.0,
+      "raw": "3.57% level, +4.00 bp vs 5 sessions",
+      "unit": "60% level + 40% change",
+      "score": 21.6,
       "latest_value": 3.57,
       "latest_date": "2026-02-03",
-      "note": "A rise in front-end yields can tighten financial conditions."
+      "note": "Rates pressure reflects both the current 2Y level and any fresh 5-session rise."
     },
     "inflation": {
       "label": "Inflation expectations pressure",
-      "raw": 6.0,
-      "unit": "bps 5-session increase",
-      "score": 30.0,
+      "raw": "2.53% level, +6.00 bp vs 5 sessions",
+      "unit": "60% level + 40% change",
+      "score": 43.8,
       "latest_value": 2.5300000000000002,
       "latest_date": "2026-02-03",
-      "note": "Higher breakevens imply more inflation pressure."
+      "note": "Inflation pressure reflects both the breakeven level and any fresh 5-session rise."
     },
     "volatility": {
       "label": "VIX volatility pressure",
@@ -40,7 +40,7 @@
       "note": "Higher implied volatility usually means greater market stress."
     }
   },
-  "title": "2026-02-03 TACO Pressure Index Update: Low at 21.97",
-  "description": "Today’s retreat-pressure snapshot for 2026-02-03: the TACO Pressure Index closed at 21.97/100, signaling a low pressure regime as inflation expectations and volatility shaped the daily read. Explore the score history, daily post, and the four-factor dashboard.",
-  "hero_summary": "It is not a forecast of policy decisions; it is a structured way to monitor pressure building across markets. On 2026-02-03, the score printed 21.97/100 in the low regime, with inflation expectations and volatility doing most of the work."
+  "title": "2026-02-03 TACO Pressure Index Update: Elevated at 26.82",
+  "description": "Today’s retreat-pressure snapshot for 2026-02-03: the TACO Pressure Index closed at 26.82/100, signaling a elevated pressure regime as inflation expectations and volatility shaped the daily read. Explore the score history, daily post, and the four-factor dashboard.",
+  "hero_summary": "It is not a forecast of policy decisions; it is a structured way to monitor pressure building across markets. On 2026-02-03, the score printed 26.82/100 in the elevated regime, with inflation expectations and volatility doing most of the work."
 }

@@ -1,6 +1,6 @@
 {
   "date": "2026-02-23",
-  "score": 10.24,
+  "score": 17.31,
   "regime": "LOW",
   "drivers": {
     "equity": {
@@ -14,21 +14,21 @@
     },
     "rates": {
       "label": "2Y Treasury rate pressure",
-      "raw": 3.0,
-      "unit": "bps 5-session increase",
-      "score": 12.0,
+      "raw": "3.43% level, +3.00 bp vs 5 sessions",
+      "unit": "60% level + 40% change",
+      "score": 16.27,
       "latest_value": 3.43,
       "latest_date": "2026-02-23",
-      "note": "A rise in front-end yields can tighten financial conditions."
+      "note": "Rates pressure reflects both the current 2Y level and any fresh 5-session rise."
     },
     "inflation": {
       "label": "Inflation expectations pressure",
-      "raw": 0.0,
-      "unit": "bps 5-session increase",
-      "score": 0.0,
+      "raw": "2.40% level, -2.00 bp vs 5 sessions",
+      "unit": "60% level + 40% change",
+      "score": 24.0,
       "latest_value": 2.4,
       "latest_date": "2026-02-23",
-      "note": "Higher breakevens imply more inflation pressure."
+      "note": "Inflation pressure reflects both the breakeven level and any fresh 5-session rise."
     },
     "volatility": {
       "label": "VIX volatility pressure",
@@ -40,7 +40,7 @@
       "note": "Higher implied volatility usually means greater market stress."
     }
   },
-  "title": "2026-02-23 TACO Pressure Index Update: Low at 10.24",
-  "description": "Fresh macro pressure read for 2026-02-23: the TACO Pressure Index closed at 10.24/100, signaling a low pressure regime as volatility and front-end rate pressure shaped the daily read. Explore the score history, daily post, and the four-factor dashboard.",
-  "hero_summary": "The index is designed to approximate how market stress can build pressure for a softer policy posture. On 2026-02-23, the score printed 10.24/100 in the low regime, with volatility and front-end rate pressure doing most of the work."
+  "title": "2026-02-23 TACO Pressure Index Update: Low at 17.31",
+  "description": "Fresh macro pressure read for 2026-02-23: the TACO Pressure Index closed at 17.31/100, signaling a low pressure regime as volatility and inflation expectations shaped the daily read. Explore the score history, daily post, and the four-factor dashboard.",
+  "hero_summary": "The index is designed to approximate how market stress can build pressure for a softer policy posture. On 2026-02-23, the score printed 17.31/100 in the low regime, with volatility and inflation expectations doing most of the work."
 }

@@ -14,14 +14,14 @@
 <text x="797.60" y="418" text-anchor="middle" fill="#93a4c3" font-family="Inter, Arial, sans-serif" font-size="12">80</text>
 <line x1="935.00" x2="935.00" y1="60" y2="390" stroke="#27314e" stroke-width="1"/>
 <text x="935.00" y="418" text-anchor="middle" fill="#93a4c3" font-family="Inter, Arial, sans-serif" font-size="12">100</text>
-<text x="232" y="99.50" text-anchor="end" fill="#f5f7fb" font-family="Inter, Arial, sans-serif" font-size="14">2Y Treasury rate pressure</text>
+<text x="232" y="99.50" text-anchor="end" fill="#f5f7fb" font-family="Inter, Arial, sans-serif" font-size="14">Inflation expectations pressure</text>
 <rect x="248" y="60.00" width="687.00" height="69.00" rx="10" fill="#121933" stroke="#223154"/>
-<rect x="248" y="60.00" width="247.32" height="69.00" rx="10" fill="#f5c451"/>
-<text x="503.32" y="99.50" fill="#f5f7fb" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600">36.00</text>
-<text x="232" y="186.50" text-anchor="end" fill="#f5f7fb" font-family="Inter, Arial, sans-serif" font-size="14">Inflation expectations pressure</text>
+<rect x="248" y="60.00" width="208.85" height="69.00" rx="10" fill="#f5c451"/>
+<text x="464.85" y="99.50" fill="#f5f7fb" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600">30.40</text>
+<text x="232" y="186.50" text-anchor="end" fill="#f5f7fb" font-family="Inter, Arial, sans-serif" font-size="14">2Y Treasury rate pressure</text>
 <rect x="248" y="147.00" width="687.00" height="69.00" rx="10" fill="#121933" stroke="#223154"/>
-<rect x="248" y="147.00" width="171.75" height="69.00" rx="10" fill="#f5c451"/>
-<text x="427.75" y="186.50" fill="#f5f7fb" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600">25.00</text>
+<rect x="248" y="147.00" width="201.50" height="69.00" rx="10" fill="#f5c451"/>
+<text x="457.50" y="186.50" fill="#f5f7fb" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600">29.33</text>
 <text x="232" y="273.50" text-anchor="end" fill="#f5f7fb" font-family="Inter, Arial, sans-serif" font-size="14">VIX volatility pressure</text>
 <rect x="248" y="234.00" width="687.00" height="69.00" rx="10" fill="#121933" stroke="#223154"/>
 <rect x="248" y="234.00" width="71.31" height="69.00" rx="10" fill="#3ad29f"/>

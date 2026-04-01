@@ -3,21 +3,21 @@
 <text x="70" y="32" fill="#f5f7fb" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700">Composite score history</text>
 <text x="70" y="52" fill="#93a4c3" font-family="Inter, Arial, sans-serif" font-size="13">Trailing 90 sessions through 2026-02-25</text>
 <line x1="70" x2="935" y1="375.00" y2="375.00" stroke="#27314e" stroke-width="1"/>
-<text x="58" y="379.00" text-anchor="end" fill="#93a4c3" font-family="Inter, Arial, sans-serif" font-size="12">1</text>
+<text x="58" y="379.00" text-anchor="end" fill="#93a4c3" font-family="Inter, Arial, sans-serif" font-size="12">8</text>
 <line x1="70" x2="935" y1="312.00" y2="312.00" stroke="#27314e" stroke-width="1"/>
-<text x="58" y="316.00" text-anchor="end" fill="#93a4c3" font-family="Inter, Arial, sans-serif" font-size="12">8</text>
+<text x="58" y="316.00" text-anchor="end" fill="#93a4c3" font-family="Inter, Arial, sans-serif" font-size="12">14</text>
 <line x1="70" x2="935" y1="249.00" y2="249.00" stroke="#27314e" stroke-width="1"/>
-<text x="58" y="253.00" text-anchor="end" fill="#93a4c3" font-family="Inter, Arial, sans-serif" font-size="12">15</text>
+<text x="58" y="253.00" text-anchor="end" fill="#93a4c3" font-family="Inter, Arial, sans-serif" font-size="12">21</text>
 <line x1="70" x2="935" y1="186.00" y2="186.00" stroke="#27314e" stroke-width="1"/>
-<text x="58" y="190.00" text-anchor="end" fill="#93a4c3" font-family="Inter, Arial, sans-serif" font-size="12">21</text>
+<text x="58" y="190.00" text-anchor="end" fill="#93a4c3" font-family="Inter, Arial, sans-serif" font-size="12">28</text>
 <line x1="70" x2="935" y1="123.00" y2="123.00" stroke="#27314e" stroke-width="1"/>
-<text x="58" y="127.00" text-anchor="end" fill="#93a4c3" font-family="Inter, Arial, sans-serif" font-size="12">28</text>
+<text x="58" y="127.00" text-anchor="end" fill="#93a4c3" font-family="Inter, Arial, sans-serif" font-size="12">35</text>
 <line x1="70" x2="935" y1="60.00" y2="60.00" stroke="#27314e" stroke-width="1"/>
-<text x="58" y="64.00" text-anchor="end" fill="#93a4c3" font-family="Inter, Arial, sans-serif" font-size="12">35</text>
+<text x="58" y="64.00" text-anchor="end" fill="#93a4c3" font-family="Inter, Arial, sans-serif" font-size="12">41</text>
 <text x="70.00" y="412" text-anchor="middle" fill="#93a4c3" font-family="Inter, Arial, sans-serif" font-size="12">2025-10-15</text>
 <text x="507.36" y="412" text-anchor="middle" fill="#93a4c3" font-family="Inter, Arial, sans-serif" font-size="12">2025-12-19</text>
 <text x="935.00" y="412" text-anchor="middle" fill="#93a4c3" font-family="Inter, Arial, sans-serif" font-size="12">2026-02-25</text>
-<path d="M 70.00 263.69 L 79.72 125.02 L 89.44 235.21 L 99.16 341.08 L 108.88 343.61 L 118.60 338.46 L 128.31 129.90 L 138.03 206.82 L 147.75 234.36 L 157.47 265.00 L 167.19 160.72 L 176.91 228.74 L 186.63 224.90 L 196.35 161.47 L 206.07 105.25 L 215.79 208.04 L 225.51 239.24 L 235.22 244.30 L 244.94 328.43 L 254.66 346.24 L 264.38 270.44 L 274.10 268.19 L 283.82 184.71 L 293.54 85.20 L 303.26 86.89 L 312.98 88.11 L 322.70 181.15 L 332.42 324.78 L 342.13 338.74 L 351.85 348.48 L 361.57 354.48 L 371.29 320.00 L 381.01 305.95 L 390.73 276.71 L 400.45 246.08 L 410.17 218.34 L 419.89 312.51 L 429.61 230.24 L 439.33 276.62 L 449.04 365.16 L 458.76 326.65 L 468.48 332.84 L 478.20 326.00 L 487.92 216.75 L 497.64 247.29 L 507.36 364.79 L 517.08 370.69 L 526.80 371.25 L 536.52 375.00 L 546.24 374.06 L 555.96 369.75 L 565.67 357.29 L 575.39 289.08 L 585.11 261.91 L 594.83 252.54 L 604.55 260.32 L 614.27 274.93 L 623.99 279.24 L 633.71 255.35 L 643.43 204.38 L 653.15 208.13 L 662.87 231.84 L 672.58 230.52 L 682.30 199.42 L 692.02 60.00 L 701.74 159.03 L 711.46 186.58 L 721.18 180.02 L 730.90 283.09 L 740.62 272.50 L 750.34 260.79 L 760.06 222.65 L 769.78 252.82 L 779.49 261.54 L 789.21 179.65 L 798.93 232.96 L 808.65 158.19 L 818.37 337.05 L 828.09 330.50 L 837.81 344.17 L 847.53 345.21 L 857.25 322.62 L 866.97 234.27 L 876.69 218.81 L 886.40 255.54 L 896.12 250.48 L 905.84 325.62 L 915.56 289.55 L 925.28 319.91 L 935.00 343.24" fill="none" stroke="#69a7ff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-<circle cx="935.00" cy="343.24" r="6" fill="#69a7ff"/>
-<text x="927.00" y="331.24" text-anchor="end" fill="#f5f7fb" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="600">4.51</text>
+<path d="M 70.00 246.96 L 79.72 120.05 L 89.44 226.79 L 99.16 333.63 L 108.88 334.00 L 118.60 326.06 L 128.31 232.58 L 138.03 270.03 L 147.75 287.68 L 157.47 299.17 L 167.19 246.59 L 176.91 271.15 L 186.63 259.57 L 196.35 222.87 L 206.07 152.83 L 215.79 211.48 L 225.51 212.69 L 235.22 220.35 L 244.94 299.54 L 254.66 319.99 L 264.38 243.14 L 274.10 272.09 L 283.82 191.49 L 293.54 60.00 L 303.26 72.79 L 312.98 67.56 L 322.70 165.53 L 332.42 314.58 L 342.13 334.56 L 351.85 340.26 L 361.57 345.02 L 371.29 320.27 L 381.01 320.74 L 390.73 313.92 L 400.45 295.53 L 410.17 282.08 L 419.89 316.54 L 429.61 278.25 L 439.33 307.85 L 449.04 348.38 L 458.76 309.91 L 468.48 321.02 L 478.20 321.58 L 487.92 210.64 L 497.64 243.04 L 507.36 357.44 L 517.08 368.56 L 526.80 368.09 L 536.52 372.48 L 546.24 375.00 L 555.96 369.96 L 565.67 360.24 L 575.39 298.05 L 585.11 282.17 L 594.83 293.00 L 604.55 310.00 L 614.27 310.47 L 623.99 312.15 L 633.71 304.77 L 643.43 275.07 L 653.15 266.86 L 662.87 274.89 L 672.58 280.30 L 682.30 246.03 L 692.02 89.60 L 701.74 198.12 L 711.46 248.74 L 721.18 231.65 L 730.90 287.87 L 740.62 283.39 L 750.34 272.65 L 760.06 247.71 L 769.78 256.02 L 779.49 268.54 L 789.21 195.32 L 798.93 199.43 L 808.65 122.76 L 818.37 296.37 L 828.09 291.04 L 837.81 310.75 L 847.53 304.58 L 857.25 290.86 L 866.97 211.29 L 876.69 198.31 L 886.40 238.00 L 896.12 221.66 L 905.84 301.50 L 915.56 284.13 L 925.28 304.68 L 935.00 316.82" fill="none" stroke="#69a7ff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="935.00" cy="316.82" r="6" fill="#69a7ff"/>
+<text x="927.00" y="304.82" text-anchor="end" fill="#f5f7fb" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="600">13.81</text>
 </svg>

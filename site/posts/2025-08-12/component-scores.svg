@@ -16,17 +16,17 @@
 <text x="935.00" y="418" text-anchor="middle" fill="#93a4c3" font-family="Inter, Arial, sans-serif" font-size="12">100</text>
 <text x="232" y="99.50" text-anchor="end" fill="#f5f7fb" font-family="Inter, Arial, sans-serif" font-size="14">Inflation expectations pressure</text>
 <rect x="248" y="60.00" width="687.00" height="69.00" rx="10" fill="#121933" stroke="#223154"/>
-<rect x="248" y="60.00" width="68.70" height="69.00" rx="10" fill="#3ad29f"/>
-<text x="324.70" y="99.50" fill="#f5f7fb" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600">10.00</text>
-<text x="232" y="186.50" text-anchor="end" fill="#f5f7fb" font-family="Inter, Arial, sans-serif" font-size="14">VIX volatility pressure</text>
+<rect x="248" y="60.00" width="204.73" height="69.00" rx="10" fill="#f5c451"/>
+<text x="460.73" y="99.50" fill="#f5f7fb" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600">29.80</text>
+<text x="232" y="186.50" text-anchor="end" fill="#f5f7fb" font-family="Inter, Arial, sans-serif" font-size="14">2Y Treasury rate pressure</text>
 <rect x="248" y="147.00" width="687.00" height="69.00" rx="10" fill="#121933" stroke="#223154"/>
-<rect x="248" y="147.00" width="57.09" height="69.00" rx="10" fill="#3ad29f"/>
-<text x="313.09" y="186.50" fill="#f5f7fb" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600">8.31</text>
-<text x="232" y="273.50" text-anchor="end" fill="#f5f7fb" font-family="Inter, Arial, sans-serif" font-size="14">S&amp;P 500 equity pressure</text>
+<rect x="248" y="147.00" width="131.90" height="69.00" rx="10" fill="#3ad29f"/>
+<text x="387.90" y="186.50" fill="#f5f7fb" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600">19.20</text>
+<text x="232" y="273.50" text-anchor="end" fill="#f5f7fb" font-family="Inter, Arial, sans-serif" font-size="14">VIX volatility pressure</text>
 <rect x="248" y="234.00" width="687.00" height="69.00" rx="10" fill="#121933" stroke="#223154"/>
-<rect x="248" y="234.00" width="0.00" height="69.00" rx="10" fill="#3ad29f"/>
-<text x="256.00" y="273.50" fill="#f5f7fb" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600">0.00</text>
-<text x="232" y="360.50" text-anchor="end" fill="#f5f7fb" font-family="Inter, Arial, sans-serif" font-size="14">2Y Treasury rate pressure</text>
+<rect x="248" y="234.00" width="57.09" height="69.00" rx="10" fill="#3ad29f"/>
+<text x="313.09" y="273.50" fill="#f5f7fb" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600">8.31</text>
+<text x="232" y="360.50" text-anchor="end" fill="#f5f7fb" font-family="Inter, Arial, sans-serif" font-size="14">S&amp;P 500 equity pressure</text>
 <rect x="248" y="321.00" width="687.00" height="69.00" rx="10" fill="#121933" stroke="#223154"/>
 <rect x="248" y="321.00" width="0.00" height="69.00" rx="10" fill="#3ad29f"/>
 <text x="256.00" y="360.50" fill="#f5f7fb" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600">0.00</text>

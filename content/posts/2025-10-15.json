@@ -1,6 +1,6 @@
 {
   "date": "2025-10-15",
-  "score": 13.0,
+  "score": 21.29,
   "regime": "LOW",
   "drivers": {
     "equity": {
@@ -14,21 +14,21 @@
     },
     "rates": {
       "label": "2Y Treasury rate pressure",
-      "raw": 0.0,
-      "unit": "bps 5-session increase",
-      "score": 0.0,
+      "raw": "3.50% level, -7.00 bp vs 5 sessions",
+      "unit": "60% level + 40% change",
+      "score": 13.33,
       "latest_value": 3.5,
       "latest_date": "2025-10-15",
-      "note": "A rise in front-end yields can tighten financial conditions."
+      "note": "Rates pressure reflects both the current 2Y level and any fresh 5-session rise."
     },
     "inflation": {
       "label": "Inflation expectations pressure",
-      "raw": 0.0,
-      "unit": "bps 5-session increase",
-      "score": 0.0,
+      "raw": "2.33% level, -6.00 bp vs 5 sessions",
+      "unit": "60% level + 40% change",
+      "score": 19.8,
       "latest_value": 2.33,
       "latest_date": "2025-10-15",
-      "note": "Higher breakevens imply more inflation pressure."
+      "note": "Inflation pressure reflects both the breakeven level and any fresh 5-session rise."
     },
     "volatility": {
       "label": "VIX volatility pressure",
@@ -40,7 +40,7 @@
       "note": "Higher implied volatility usually means greater market stress."
     }
   },
-  "title": "2025-10-15 TACO Pressure Index Update: Low at 13.00",
-  "description": "Automated market-pressure update for 2025-10-15: the TACO Pressure Index closed at 13.00/100, signaling a low pressure regime as volatility and equity stress shaped the daily read. See the chart pack, score regime, and what drove the latest reading.",
-  "hero_summary": "The daily signal helps separate noise from persistent multi-factor stress. On 2025-10-15, the score printed 13.00/100 in the low regime, with volatility and equity stress doing most of the work."
+  "title": "2025-10-15 TACO Pressure Index Update: Low at 21.29",
+  "description": "Automated market-pressure update for 2025-10-15: the TACO Pressure Index closed at 21.29/100, signaling a low pressure regime as volatility and inflation expectations shaped the daily read. See the chart pack, score regime, and what drove the latest reading.",
+  "hero_summary": "The daily signal helps separate noise from persistent multi-factor stress. On 2025-10-15, the score printed 21.29/100 in the low regime, with volatility and inflation expectations doing most of the work."
 }
