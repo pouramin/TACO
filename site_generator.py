@@ -861,7 +861,13 @@ def make_post_page(config: dict, post: dict, recent_history: List[dict]) -> str:
 
     <section class="chart-section">
       <h2>Pressure history</h2>
-      <img src="./score-history.svg?v={post['score_history_token']}" alt="Score history chart for the last 90 sessions">
+      {interactive_line_chart(
+        chart_id=f"score-history-{post['date']}",
+        points=[(x["date"], x["score"]) for x in upto],
+        title="Composite score history",
+        subtitle=f"Trailing {len(upto)} sessions through {post['date']}",
+        fallback_src=f"./score-history.svg?v={post.get('score_history_token', '')}",
+      )}
     </section>
 
     <section class="chart-section">
@@ -923,7 +929,13 @@ def make_index_page(config: dict, posts: List[dict]) -> str:
 
   <section class="chart-section">
     <h2>Latest 90-session score history</h2>
-    <img src="{root_url('assets/latest-score-history.svg')}" alt="Composite score history chart">
+    {interactive_line_chart(
+      chart_id="home-score-history",
+      points=[(x["date"], x["score"]) for x in latest.get("recent_history", [])],
+      title="Composite score history",
+      subtitle=f"Last {len(latest.get('recent_history', []))} common sessions",
+      fallback_src=f"{root_url('assets/latest-score-history.svg')}?v={latest.get('latest_score_history_token', '')}",
+    )}
   </section>
 
   <section class="grid-two">
@@ -1096,8 +1108,10 @@ def build_site(config: dict, history: List[dict]) -> None:
 
     posts = list(reversed(posts))
     recent_history = history[-config["chart_days"] :]
+    latest_score_history_token = cache_bust_token([(x["date"], x["score"]) for x in recent_history])
     if posts:
         posts[0]["recent_history"] = recent_history
+        posts[0]["latest_score_history_token"] = latest_score_history_token
 
     json_dump(DATA_DIR / "latest.json", posts[0])
     json_dump(DATA_DIR / "posts.json", posts)
@@ -1129,10 +1143,12 @@ def build_site(config: dict, history: List[dict]) -> None:
             title="Latest component scores",
             subtitle=f"How each factor contributed on {post['date']}",
         )
+        post["score_history_token"] = cache_bust_token([(x["date"], x["score"]) for x in upto])
+        post["component_chart_token"] = cache_bust_token([(v["label"], round(float(v["score"]), 2)) for v in sorted(post["drivers"].values(), key=lambda x: x["score"], reverse=True)])
         write_text(post_dir / "score-history.svg", score_svg)
         write_text(post_dir / "component-scores.svg", component_svg)
         write_text(post_dir / "og.svg", svg_og_card(post["title"], post["description"], post["score"], post["regime"]))
-        write_text(post_dir / "index.html", make_post_page(config, post, recent_history))
+        write_text(post_dir / "index.html", make_post_page(config, post, upto))
 
     (SITE_DIR / "archive").mkdir(parents=True, exist_ok=True)
     (SITE_DIR / "about").mkdir(parents=True, exist_ok=True)
