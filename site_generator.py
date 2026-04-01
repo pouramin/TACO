@@ -8,8 +8,9 @@ import math
 import os
 import re
 import sys
+import time
 from dataclasses import dataclass
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 from pathlib import Path
 from statistics import mean
 from typing import Dict, List, Tuple
@@ -115,15 +116,21 @@ def ensure_dirs() -> None:
         p.mkdir(parents=True, exist_ok=True)
 
 
-def fred_csv_url(series_id: str) -> str:
+def fred_csv_url(series_id: str, start_date: str | None = None) -> str:
+    if start_date:
+        return f"https://fred.stlouisfed.org/graph/fredgraph.csv?id={series_id}&cosd={start_date}"
     return f"https://fred.stlouisfed.org/graph/fredgraph.csv?id={series_id}"
 
 
-def fetch_csv(url: str, retries: int = 3) -> str:
+def fred_txt_url(series_id: str) -> str:
+    return f"https://fred.stlouisfed.org/data/{series_id}.txt"
+
+
+def http_get_text(url: str, retries: int = 4, timeout: int = 45) -> str:
     last_exc = None
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
-        "Accept": "text/csv,application/csv,text/plain;q=0.9,*/*;q=0.8",
+        "Accept": "text/plain,text/csv,application/csv,text/html;q=0.9,*/*;q=0.8",
         "Accept-Language": "en-US,en;q=0.9",
         "Cache-Control": "no-cache",
         "Pragma": "no-cache",
@@ -131,7 +138,7 @@ def fetch_csv(url: str, retries: int = 3) -> str:
     for attempt in range(retries):
         try:
             req = Request(url, headers=headers)
-            with urlopen(req, timeout=30) as r:
+            with urlopen(req, timeout=timeout) as r:
                 payload = r.read()
                 try:
                     return payload.decode("utf-8-sig")
@@ -139,6 +146,8 @@ def fetch_csv(url: str, retries: int = 3) -> str:
                     return payload.decode("latin-1")
         except Exception as exc:
             last_exc = exc
+            if attempt < retries - 1:
+                time.sleep(2 ** attempt)
     raise RuntimeError(f"Failed to fetch {url}: {last_exc}")
 
 
@@ -197,17 +206,56 @@ def parse_fred_csv(raw: str) -> List[Point]:
             continue
     return points
 
+def parse_fred_txt(raw: str) -> List[Point]:
+    normalized = raw.lstrip("\ufeff").replace("\r\n", "\n").replace("\r", "\n")
+    date_re = re.compile(r"^(\d{4}-\d{2}-\d{2})\s+([0-9.+-]+)$")
+    points: List[Point] = []
+    for line in normalized.split("\n"):
+        line = line.strip()
+        if not line or line.startswith("#"):
+            continue
+        m = date_re.match(line)
+        if not m:
+            continue
+        d, v = m.group(1), m.group(2)
+        if v in (".", ""):
+            continue
+        try:
+            points.append(Point(date=d, value=float(v)))
+        except ValueError:
+            continue
+    return points
+
+
 def fetch_series(config: dict) -> Dict[str, List[Point]]:
     out = {}
+    start_date = (
+        datetime.now(timezone.utc).date()
+        - timedelta(days=max(config.get("lookback_days", 180) + 120, 365))
+    ).isoformat()
     for key, meta in config["series"].items():
-        url = fred_csv_url(meta["id"])
-        raw = fetch_csv(url)
-        points = parse_fred_csv(raw)
+        series_id = meta["id"]
+        attempts = [
+            ("txt", fred_txt_url(series_id), parse_fred_txt),
+            ("csv-recent", fred_csv_url(series_id, start_date=start_date), parse_fred_csv),
+            ("csv-full", fred_csv_url(series_id), parse_fred_csv),
+        ]
+        series_errors = []
+        points: List[Point] = []
+        for source_name, url, parser in attempts:
+            try:
+                raw = http_get_text(url)
+                points = parser(raw)
+                if points:
+                    break
+                preview = raw[:220].replace("\n", " ").replace("\r", " ").strip()
+                series_errors.append(f"{source_name} produced 0 rows from {url} | preview={preview!r}")
+            except Exception as exc:
+                series_errors.append(f"{source_name} failed for {url}: {exc}")
         if not points:
-            preview = raw[:180].replace("\n", " ").replace("\r", " ").strip()
             raise RuntimeError(
-                f"No valid rows parsed for series '{key}' ({meta['id']}). URL={url}. "
-                f"Response preview: {preview!r}"
+                f"All live fetch attempts failed for series '{key}' ({series_id}). "
+                + " || ".join(series_errors)
             )
         out[key] = points
     return out
