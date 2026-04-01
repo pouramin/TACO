@@ -14,6 +14,7 @@ from datetime import datetime, timezone, timedelta
 from pathlib import Path
 from statistics import mean
 from typing import Dict, List, Tuple
+from urllib.parse import quote
 from urllib.request import Request, urlopen
 from zoneinfo import ZoneInfo
 from xml.sax.saxutils import escape as xml_escape
@@ -116,21 +117,11 @@ def ensure_dirs() -> None:
         p.mkdir(parents=True, exist_ok=True)
 
 
-def fred_csv_url(series_id: str, start_date: str | None = None) -> str:
-    if start_date:
-        return f"https://fred.stlouisfed.org/graph/fredgraph.csv?id={series_id}&cosd={start_date}"
-    return f"https://fred.stlouisfed.org/graph/fredgraph.csv?id={series_id}"
-
-
-def fred_txt_url(series_id: str) -> str:
-    return f"https://fred.stlouisfed.org/data/{series_id}.txt"
-
-
-def http_get_text(url: str, retries: int = 4, timeout: int = 45) -> str:
+def http_get_text(url: str, retries: int = 2, timeout: int = 25) -> str:
     last_exc = None
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
-        "Accept": "text/plain,text/csv,application/csv,text/html;q=0.9,*/*;q=0.8",
+        "Accept": "text/plain,text/csv,application/csv,application/json,text/html;q=0.9,*/*;q=0.8",
         "Accept-Language": "en-US,en;q=0.9",
         "Cache-Control": "no-cache",
         "Pragma": "no-cache",
@@ -151,114 +142,241 @@ def http_get_text(url: str, retries: int = 4, timeout: int = 45) -> str:
     raise RuntimeError(f"Failed to fetch {url}: {last_exc}")
 
 
-def parse_fred_csv(raw: str) -> List[Point]:
-    # FRED CSV responses can occasionally include a UTF-8 BOM, leading blank
-    # lines, or slightly different header casing. Parse defensively instead of
-    # assuming the first line is exactly: DATE,<SERIES_ID>
-    raw = raw.lstrip("\ufeff")
-    normalized = raw.replace("\r\n", "\n").replace("\r", "\n")
-    lines = [line.strip() for line in normalized.split("\n") if line.strip()]
-    if not lines:
-        return []
+def normalize_header(value: str) -> str:
+    return re.sub(r"[^a-z0-9]", "", value.lower())
 
-    date_re = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 
-    header_idx = None
-    date_col = 0
-    value_col = 1
-    for i, line in enumerate(lines[:10]):
+def parse_us_date(value: str) -> str:
+    return datetime.strptime(value.strip(), "%m/%d/%Y").date().isoformat()
+
+
+def lookback_start_date(config: dict) -> datetime.date:
+    days = max(config.get("lookback_days", 180) + 40, 260)
+    return datetime.now(timezone.utc).date() - timedelta(days=days)
+
+
+def filter_points(points: List[Point], start_date: datetime.date) -> List[Point]:
+    out = []
+    for p in points:
         try:
-            row = next(csv.reader([line]))
-        except Exception:
+            d = datetime.fromisoformat(p.date).date()
+        except ValueError:
             continue
+        if d >= start_date:
+            out.append(p)
+    return out
+
+
+def parse_stooq_csv(raw: str) -> List[Point]:
+    rows = list(csv.DictReader(raw.splitlines()))
+    points: List[Point] = []
+    for row in rows:
         if not row:
             continue
-        lowered = [c.strip().lower() for c in row]
-        if "date" in lowered:
-            header_idx = i
-            date_col = lowered.index("date")
-            non_date_cols = [idx for idx, name in enumerate(lowered) if idx != date_col]
-            value_col = non_date_cols[0] if non_date_cols else 1
-            break
-
-    start_idx = header_idx + 1 if header_idx is not None else 0
-    points: List[Point] = []
-    for line in lines[start_idx:]:
+        date_raw = (row.get("Date") or row.get("date") or "").strip()
+        close_raw = (row.get("Close") or row.get("close") or "").strip()
+        if not date_raw or not close_raw or close_raw.lower() in {"null", "n/a", "na", "-"}:
+            continue
         try:
-            row = next(csv.reader([line]))
+            points.append(Point(date=date_raw, value=float(close_raw.replace(",", ""))))
+        except ValueError:
+            continue
+    return points
+
+
+def stooq_csv_url(symbol: str, start_date: datetime.date, end_date: datetime.date) -> str:
+    d1 = start_date.strftime("%Y%m%d")
+    d2 = end_date.strftime("%Y%m%d")
+    return f"https://stooq.com/q/d/l/?s={quote(symbol)}&i=d&d1={d1}&d2={d2}"
+
+
+def yahoo_chart_url(symbol: str, range_value: str = "2y") -> str:
+    return (
+        f"https://query1.finance.yahoo.com/v8/finance/chart/{quote(symbol)}"
+        f"?interval=1d&range={range_value}&includePrePost=false&events=div%2Csplits"
+    )
+
+
+def parse_yahoo_chart(raw: str) -> List[Point]:
+    data = json.loads(raw)
+    result = (((data or {}).get("chart") or {}).get("result") or [None])[0]
+    if not result:
+        return []
+    timestamps = result.get("timestamp") or []
+    closes = ((((result.get("indicators") or {}).get("quote") or [None])[0] or {}).get("close") or [])
+    points: List[Point] = []
+    for ts, close in zip(timestamps, closes):
+        if close is None:
+            continue
+        try:
+            d = datetime.fromtimestamp(int(ts), tz=timezone.utc).date().isoformat()
+            points.append(Point(date=d, value=float(close)))
         except Exception:
             continue
-        if len(row) < 2:
-            continue
+    dedup = {}
+    for p in points:
+        dedup[p.date] = p.value
+    return [Point(date=d, value=dedup[d]) for d in sorted(dedup)]
 
-        d = row[date_col].strip() if date_col < len(row) else row[0].strip()
-        v = row[value_col].strip() if value_col < len(row) else row[1].strip()
 
-        if not date_re.match(d):
-            continue
-        if v in (None, ".", ""):
-            continue
-
-        v = v.replace(",", "")
+def fetch_equity_series(config: dict) -> List[Point]:
+    start_date = lookback_start_date(config)
+    end_date = datetime.now(timezone.utc).date() + timedelta(days=1)
+    attempts = [
+        ("yahoo", yahoo_chart_url("^GSPC", range_value="2y"), parse_yahoo_chart),
+        ("stooq", stooq_csv_url("^spx", start_date, end_date), parse_stooq_csv),
+    ]
+    errors = []
+    for name, url, parser in attempts:
         try:
-            points.append(Point(date=d, value=float(v)))
-        except ValueError:
-            continue
-    return points
+            pts = filter_points(parser(http_get_text(url)), start_date)
+            if pts:
+                return pts
+            errors.append(f"{name} returned 0 rows")
+        except Exception as exc:
+            errors.append(f"{name} failed: {exc}")
+    raise RuntimeError("SP500 fetch failed. " + " || ".join(errors))
 
-def parse_fred_txt(raw: str) -> List[Point]:
-    normalized = raw.lstrip("\ufeff").replace("\r\n", "\n").replace("\r", "\n")
-    date_re = re.compile(r"^(\d{4}-\d{2}-\d{2})\s+([0-9.+-]+)$")
+
+def cboe_vix_url() -> str:
+    return "https://cdn.cboe.com/api/global/us_indices/daily_prices/VIX_History.csv"
+
+
+def parse_cboe_vix_csv(raw: str) -> List[Point]:
+    rows = list(csv.DictReader(raw.splitlines()))
     points: List[Point] = []
-    for line in normalized.split("\n"):
-        line = line.strip()
-        if not line or line.startswith("#"):
+    for row in rows:
+        if not row:
             continue
-        m = date_re.match(line)
-        if not m:
-            continue
-        d, v = m.group(1), m.group(2)
-        if v in (".", ""):
+        date_raw = (row.get("DATE") or row.get("Date") or "").strip()
+        close_raw = (row.get("CLOSE") or row.get("Close") or "").strip()
+        if not date_raw or not close_raw:
             continue
         try:
-            points.append(Point(date=d, value=float(v)))
-        except ValueError:
+            d = parse_us_date(date_raw)
+            points.append(Point(date=d, value=float(close_raw.replace(",", ""))))
+        except Exception:
             continue
     return points
+
+
+def fetch_vix_series(config: dict) -> List[Point]:
+    start_date = lookback_start_date(config)
+    attempts = [
+        ("cboe", cboe_vix_url(), parse_cboe_vix_csv),
+        ("yahoo", yahoo_chart_url("^VIX", range_value="2y"), parse_yahoo_chart),
+    ]
+    errors = []
+    for name, url, parser in attempts:
+        try:
+            pts = filter_points(parser(http_get_text(url)), start_date)
+            if pts:
+                return pts
+            errors.append(f"{name} returned 0 rows")
+        except Exception as exc:
+            errors.append(f"{name} failed: {exc}")
+    raise RuntimeError("VIX fetch failed. " + " || ".join(errors))
+
+
+def treasury_year_csv_url(year: int, kind: str) -> str:
+    return (
+        "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/"
+        f"daily-treasury-rates.csv/{year}/all?_format=csv&page=&type={kind}"
+    )
+
+
+def parse_treasury_csv_table(raw: str) -> List[Tuple[str, dict]]:
+    rows: List[Tuple[str, dict]] = []
+    reader = csv.DictReader(raw.splitlines())
+    if not reader.fieldnames:
+        return rows
+    field_map = {normalize_header(name): name for name in reader.fieldnames if name}
+    date_field = field_map.get("date")
+    if not date_field:
+        return rows
+    for row in reader:
+        if not row:
+            continue
+        try:
+            iso_date = parse_us_date(row[date_field])
+        except Exception:
+            continue
+        normalized = {}
+        for norm, original in field_map.items():
+            normalized[norm] = (row.get(original) or "").strip()
+        rows.append((iso_date, normalized))
+    return rows
+
+
+def fetch_treasury_core_series(config: dict) -> Tuple[List[Point], List[Point]]:
+    start_date = lookback_start_date(config)
+    current_year = datetime.now(timezone.utc).date().year
+    years = list(range(start_date.year, current_year + 1))
+
+    nominal_map: Dict[str, dict] = {}
+    real_map: Dict[str, dict] = {}
+    nominal_errors = []
+    real_errors = []
+
+    for year in years:
+        try:
+            raw = http_get_text(treasury_year_csv_url(year, "daily_treasury_yield_curve"), retries=2, timeout=20)
+            for d, row in parse_treasury_csv_table(raw):
+                nominal_map[d] = row
+        except Exception as exc:
+            nominal_errors.append(f"nominal {year}: {exc}")
+
+        try:
+            raw = http_get_text(treasury_year_csv_url(year, "daily_treasury_real_yield_curve"), retries=2, timeout=20)
+            for d, row in parse_treasury_csv_table(raw):
+                real_map[d] = row
+        except Exception as exc:
+            real_errors.append(f"real {year}: {exc}")
+
+    if not nominal_map:
+        raise RuntimeError("Treasury nominal fetch failed. " + " || ".join(nominal_errors))
+    if not real_map:
+        raise RuntimeError("Treasury real fetch failed. " + " || ".join(real_errors))
+
+    dgs2_points: List[Point] = []
+    t5yie_points: List[Point] = []
+    common_dates = sorted(set(nominal_map) & set(real_map))
+    for d in common_dates:
+        if datetime.fromisoformat(d).date() < start_date:
+            continue
+        nrow = nominal_map[d]
+        rrow = real_map[d]
+        y2_raw = nrow.get("2yr", "")
+        n5_raw = nrow.get("5yr", "")
+        r5_raw = rrow.get("5yr", "")
+        if y2_raw and y2_raw.upper() != "N/A":
+            try:
+                dgs2_points.append(Point(date=d, value=float(y2_raw.replace(",", ""))))
+            except ValueError:
+                pass
+        if n5_raw and r5_raw and n5_raw.upper() != "N/A" and r5_raw.upper() != "N/A":
+            try:
+                breakeven = float(n5_raw.replace(",", "")) - float(r5_raw.replace(",", ""))
+                t5yie_points.append(Point(date=d, value=breakeven))
+            except ValueError:
+                pass
+
+    if not dgs2_points:
+        raise RuntimeError("Treasury nominal data did not yield any 2Y points.")
+    if not t5yie_points:
+        raise RuntimeError("Treasury nominal/real data did not yield any 5Y breakeven points.")
+
+    return dgs2_points, t5yie_points
 
 
 def fetch_series(config: dict) -> Dict[str, List[Point]]:
-    out = {}
-    start_date = (
-        datetime.now(timezone.utc).date()
-        - timedelta(days=max(config.get("lookback_days", 180) + 120, 365))
-    ).isoformat()
-    for key, meta in config["series"].items():
-        series_id = meta["id"]
-        attempts = [
-            ("txt", fred_txt_url(series_id), parse_fred_txt),
-            ("csv-recent", fred_csv_url(series_id, start_date=start_date), parse_fred_csv),
-            ("csv-full", fred_csv_url(series_id), parse_fred_csv),
-        ]
-        series_errors = []
-        points: List[Point] = []
-        for source_name, url, parser in attempts:
-            try:
-                raw = http_get_text(url)
-                points = parser(raw)
-                if points:
-                    break
-                preview = raw[:220].replace("\n", " ").replace("\r", " ").strip()
-                series_errors.append(f"{source_name} produced 0 rows from {url} | preview={preview!r}")
-            except Exception as exc:
-                series_errors.append(f"{source_name} failed for {url}: {exc}")
-        if not points:
-            raise RuntimeError(
-                f"All live fetch attempts failed for series '{key}' ({series_id}). "
-                + " || ".join(series_errors)
-            )
-        out[key] = points
-    return out
+    dgs2_points, t5yie_points = fetch_treasury_core_series(config)
+    return {
+        "sp500": fetch_equity_series(config),
+        "dgs2": dgs2_points,
+        "t5yie": t5yie_points,
+        "vix": fetch_vix_series(config),
+    }
 
 def align_series(series: Dict[str, List[Point]], lookback_days: int) -> List[dict]:
     maps = {k: {p.date: p.value for p in pts} for k, pts in series.items()}

@@ -12,12 +12,12 @@ The site is designed for scheduled static publishing and includes:
 
 ## Live data inputs
 
-The generator downloads four public daily series from FRED and transforms them into a custom composite pressure score:
+The generator downloads four public daily market inputs from multiple public sources and transforms them into a custom composite pressure score:
 
-- **S&P 500** (`SP500`)
-- **2Y Treasury yield** (`DGS2`)
-- **5Y breakeven inflation** (`T5YIE`)
-- **VIX** (`VIXCLS`)
+- **S&P 500** (Yahoo Finance chart endpoint with Stooq fallback)
+- **2Y Treasury yield** (U.S. Treasury daily yield curve data)
+- **5Y breakeven inflation** (derived from U.S. Treasury nominal 5Y minus real 5Y yields)
+- **VIX** (Cboe historical VIX data with Yahoo Finance fallback)
 
 The algorithm converts each input into a 0–100 component score and averages them into a composite reading.
 
