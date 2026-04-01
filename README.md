@@ -59,3 +59,8 @@ The project is preconfigured for:
 - The score is a **custom framework**, not an official Deutsche Bank formula.
 - Descriptions are generated daily and vary by date, score, regime, and top drivers.
 - Charts are generated as static SVG files, so the site stays fast and serverless.
+
+
+## Freshness and cache safety
+
+This project will only fall back to cached history if the cache is both recent and substantial. Tiny or stale seed caches are rejected so the site does not silently publish outdated posts.

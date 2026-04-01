@@ -77,6 +77,9 @@ ANALYSIS_SENTENCES = [
     "The daily signal helps separate noise from persistent multi-factor stress.",
 ]
 
+MIN_CACHE_ROWS = 20
+MAX_CACHE_AGE_DAYS = 3
+
 
 @dataclass
 class Point:
@@ -319,20 +322,46 @@ def load_cached_history() -> List[dict] | None:
     return None
 
 
-def validate_history(history: List[dict]) -> None:
+def cache_recency_days(history: List[dict], tz_name: str) -> int:
+    latest = datetime.fromisoformat(history[-1]["date"]).date()
+    today = datetime.now(ZoneInfo(tz_name)).date()
+    return (today - latest).days
+
+
+def validate_history(history: List[dict], config: dict | None = None, cache_mode: bool = False) -> None:
     if not history:
         raise RuntimeError("No historical rows available to build the site.")
     required_top = {"date", "score", "regime", "drivers"}
     required_drivers = {"equity", "rates", "inflation", "volatility"}
+    seen_dates = []
     for row in history:
         missing = required_top - set(row.keys())
         if missing:
             raise RuntimeError(f"Cached history is missing keys: {sorted(missing)}")
         if set(row["drivers"].keys()) != required_drivers:
             raise RuntimeError("Cached history does not contain the expected driver blocks.")
+        seen_dates.append(row["date"])
+
+    if seen_dates != sorted(seen_dates):
+        raise RuntimeError("History dates are not sorted ascending.")
+    if len(set(seen_dates)) != len(seen_dates):
+        raise RuntimeError("History contains duplicate dates.")
+
+    if cache_mode:
+        if len(history) < MIN_CACHE_ROWS:
+            raise RuntimeError(
+                f"Cached history is too short to trust ({len(history)} rows; need at least {MIN_CACHE_ROWS})."
+            )
+        if config is not None:
+            age_days = cache_recency_days(history, config.get("timezone", "UTC"))
+            if age_days > MAX_CACHE_AGE_DAYS:
+                raise RuntimeError(
+                    f"Cached history is stale ({age_days} days behind today; max allowed is {MAX_CACHE_AGE_DAYS})."
+                )
 
 
 def json_dump(path: Path, data) -> None:
+
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
@@ -1007,12 +1036,12 @@ def main(argv: List[str]) -> int:
         series = fetch_series(config)
         rows = align_series(series, config["lookback_days"])
         history = compute_history(rows)
-        validate_history(history)
+        validate_history(history, config=config, cache_mode=False)
     except Exception as exc:
         cached = load_cached_history()
         if cached:
             try:
-                validate_history(cached)
+                validate_history(cached, config=config, cache_mode=True)
                 history = cached
                 used_cache = True
                 print(f"WARNING: live fetch/build input failed; using cached real history instead. Cause: {exc}", file=sys.stderr)
