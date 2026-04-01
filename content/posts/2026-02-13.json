@@ -1,7 +1,7 @@
 {
   "date": "2026-02-13",
-  "score": 16.14,
-  "regime": "LOW",
+  "score": 25.11,
+  "regime": "ELEVATED",
   "drivers": {
     "equity": {
       "label": "S&P 500 equity pressure",
@@ -14,21 +14,21 @@
     },
     "rates": {
       "label": "2Y Treasury rate pressure",
-      "raw": 0.0,
-      "unit": "bps 5-session increase",
-      "score": 0.0,
+      "raw": "3.40% level, -10.00 bp vs 5 sessions",
+      "unit": "60% level + 40% change",
+      "score": 10.67,
       "latest_value": 3.4,
       "latest_date": "2026-02-13",
-      "note": "A rise in front-end yields can tighten financial conditions."
+      "note": "Rates pressure reflects both the current 2Y level and any fresh 5-session rise."
     },
     "inflation": {
       "label": "Inflation expectations pressure",
-      "raw": 0.0,
-      "unit": "bps 5-session increase",
-      "score": 0.0,
+      "raw": "2.42% level, -8.00 bp vs 5 sessions",
+      "unit": "60% level + 40% change",
+      "score": 25.2,
       "latest_value": 2.42,
       "latest_date": "2026-02-13",
-      "note": "Higher breakevens imply more inflation pressure."
+      "note": "Inflation pressure reflects both the breakeven level and any fresh 5-session rise."
     },
     "volatility": {
       "label": "VIX volatility pressure",
@@ -40,7 +40,7 @@
       "note": "Higher implied volatility usually means greater market stress."
     }
   },
-  "title": "2026-02-13 TACO Pressure Index Update: Low at 16.14",
-  "description": "Policy pressure tracker for 2026-02-13: the TACO Pressure Index closed at 16.14/100, signaling a low pressure regime as volatility and equity stress shaped the daily read. See the chart pack, score regime, and what drove the latest reading.",
-  "hero_summary": "This custom framework combines equities, front-end rates, inflation expectations, and volatility into one daily score. On 2026-02-13, the score printed 16.14/100 in the low regime, with volatility and equity stress doing most of the work."
+  "title": "2026-02-13 TACO Pressure Index Update: Elevated at 25.11",
+  "description": "Policy pressure tracker for 2026-02-13: the TACO Pressure Index closed at 25.11/100, signaling a elevated pressure regime as volatility and equity stress shaped the daily read. See the chart pack, score regime, and what drove the latest reading.",
+  "hero_summary": "This custom framework combines equities, front-end rates, inflation expectations, and volatility into one daily score. On 2026-02-13, the score printed 25.11/100 in the elevated regime, with volatility and equity stress doing most of the work."
 }

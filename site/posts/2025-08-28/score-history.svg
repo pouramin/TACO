@@ -3,21 +3,21 @@
 <text x="70" y="32" fill="#f5f7fb" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700">Composite score history</text>
 <text x="70" y="52" fill="#93a4c3" font-family="Inter, Arial, sans-serif" font-size="13">Trailing 33 sessions through 2025-08-28</text>
 <line x1="70" x2="935" y1="375.00" y2="375.00" stroke="#27314e" stroke-width="1"/>
-<text x="58" y="379.00" text-anchor="end" fill="#93a4c3" font-family="Inter, Arial, sans-serif" font-size="12">2</text>
+<text x="58" y="379.00" text-anchor="end" fill="#93a4c3" font-family="Inter, Arial, sans-serif" font-size="12">14</text>
 <line x1="70" x2="935" y1="312.00" y2="312.00" stroke="#27314e" stroke-width="1"/>
-<text x="58" y="316.00" text-anchor="end" fill="#93a4c3" font-family="Inter, Arial, sans-serif" font-size="12">7</text>
+<text x="58" y="316.00" text-anchor="end" fill="#93a4c3" font-family="Inter, Arial, sans-serif" font-size="12">18</text>
 <line x1="70" x2="935" y1="249.00" y2="249.00" stroke="#27314e" stroke-width="1"/>
-<text x="58" y="253.00" text-anchor="end" fill="#93a4c3" font-family="Inter, Arial, sans-serif" font-size="12">11</text>
+<text x="58" y="253.00" text-anchor="end" fill="#93a4c3" font-family="Inter, Arial, sans-serif" font-size="12">22</text>
 <line x1="70" x2="935" y1="186.00" y2="186.00" stroke="#27314e" stroke-width="1"/>
-<text x="58" y="190.00" text-anchor="end" fill="#93a4c3" font-family="Inter, Arial, sans-serif" font-size="12">15</text>
+<text x="58" y="190.00" text-anchor="end" fill="#93a4c3" font-family="Inter, Arial, sans-serif" font-size="12">26</text>
 <line x1="70" x2="935" y1="123.00" y2="123.00" stroke="#27314e" stroke-width="1"/>
-<text x="58" y="127.00" text-anchor="end" fill="#93a4c3" font-family="Inter, Arial, sans-serif" font-size="12">19</text>
+<text x="58" y="127.00" text-anchor="end" fill="#93a4c3" font-family="Inter, Arial, sans-serif" font-size="12">30</text>
 <line x1="70" x2="935" y1="60.00" y2="60.00" stroke="#27314e" stroke-width="1"/>
-<text x="58" y="64.00" text-anchor="end" fill="#93a4c3" font-family="Inter, Arial, sans-serif" font-size="12">23</text>
+<text x="58" y="64.00" text-anchor="end" fill="#93a4c3" font-family="Inter, Arial, sans-serif" font-size="12">34</text>
 <text x="70.00" y="412" text-anchor="middle" fill="#93a4c3" font-family="Inter, Arial, sans-serif" font-size="12">2025-07-15</text>
 <text x="502.50" y="412" text-anchor="middle" fill="#93a4c3" font-family="Inter, Arial, sans-serif" font-size="12">2025-08-06</text>
 <text x="935.00" y="412" text-anchor="middle" fill="#93a4c3" font-family="Inter, Arial, sans-serif" font-size="12">2025-08-28</text>
-<path d="M 70.00 348.80 L 97.03 332.54 L 124.06 264.48 L 151.09 322.15 L 178.12 338.26 L 205.16 358.89 L 232.19 371.84 L 259.22 371.54 L 286.25 331.63 L 313.28 285.41 L 340.31 300.77 L 367.34 203.35 L 394.38 264.03 L 421.41 60.00 L 448.44 241.44 L 475.47 232.26 L 502.50 316.43 L 529.53 357.99 L 556.56 118.27 L 583.59 162.24 L 610.62 341.42 L 637.66 344.28 L 664.69 310.25 L 691.72 375.00 L 718.75 361.15 L 745.78 272.31 L 772.81 163.29 L 799.84 124.14 L 826.88 272.01 L 853.91 235.27 L 880.94 173.38 L 907.97 189.49 L 935.00 288.42" fill="none" stroke="#69a7ff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-<circle cx="935.00" cy="288.42" r="6" fill="#69a7ff"/>
-<text x="927.00" y="276.42" text-anchor="end" fill="#f5f7fb" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="600">8.10</text>
+<path d="M 70.00 312.22 L 97.03 311.91 L 124.06 275.22 L 151.09 310.64 L 178.12 321.23 L 205.16 337.68 L 232.19 353.18 L 259.22 335.47 L 286.25 329.14 L 313.28 309.06 L 340.31 311.59 L 367.34 264.78 L 394.38 257.35 L 421.41 60.00 L 448.44 243.43 L 475.47 230.63 L 502.50 324.56 L 529.53 362.67 L 556.56 256.24 L 583.59 266.68 L 610.62 364.25 L 637.66 374.84 L 664.69 348.28 L 691.72 375.00 L 718.75 367.73 L 745.78 302.73 L 772.81 224.93 L 799.84 161.84 L 826.88 331.20 L 853.91 296.72 L 880.94 289.45 L 907.97 296.72 L 935.00 340.53" fill="none" stroke="#69a7ff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="935.00" cy="340.53" r="6" fill="#69a7ff"/>
+<text x="927.00" y="328.53" text-anchor="end" fill="#f5f7fb" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="600">15.83</text>
 </svg>
