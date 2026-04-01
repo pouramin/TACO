@@ -1,46 +1,46 @@
 {
   "date": "2026-03-26",
-  "score": 40,
+  "score": 41.7,
   "regime": "ELEVATED",
   "drivers": {
     "equity": {
       "label": "S&P 500 equity pressure",
-      "raw": 3.0,
+      "raw": 1.96,
       "unit": "% 5-session drop",
-      "score": 40,
-      "latest_value": 5002,
+      "score": 39.15,
+      "latest_value": 6477.16015625,
       "latest_date": "2026-03-26",
-      "note": "n"
+      "note": "Bigger equity drawdowns imply more stress."
     },
     "rates": {
       "label": "2Y Treasury rate pressure",
-      "raw": 4.0,
+      "raw": 17.0,
       "unit": "bps 5-session increase",
-      "score": 30,
-      "latest_value": 4.2,
+      "score": 68.0,
+      "latest_value": 3.96,
       "latest_date": "2026-03-26",
-      "note": "n"
+      "note": "A rise in front-end yields can tighten financial conditions."
     },
     "inflation": {
       "label": "Inflation expectations pressure",
-      "raw": 5.0,
+      "raw": 0.0,
       "unit": "bps 5-session increase",
-      "score": 20,
-      "latest_value": 2.7,
+      "score": 0.0,
+      "latest_value": 2.56,
       "latest_date": "2026-03-26",
-      "note": "n"
+      "note": "Higher breakevens imply more inflation pressure."
     },
     "volatility": {
       "label": "VIX volatility pressure",
-      "raw": 17,
+      "raw": 27.44,
       "unit": "index level",
-      "score": 40,
-      "latest_value": 17,
+      "score": 59.67,
+      "latest_value": 27.44,
       "latest_date": "2026-03-26",
-      "note": "n"
+      "note": "Higher implied volatility usually means greater market stress."
     }
   },
-  "title": "2026-03-26 TACO Pressure Index Update: Elevated at 40.00",
-  "description": "Policy pressure tracker for 2026-03-26: the TACO Pressure Index closed at 40.00/100, signaling a elevated pressure regime as equity stress and volatility shaped the daily read. Read the charts, latest moves, and a concise market interpretation.",
-  "hero_summary": "It is not a forecast of policy decisions; it is a structured way to monitor pressure building across markets. On 2026-03-26, the score printed 40.00/100 in the elevated regime, with equity stress and volatility doing most of the work."
+  "title": "2026-03-26 TACO Pressure Index Update: Elevated at 41.70",
+  "description": "Policy pressure tracker for 2026-03-26: the TACO Pressure Index closed at 41.70/100, signaling a elevated pressure regime as front-end rate pressure and volatility shaped the daily read. Read the charts, latest moves, and a concise market interpretation.",
+  "hero_summary": "It is not a forecast of policy decisions; it is a structured way to monitor pressure building across markets. On 2026-03-26, the score printed 41.70/100 in the elevated regime, with front-end rate pressure and volatility doing most of the work."
 }

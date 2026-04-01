@@ -1,0 +1,46 @@
+{
+  "date": "2025-07-25",
+  "score": 5.23,
+  "regime": "LOW",
+  "drivers": {
+    "equity": {
+      "label": "S&P 500 equity pressure",
+      "raw": 0.0,
+      "unit": "% 5-session drop",
+      "score": 0.0,
+      "latest_value": 6388.64013671875,
+      "latest_date": "2025-07-25",
+      "note": "Bigger equity drawdowns imply more stress."
+    },
+    "rates": {
+      "label": "2Y Treasury rate pressure",
+      "raw": 3.0,
+      "unit": "bps 5-session increase",
+      "score": 12.0,
+      "latest_value": 3.91,
+      "latest_date": "2025-07-25",
+      "note": "A rise in front-end yields can tighten financial conditions."
+    },
+    "inflation": {
+      "label": "Inflation expectations pressure",
+      "raw": 0.0,
+      "unit": "bps 5-session increase",
+      "score": 0.0,
+      "latest_value": 2.47,
+      "latest_date": "2025-07-25",
+      "note": "Higher breakevens imply more inflation pressure."
+    },
+    "volatility": {
+      "label": "VIX volatility pressure",
+      "raw": 14.93,
+      "unit": "index level",
+      "score": 8.92,
+      "latest_value": 14.93,
+      "latest_date": "2025-07-25",
+      "note": "Higher implied volatility usually means greater market stress."
+    }
+  },
+  "title": "2025-07-25 TACO Pressure Index Update: Low at 5.23",
+  "description": "Fresh macro pressure read for 2025-07-25: the TACO Pressure Index closed at 5.23/100, signaling a low pressure regime as front-end rate pressure and volatility shaped the daily read. Read the charts, latest moves, and a concise market interpretation.",
+  "hero_summary": "This custom framework combines equities, front-end rates, inflation expectations, and volatility into one daily score. On 2025-07-25, the score printed 5.23/100 in the low regime, with front-end rate pressure and volatility doing most of the work."
+}

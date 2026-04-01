@@ -1,0 +1,46 @@
+{
+  "date": "2026-02-27",
+  "score": 8.92,
+  "regime": "LOW",
+  "drivers": {
+    "equity": {
+      "label": "S&P 500 equity pressure",
+      "raw": 0.44,
+      "unit": "% 5-session drop",
+      "score": 8.87,
+      "latest_value": 6878.8798828125,
+      "latest_date": "2026-02-27",
+      "note": "Bigger equity drawdowns imply more stress."
+    },
+    "rates": {
+      "label": "2Y Treasury rate pressure",
+      "raw": 0.0,
+      "unit": "bps 5-session increase",
+      "score": 0.0,
+      "latest_value": 3.38,
+      "latest_date": "2026-02-27",
+      "note": "A rise in front-end yields can tighten financial conditions."
+    },
+    "inflation": {
+      "label": "Inflation expectations pressure",
+      "raw": 0.0,
+      "unit": "bps 5-session increase",
+      "score": 0.0,
+      "latest_value": 2.3999999999999995,
+      "latest_date": "2026-02-27",
+      "note": "Higher breakevens imply more inflation pressure."
+    },
+    "volatility": {
+      "label": "VIX volatility pressure",
+      "raw": 19.86,
+      "unit": "index level",
+      "score": 26.81,
+      "latest_value": 19.86,
+      "latest_date": "2026-02-27",
+      "note": "Higher implied volatility usually means greater market stress."
+    }
+  },
+  "title": "2026-02-27 TACO Pressure Index Update: Low at 8.92",
+  "description": "Today’s retreat-pressure snapshot for 2026-02-27: the TACO Pressure Index closed at 8.92/100, signaling a low pressure regime as volatility and equity stress shaped the daily read. Includes charts, a component breakdown, and a narrative summary.",
+  "hero_summary": "The index is designed to approximate how market stress can build pressure for a softer policy posture. On 2026-02-27, the score printed 8.92/100 in the low regime, with volatility and equity stress doing most of the work."
+}
