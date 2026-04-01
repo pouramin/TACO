@@ -43,11 +43,11 @@
     <section class="grid-two">
       <div class="panel">
         <h2>What data goes into the index</h2>
-        <p>The model pulls four public series: the S&amp;P 500, the U.S. 2-year Treasury yield, 5-year breakeven inflation, and the VIX. The site keeps only dates where all four series are available together, then computes one daily score from that aligned history.</p>
+        <p>The model uses four live market inputs: the S&amp;P 500, the U.S. 2-year Treasury yield, 5-year breakeven inflation, and the VIX. In the current build, the breakeven input is calculated as the difference between the 5-year nominal Treasury yield and the 5-year real Treasury yield. The site keeps only dates where all four inputs are available together, then computes one daily score from that aligned history.</p>
       </div>
       <div class="panel">
         <h2>What the score is trying to capture</h2>
-        <p>The framework treats falling equities, rising front-end rates, rising inflation expectations, and higher volatility as signs of growing market stress. When more of those signals worsen at the same time, the composite score rises.</p>
+        <p>The framework treats falling equities, rising front-end rates, rising inflation expectations, and higher volatility as signs of growing market stress. When more of those signals worsen at the same time, the composite score rises. The scoring thresholds themselves remain fixed; what can change over time is the live data feeding those thresholds.</p>
       </div>
     </section>
 
