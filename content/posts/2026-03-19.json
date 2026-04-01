@@ -1,0 +1,46 @@
+{
+  "date": "2026-03-19",
+  "score": 17.13,
+  "regime": "LOW",
+  "drivers": {
+    "equity": {
+      "label": "S&P 500 equity pressure",
+      "raw": 0.99,
+      "unit": "% 5-session drop",
+      "score": 19.82,
+      "latest_value": 6606.490234375,
+      "latest_date": "2026-03-19",
+      "note": "Bigger equity drawdowns imply more stress."
+    },
+    "rates": {
+      "label": "2Y Treasury rate pressure",
+      "raw": 3.0,
+      "unit": "bps 5-session increase",
+      "score": 12.0,
+      "latest_value": 3.79,
+      "latest_date": "2026-03-19",
+      "note": "A rise in front-end yields can tighten financial conditions."
+    },
+    "inflation": {
+      "label": "Inflation expectations pressure",
+      "raw": 0.0,
+      "unit": "bps 5-session increase",
+      "score": 0.0,
+      "latest_value": 2.61,
+      "latest_date": "2026-03-19",
+      "note": "Higher breakevens imply more inflation pressure."
+    },
+    "volatility": {
+      "label": "VIX volatility pressure",
+      "raw": 24.06,
+      "unit": "index level",
+      "score": 36.7,
+      "latest_value": 24.06,
+      "latest_date": "2026-03-19",
+      "note": "Higher implied volatility usually means greater market stress."
+    }
+  },
+  "title": "2026-03-19 TACO Pressure Index Update: Low at 17.13",
+  "description": "Daily pressure check for 2026-03-19: the TACO Pressure Index closed at 17.13/100, signaling a low pressure regime as volatility and equity stress shaped the daily read. Explore the score history, daily post, and the four-factor dashboard.",
+  "hero_summary": "The index is designed to approximate how market stress can build pressure for a softer policy posture. On 2026-03-19, the score printed 17.13/100 in the low regime, with volatility and equity stress doing most of the work."
+}

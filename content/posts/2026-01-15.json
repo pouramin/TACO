@@ -1,0 +1,46 @@
+{
+  "date": "2026-01-15",
+  "score": 16.54,
+  "regime": "LOW",
+  "drivers": {
+    "equity": {
+      "label": "S&P 500 equity pressure",
+      "raw": 0.0,
+      "unit": "% 5-session drop",
+      "score": 0.0,
+      "latest_value": 6944.47021484375,
+      "latest_date": "2026-01-15",
+      "note": "Bigger equity drawdowns imply more stress."
+    },
+    "rates": {
+      "label": "2Y Treasury rate pressure",
+      "raw": 7.0,
+      "unit": "bps 5-session increase",
+      "score": 28.0,
+      "latest_value": 3.56,
+      "latest_date": "2026-01-15",
+      "note": "A rise in front-end yields can tighten financial conditions."
+    },
+    "inflation": {
+      "label": "Inflation expectations pressure",
+      "raw": 5.0,
+      "unit": "bps 5-session increase",
+      "score": 25.0,
+      "latest_value": 2.3600000000000003,
+      "latest_date": "2026-01-15",
+      "note": "Higher breakevens imply more inflation pressure."
+    },
+    "volatility": {
+      "label": "VIX volatility pressure",
+      "raw": 15.84,
+      "unit": "index level",
+      "score": 13.15,
+      "latest_value": 15.84,
+      "latest_date": "2026-01-15",
+      "note": "Higher implied volatility usually means greater market stress."
+    }
+  },
+  "title": "2026-01-15 TACO Pressure Index Update: Low at 16.54",
+  "description": "Today’s retreat-pressure snapshot for 2026-01-15: the TACO Pressure Index closed at 16.54/100, signaling a low pressure regime as front-end rate pressure and inflation expectations shaped the daily read. Explore the score history, daily post, and the four-factor dashboard.",
+  "hero_summary": "The daily signal helps separate noise from persistent multi-factor stress. On 2026-01-15, the score printed 16.54/100 in the low regime, with front-end rate pressure and inflation expectations doing most of the work."
+}

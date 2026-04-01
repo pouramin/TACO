@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="430" viewBox="0 0 960 430" role="img" aria-label="Latest component scores">
+<rect width="100%" height="100%" fill="#0b1020" rx="20"/>
+<text x="248" y="32" fill="#f5f7fb" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700">Latest component scores</text>
+<text x="248" y="52" fill="#93a4c3" font-family="Inter, Arial, sans-serif" font-size="13">How each factor contributed on 2026-01-09</text>
+<line x1="248.00" x2="248.00" y1="60" y2="390" stroke="#27314e" stroke-width="1"/>
+<text x="248.00" y="418" text-anchor="middle" fill="#93a4c3" font-family="Inter, Arial, sans-serif" font-size="12">0</text>
+<line x1="385.40" x2="385.40" y1="60" y2="390" stroke="#27314e" stroke-width="1"/>
+<text x="385.40" y="418" text-anchor="middle" fill="#93a4c3" font-family="Inter, Arial, sans-serif" font-size="12">20</text>
+<line x1="522.80" x2="522.80" y1="60" y2="390" stroke="#27314e" stroke-width="1"/>
+<text x="522.80" y="418" text-anchor="middle" fill="#93a4c3" font-family="Inter, Arial, sans-serif" font-size="12">40</text>
+<line x1="660.20" x2="660.20" y1="60" y2="390" stroke="#27314e" stroke-width="1"/>
+<text x="660.20" y="418" text-anchor="middle" fill="#93a4c3" font-family="Inter, Arial, sans-serif" font-size="12">60</text>
+<line x1="797.60" x2="797.60" y1="60" y2="390" stroke="#27314e" stroke-width="1"/>
+<text x="797.60" y="418" text-anchor="middle" fill="#93a4c3" font-family="Inter, Arial, sans-serif" font-size="12">80</text>
+<line x1="935.00" x2="935.00" y1="60" y2="390" stroke="#27314e" stroke-width="1"/>
+<text x="935.00" y="418" text-anchor="middle" fill="#93a4c3" font-family="Inter, Arial, sans-serif" font-size="12">100</text>
+<text x="232" y="99.50" text-anchor="end" fill="#f5f7fb" font-family="Inter, Arial, sans-serif" font-size="14">2Y Treasury rate pressure</text>
+<rect x="248" y="60.00" width="687.00" height="69.00" rx="10" fill="#121933" stroke="#223154"/>
+<rect x="248" y="60.00" width="192.36" height="69.00" rx="10" fill="#f5c451"/>
+<text x="448.36" y="99.50" fill="#f5f7fb" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600">28.00</text>
+<text x="232" y="186.50" text-anchor="end" fill="#f5f7fb" font-family="Inter, Arial, sans-serif" font-size="14">Inflation expectations pressure</text>
+<rect x="248" y="147.00" width="687.00" height="69.00" rx="10" fill="#121933" stroke="#223154"/>
+<rect x="248" y="147.00" width="137.40" height="69.00" rx="10" fill="#3ad29f"/>
+<text x="393.40" y="186.50" fill="#f5f7fb" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600">20.00</text>
+<text x="232" y="273.50" text-anchor="end" fill="#f5f7fb" font-family="Inter, Arial, sans-serif" font-size="14">VIX volatility pressure</text>
+<rect x="248" y="234.00" width="687.00" height="69.00" rx="10" fill="#121933" stroke="#223154"/>
+<rect x="248" y="234.00" width="52.07" height="69.00" rx="10" fill="#3ad29f"/>
+<text x="308.07" y="273.50" fill="#f5f7fb" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600">7.58</text>
+<text x="232" y="360.50" text-anchor="end" fill="#f5f7fb" font-family="Inter, Arial, sans-serif" font-size="14">S&amp;P 500 equity pressure</text>
+<rect x="248" y="321.00" width="687.00" height="69.00" rx="10" fill="#121933" stroke="#223154"/>
+<rect x="248" y="321.00" width="0.00" height="69.00" rx="10" fill="#3ad29f"/>
+<text x="256.00" y="360.50" fill="#f5f7fb" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600">0.00</text>
+</svg>

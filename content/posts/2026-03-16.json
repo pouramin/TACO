@@ -1,0 +1,46 @@
+{
+  "date": "2026-03-16",
+  "score": 30.37,
+  "regime": "ELEVATED",
+  "drivers": {
+    "equity": {
+      "label": "S&P 500 equity pressure",
+      "raw": 1.42,
+      "unit": "% 5-session drop",
+      "score": 28.43,
+      "latest_value": 6699.3798828125,
+      "latest_date": "2026-03-16",
+      "note": "Bigger equity drawdowns imply more stress."
+    },
+    "rates": {
+      "label": "2Y Treasury rate pressure",
+      "raw": 12.0,
+      "unit": "bps 5-session increase",
+      "score": 48.0,
+      "latest_value": 3.68,
+      "latest_date": "2026-03-16",
+      "note": "A rise in front-end yields can tighten financial conditions."
+    },
+    "inflation": {
+      "label": "Inflation expectations pressure",
+      "raw": 2.0,
+      "unit": "bps 5-session increase",
+      "score": 10.0,
+      "latest_value": 2.58,
+      "latest_date": "2026-03-16",
+      "note": "Higher breakevens imply more inflation pressure."
+    },
+    "volatility": {
+      "label": "VIX volatility pressure",
+      "raw": 23.51,
+      "unit": "index level",
+      "score": 35.03,
+      "latest_value": 23.51,
+      "latest_date": "2026-03-16",
+      "note": "Higher implied volatility usually means greater market stress."
+    }
+  },
+  "title": "2026-03-16 TACO Pressure Index Update: Elevated at 30.37",
+  "description": "Daily pressure check for 2026-03-16: the TACO Pressure Index closed at 30.37/100, signaling a elevated pressure regime as front-end rate pressure and volatility shaped the daily read. See the chart pack, score regime, and what drove the latest reading.",
+  "hero_summary": "The daily signal helps separate noise from persistent multi-factor stress. On 2026-03-16, the score printed 30.37/100 in the elevated regime, with front-end rate pressure and volatility doing most of the work."
+}

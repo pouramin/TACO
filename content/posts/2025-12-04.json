@@ -1,0 +1,46 @@
+{
+  "date": "2025-12-04",
+  "score": 14.88,
+  "regime": "LOW",
+  "drivers": {
+    "equity": {
+      "label": "S&P 500 equity pressure",
+      "raw": 0.0,
+      "unit": "% 5-session drop",
+      "score": 0.0,
+      "latest_value": 6857.1201171875,
+      "latest_date": "2025-12-04",
+      "note": "Bigger equity drawdowns imply more stress."
+    },
+    "rates": {
+      "label": "2Y Treasury rate pressure",
+      "raw": 7.0,
+      "unit": "bps 5-session increase",
+      "score": 28.0,
+      "latest_value": 3.52,
+      "latest_date": "2025-12-04",
+      "note": "A rise in front-end yields can tighten financial conditions."
+    },
+    "inflation": {
+      "label": "Inflation expectations pressure",
+      "raw": 4.0,
+      "unit": "bps 5-session increase",
+      "score": 20.0,
+      "latest_value": 2.33,
+      "latest_date": "2025-12-04",
+      "note": "Higher breakevens imply more inflation pressure."
+    },
+    "volatility": {
+      "label": "VIX volatility pressure",
+      "raw": 15.78,
+      "unit": "index level",
+      "score": 11.5,
+      "latest_value": 15.78,
+      "latest_date": "2025-12-04",
+      "note": "Higher implied volatility usually means greater market stress."
+    }
+  },
+  "title": "2025-12-04 TACO Pressure Index Update: Low at 14.88",
+  "description": "New daily signal for 2025-12-04: the TACO Pressure Index closed at 14.88/100, signaling a low pressure regime as front-end rate pressure and inflation expectations shaped the daily read. Explore the score history, daily post, and the four-factor dashboard.",
+  "hero_summary": "The daily signal helps separate noise from persistent multi-factor stress. On 2025-12-04, the score printed 14.88/100 in the low regime, with front-end rate pressure and inflation expectations doing most of the work."
+}

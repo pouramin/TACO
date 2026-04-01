@@ -1,0 +1,46 @@
+{
+  "date": "2026-03-09",
+  "score": 41.8,
+  "regime": "ELEVATED",
+  "drivers": {
+    "equity": {
+      "label": "S&P 500 equity pressure",
+      "raw": 1.24,
+      "unit": "% 5-session drop",
+      "score": 24.89,
+      "latest_value": 6795.990234375,
+      "latest_date": "2026-03-09",
+      "note": "Bigger equity drawdowns imply more stress."
+    },
+    "rates": {
+      "label": "2Y Treasury rate pressure",
+      "raw": 9.0,
+      "unit": "bps 5-session increase",
+      "score": 36.0,
+      "latest_value": 3.56,
+      "latest_date": "2026-03-09",
+      "note": "A rise in front-end yields can tighten financial conditions."
+    },
+    "inflation": {
+      "label": "Inflation expectations pressure",
+      "raw": 10.0,
+      "unit": "bps 5-session increase",
+      "score": 50.0,
+      "latest_value": 2.56,
+      "latest_date": "2026-03-09",
+      "note": "Higher breakevens imply more inflation pressure."
+    },
+    "volatility": {
+      "label": "VIX volatility pressure",
+      "raw": 25.5,
+      "unit": "index level",
+      "score": 56.31,
+      "latest_value": 25.5,
+      "latest_date": "2026-03-09",
+      "note": "Higher implied volatility usually means greater market stress."
+    }
+  },
+  "title": "2026-03-09 TACO Pressure Index Update: Elevated at 41.80",
+  "description": "Policy pressure tracker for 2026-03-09: the TACO Pressure Index closed at 41.80/100, signaling a elevated pressure regime as volatility and inflation expectations shaped the daily read. Read the charts, latest moves, and a concise market interpretation.",
+  "hero_summary": "The daily signal helps separate noise from persistent multi-factor stress. On 2026-03-09, the score printed 41.80/100 in the elevated regime, with volatility and inflation expectations doing most of the work."
+}

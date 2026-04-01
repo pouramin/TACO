@@ -1,0 +1,46 @@
+{
+  "date": "2025-09-29",
+  "score": 7.58,
+  "regime": "LOW",
+  "drivers": {
+    "equity": {
+      "label": "S&P 500 equity pressure",
+      "raw": 0.49,
+      "unit": "% 5-session drop",
+      "score": 9.72,
+      "latest_value": 6661.2099609375,
+      "latest_date": "2025-09-29",
+      "note": "Bigger equity drawdowns imply more stress."
+    },
+    "rates": {
+      "label": "2Y Treasury rate pressure",
+      "raw": 2.0,
+      "unit": "bps 5-session increase",
+      "score": 8.0,
+      "latest_value": 3.63,
+      "latest_date": "2025-09-29",
+      "note": "A rise in front-end yields can tighten financial conditions."
+    },
+    "inflation": {
+      "label": "Inflation expectations pressure",
+      "raw": 0.0,
+      "unit": "bps 5-session increase",
+      "score": 0.0,
+      "latest_value": 2.41,
+      "latest_date": "2025-09-29",
+      "note": "Higher breakevens imply more inflation pressure."
+    },
+    "volatility": {
+      "label": "VIX volatility pressure",
+      "raw": 16.12,
+      "unit": "index level",
+      "score": 12.61,
+      "latest_value": 16.12,
+      "latest_date": "2025-09-29",
+      "note": "Higher implied volatility usually means greater market stress."
+    }
+  },
+  "title": "2025-09-29 TACO Pressure Index Update: Low at 7.58",
+  "description": "Today’s retreat-pressure snapshot for 2025-09-29: the TACO Pressure Index closed at 7.58/100, signaling a low pressure regime as volatility and equity stress shaped the daily read. See the chart pack, score regime, and what drove the latest reading.",
+  "hero_summary": "The index is designed to approximate how market stress can build pressure for a softer policy posture. On 2025-09-29, the score printed 7.58/100 in the low regime, with volatility and equity stress doing most of the work."
+}

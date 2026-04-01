@@ -1,0 +1,46 @@
+{
+  "date": "2025-11-20",
+  "score": 31.74,
+  "regime": "ELEVATED",
+  "drivers": {
+    "equity": {
+      "label": "S&P 500 equity pressure",
+      "raw": 2.95,
+      "unit": "% 5-session drop",
+      "score": 58.99,
+      "latest_value": 6538.759765625,
+      "latest_date": "2025-11-20",
+      "note": "Bigger equity drawdowns imply more stress."
+    },
+    "rates": {
+      "label": "2Y Treasury rate pressure",
+      "raw": 0.0,
+      "unit": "bps 5-session increase",
+      "score": 0.0,
+      "latest_value": 3.55,
+      "latest_date": "2025-11-20",
+      "note": "A rise in front-end yields can tighten financial conditions."
+    },
+    "inflation": {
+      "label": "Inflation expectations pressure",
+      "raw": 0.0,
+      "unit": "bps 5-session increase",
+      "score": 0.0,
+      "latest_value": 2.34,
+      "latest_date": "2025-11-20",
+      "note": "Higher breakevens imply more inflation pressure."
+    },
+    "volatility": {
+      "label": "VIX volatility pressure",
+      "raw": 26.42,
+      "unit": "index level",
+      "score": 67.96,
+      "latest_value": 26.42,
+      "latest_date": "2025-11-20",
+      "note": "Higher implied volatility usually means greater market stress."
+    }
+  },
+  "title": "2025-11-20 TACO Pressure Index Update: Elevated at 31.74",
+  "description": "New daily signal for 2025-11-20: the TACO Pressure Index closed at 31.74/100, signaling a elevated pressure regime as volatility and equity stress shaped the daily read. Includes charts, a component breakdown, and a narrative summary.",
+  "hero_summary": "The daily signal helps separate noise from persistent multi-factor stress. On 2025-11-20, the score printed 31.74/100 in the elevated regime, with volatility and equity stress doing most of the work."
+}
