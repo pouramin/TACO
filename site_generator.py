@@ -597,6 +597,9 @@ def format_num(value: float, digits: int = 2) -> str:
 
 
 def svg_line_chart(points: List[Tuple[str, float]], title: str, subtitle: str, width: int = 960, height: int = 430) -> str:
+    # Always draw time series from older dates on the left to newer dates on the right.
+    # Dates use ISO format (YYYY-MM-DD), so lexical sorting is chronological.
+    points = sorted(points, key=lambda item: item[0])
     margin = {"l": 70, "r": 25, "t": 60, "b": 55}
     xs = list(range(len(points)))
     ys = [p[1] for p in points]
@@ -1058,7 +1061,7 @@ def build_site(config: dict, history: List[dict]) -> None:
         posts.append(post)
 
     posts = list(reversed(posts))
-    recent_history = list(reversed(history[-config["chart_days"] :]))
+    recent_history = history[-config["chart_days"] :]
 
     json_dump(DATA_DIR / "latest.json", posts[0])
     json_dump(DATA_DIR / "posts.json", posts)
