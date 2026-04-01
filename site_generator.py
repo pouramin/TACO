@@ -4,6 +4,7 @@ from __future__ import annotations
 import csv
 import hashlib
 import json
+import hashlib
 import math
 import os
 import re
@@ -720,6 +721,33 @@ def abs_url(config: dict, path: str) -> str:
     return f"{config['site_url'].rstrip('/')}/{path.lstrip('/')}"
 
 
+def cache_bust_token(obj) -> str:
+    payload = json.dumps(obj, ensure_ascii=False, sort_keys=True).encode('utf-8')
+    return hashlib.md5(payload).hexdigest()[:10]
+
+
+
+
+def interactive_line_chart(chart_id: str, points: List[Tuple[str, float]], title: str, subtitle: str, fallback_src: str) -> str:
+    ordered = [{"date": d, "value": round(float(v), 2)} for d, v in sorted(points, key=lambda item: item[0])]
+    payload = json.dumps(ordered, ensure_ascii=False)
+    return f'''
+    <div class="interactive-line-chart js-line-chart" id="{xml_escape(chart_id)}">
+      <div class="chart-header">
+        <h3>{xml_escape(title)}</h3>
+        <p>{xml_escape(subtitle)}</p>
+      </div>
+      <div class="chart-canvas-wrap">
+        <div class="chart-tooltip" hidden></div>
+        <svg class="chart-svg" viewBox="0 0 960 430" preserveAspectRatio="none" aria-label="{xml_escape(title)} interactive chart"></svg>
+        <script type="application/json" class="chart-data">{xml_escape(payload)}</script>
+      </div>
+      <noscript>
+        <img src="{xml_escape(fallback_src)}" alt="{xml_escape(title)} chart">
+      </noscript>
+    </div>
+    '''
+
 def html_page(*, config: dict, title: str, description: str, body: str, canonical: str, og_image: str, extra_head: str = "") -> str:
     return f'''<!doctype html>
 <html lang="{config['language']}">
@@ -740,6 +768,7 @@ def html_page(*, config: dict, title: str, description: str, body: str, canonica
   <meta name="twitter:image" content="{xml_escape(og_image)}">
   <link rel="alternate" type="application/rss+xml" title="{xml_escape(config['site_name'])}" href="{xml_escape(root_url('rss.xml'))}">
   <link rel="stylesheet" href="{xml_escape(root_url('assets/style.css'))}">
+  <script defer src="{xml_escape(root_url('assets/app.js'))}"></script>
   {extra_head}
 </head>
 <body>
@@ -779,6 +808,7 @@ def footer(config: dict) -> str:
 def make_post_page(config: dict, post: dict, recent_history: List[dict]) -> str:
     post_url = abs_url(config, f"posts/{post['date']}/")
     og_url = abs_url(config, f"posts/{post['date']}/og.svg")
+    upto = [x for x in recent_history if x["date"] <= post["date"]][-config["chart_days"] :]
     json_ld = json.dumps({
         "@context": "https://schema.org",
         "@type": "BlogPosting",
@@ -831,12 +861,12 @@ def make_post_page(config: dict, post: dict, recent_history: List[dict]) -> str:
 
     <section class="chart-section">
       <h2>Pressure history</h2>
-      <img src="./score-history.svg" alt="Score history chart for the last 90 sessions">
+      <img src="./score-history.svg?v={post['score_history_token']}" alt="Score history chart for the last 90 sessions">
     </section>
 
     <section class="chart-section">
       <h2>Latest component scores</h2>
-      <img src="./component-scores.svg" alt="Bar chart of the latest component scores">
+      <img src="./component-scores.svg?v={post['component_chart_token']}" alt="Bar chart of the latest component scores">
     </section>
 
     <section>
@@ -1066,6 +1096,8 @@ def build_site(config: dict, history: List[dict]) -> None:
 
     posts = list(reversed(posts))
     recent_history = history[-config["chart_days"] :]
+    if posts:
+        posts[0]["recent_history"] = recent_history
 
     json_dump(DATA_DIR / "latest.json", posts[0])
     json_dump(DATA_DIR / "posts.json", posts)
@@ -1108,9 +1140,18 @@ def build_site(config: dict, history: List[dict]) -> None:
     write_text(SITE_DIR / "archive" / "index.html", make_archive_page(config, posts))
     write_text(SITE_DIR / "about" / "index.html", make_about_page(config))
     write_text(SITE_DIR / "assets" / "style.css", STYLE_CSS)
+    write_text(SITE_DIR / "assets" / "app.js", APP_JS)
     write_text(SITE_DIR / "assets" / "x-mark.svg", X_MARK_SVG)
     write_text(SITE_DIR / "robots.txt", f"User-agent: *\nAllow: /\nSitemap: {config['site_url']}/sitemap.xml\n")
-    write_text(SITE_DIR / "_headers", "/*\n  Cache-Control: public, max-age=300\n")
+    write_text(SITE_DIR / "_headers", """/*
+  Cache-Control: public, max-age=60, must-revalidate
+
+/posts/*/*.svg
+  Cache-Control: public, max-age=60, must-revalidate
+
+/assets/latest-score-history.svg
+  Cache-Control: public, max-age=60, must-revalidate
+""")
     write_text(SITE_DIR / "rss.xml", make_rss(config, posts[:30]))
     write_text(SITE_DIR / "feed.json", json.dumps(make_feed_json(config, posts[:30]), ensure_ascii=False, indent=2))
     write_text(SITE_DIR / "sitemap.xml", make_sitemap(config, posts))
@@ -1245,12 +1286,140 @@ main { padding: 36px 0 60px; }
 .footer-centered { justify-content: center; align-items: center; }
 .x-logo-link { display: inline-flex; align-items: center; justify-content: center; width: 58px; height: 58px; border-radius: 999px; background: rgba(255,255,255,.03); border: 1px solid rgba(255,255,255,.08); box-shadow: var(--shadow); transition: transform .15s ease, border-color .15s ease, background .15s ease; }
 .x-logo-link:hover { text-decoration: none; transform: translateY(-2px); border-color: rgba(127,177,255,.55); background: rgba(127,177,255,.08); }
+
 .x-logo { width: 22px; height: 22px; display: block; border: 0; border-radius: 0; }
+.interactive-line-chart { background: linear-gradient(180deg, rgba(11,16,32,.96), rgba(7,12,25,.98)); border: 1px solid var(--border); border-radius: 28px; padding: 18px 18px 14px; box-shadow: var(--shadow); }
+.interactive-line-chart h3 { margin: 0; font-size: clamp(1.35rem, 2vw, 2rem); }
+.interactive-line-chart .chart-header p { margin: 4px 0 0; color: var(--muted); }
+.chart-canvas-wrap { position: relative; margin-top: 10px; }
+.chart-svg { width: 100%; height: auto; display: block; border: 0; border-radius: 22px; }
+.chart-tooltip { position: absolute; pointer-events: none; min-width: 132px; padding: 10px 12px; border-radius: 14px; background: rgba(8,16,31,.96); border: 1px solid rgba(127,177,255,.28); color: var(--text); box-shadow: 0 14px 34px rgba(0,0,0,.34); transform: translate(-50%, calc(-100% - 14px)); z-index: 5; }
+.chart-tooltip strong { display: block; font-size: 1rem; }
+.chart-tooltip span { display: block; color: var(--muted); font-size: .84rem; margin-top: 2px; }
+.chart-tooltip[hidden] { display: none; }
+@media (max-width: 640px) { .interactive-line-chart { padding: 14px 14px 10px; } .chart-tooltip { min-width: 118px; padding: 8px 10px; } }
 @media (max-width: 840px) {
   .hero-grid, .grid-two, .metrics-grid { grid-template-columns: 1fr; }
   .footer-inner, .nav-row { flex-direction: column; align-items: flex-start; }
   .footer-centered { align-items: center; }
 }
+
+"""
+
+APP_JS = r"""
+(function () {
+  function clamp(v, lo, hi) { return Math.max(lo, Math.min(hi, v)); }
+  function svgEl(name, attrs) {
+    var node = document.createElementNS('http://www.w3.org/2000/svg', name);
+    if (attrs) {
+      Object.keys(attrs).forEach(function (key) { node.setAttribute(key, String(attrs[key])); });
+    }
+    return node;
+  }
+  function renderChart(root) {
+    var dataNode = root.querySelector('.chart-data');
+    var svg = root.querySelector('.chart-svg');
+    var tooltip = root.querySelector('.chart-tooltip');
+    if (!dataNode || !svg || !tooltip) return;
+    var points;
+    try { points = JSON.parse(dataNode.textContent || '[]'); } catch (err) { points = []; }
+    if (!Array.isArray(points) || !points.length) return;
+    points.sort(function (a, b) { return String(a.date).localeCompare(String(b.date)); });
+
+    var width = 960, height = 430;
+    var margin = { l: 72, r: 28, t: 14, b: 44 };
+    var chartW = width - margin.l - margin.r;
+    var chartH = height - margin.t - margin.b;
+    var values = points.map(function (p) { return Number(p.value) || 0; });
+    var minVal = Math.min.apply(null, values);
+    var maxVal = Math.max.apply(null, values);
+    if (Math.abs(maxVal - minVal) < 1e-9) maxVal = minVal + 1;
+    var pad = Math.max(1, (maxVal - minVal) * 0.08);
+    minVal = Math.max(0, minVal - pad * 0.35);
+    maxVal = maxVal + pad;
+
+    function sx(i) {
+      if (points.length === 1) return margin.l + chartW / 2;
+      return margin.l + (i / (points.length - 1)) * chartW;
+    }
+    function sy(v) {
+      return margin.t + (1 - (v - minVal) / (maxVal - minVal)) * chartH;
+    }
+
+    svg.innerHTML = '';
+    svg.setAttribute('viewBox', '0 0 ' + width + ' ' + height);
+    svg.setAttribute('preserveAspectRatio', 'none');
+
+    for (var t = 0; t <= 5; t++) {
+      var val = minVal + (maxVal - minVal) * t / 5;
+      var yy = sy(val);
+      svg.appendChild(svgEl('line', { x1: margin.l, y1: yy, x2: width - margin.r, y2: yy, stroke: '#27314e', 'stroke-width': 1 }));
+      var yLabel = svgEl('text', { x: margin.l - 10, y: yy + 4, 'text-anchor': 'end', fill: '#93a4c3', 'font-size': 12, 'font-family': 'Inter, Arial, sans-serif' });
+      yLabel.textContent = (Math.round(val * 100) / 100).toFixed(0);
+      svg.appendChild(yLabel);
+    }
+
+    Array.from(new Set([0, Math.floor((points.length - 1) / 2), points.length - 1])).forEach(function (idx) {
+      var xx = sx(idx);
+      var xLabel = svgEl('text', { x: xx, y: height - 14, 'text-anchor': 'middle', fill: '#93a4c3', 'font-size': 12, 'font-family': 'Inter, Arial, sans-serif' });
+      xLabel.textContent = points[idx].date;
+      svg.appendChild(xLabel);
+    });
+
+    var lineD = values.map(function (v, i) { return (i === 0 ? 'M' : 'L') + ' ' + sx(i).toFixed(2) + ' ' + sy(v).toFixed(2); }).join(' ');
+    var areaD = 'M ' + sx(0).toFixed(2) + ' ' + sy(values[0]).toFixed(2) + ' ' + values.map(function (v, i) { return 'L ' + sx(i).toFixed(2) + ' ' + sy(v).toFixed(2); }).join(' ') + ' L ' + sx(points.length - 1).toFixed(2) + ' ' + (height - margin.b).toFixed(2) + ' L ' + sx(0).toFixed(2) + ' ' + (height - margin.b).toFixed(2) + ' Z';
+    svg.appendChild(svgEl('path', { d: areaD, fill: 'rgba(105, 167, 255, 0.08)' }));
+    svg.appendChild(svgEl('path', { d: lineD, fill: 'none', stroke: '#69a7ff', 'stroke-width': 4, 'stroke-linecap': 'round', 'stroke-linejoin': 'round' }));
+
+    var hoverLine = svgEl('line', { x1: margin.l, y1: margin.t, x2: margin.l, y2: height - margin.b, stroke: '#7fb1ff', 'stroke-width': 1, 'stroke-dasharray': '4 4', opacity: 0 });
+    var hoverDot = svgEl('circle', { cx: margin.l, cy: margin.t, r: 5.5, fill: '#69a7ff', stroke: '#f4f7fb', 'stroke-width': 2, opacity: 0 });
+    svg.appendChild(hoverLine);
+    svg.appendChild(hoverDot);
+
+    var lastIndex = points.length - 1;
+    var latestDot = svgEl('circle', { cx: sx(lastIndex), cy: sy(values[lastIndex]), r: 6, fill: '#69a7ff' });
+    var latestLabel = svgEl('text', { x: sx(lastIndex) - 8, y: sy(values[lastIndex]) - 12, 'text-anchor': 'end', fill: '#f5f7fb', 'font-size': 12, 'font-weight': 700, 'font-family': 'Inter, Arial, sans-serif' });
+    latestLabel.textContent = values[lastIndex].toFixed(2);
+    svg.appendChild(latestDot);
+    svg.appendChild(latestLabel);
+
+    var overlay = svgEl('rect', { x: margin.l, y: margin.t, width: chartW, height: chartH, fill: 'transparent', style: 'cursor: crosshair;' });
+    svg.appendChild(overlay);
+
+    function update(clientX, clientY) {
+      var bounds = svg.getBoundingClientRect();
+      var relX = ((clientX - bounds.left) / bounds.width) * width;
+      var x = clamp(relX, margin.l, width - margin.r);
+      var ratio = chartW === 0 ? 0 : (x - margin.l) / chartW;
+      var idx = clamp(Math.round(ratio * (points.length - 1)), 0, points.length - 1);
+      var px = sx(idx);
+      var py = sy(values[idx]);
+      hoverLine.setAttribute('x1', px); hoverLine.setAttribute('x2', px); hoverLine.setAttribute('opacity', 1);
+      hoverDot.setAttribute('cx', px); hoverDot.setAttribute('cy', py); hoverDot.setAttribute('opacity', 1);
+      tooltip.hidden = false;
+      tooltip.innerHTML = '<strong>' + points[idx].value.toFixed(2) + '</strong><span>' + points[idx].date + '</span>';
+      var tipLeft = clamp((px / width) * bounds.width, 84, bounds.width - 84);
+      var tipTop = (py / height) * bounds.height;
+      tooltip.style.left = tipLeft + 'px';
+      tooltip.style.top = tipTop + 'px';
+    }
+    function hide() {
+      hoverLine.setAttribute('opacity', 0);
+      hoverDot.setAttribute('opacity', 0);
+      tooltip.hidden = true;
+    }
+
+    overlay.addEventListener('mousemove', function (e) { update(e.clientX, e.clientY); });
+    overlay.addEventListener('mouseenter', function (e) { update(e.clientX, e.clientY); });
+    overlay.addEventListener('mouseleave', hide);
+    overlay.addEventListener('touchstart', function (e) { if (e.touches && e.touches[0]) update(e.touches[0].clientX, e.touches[0].clientY); }, { passive: true });
+    overlay.addEventListener('touchmove', function (e) { if (e.touches && e.touches[0]) update(e.touches[0].clientX, e.touches[0].clientY); }, { passive: true });
+    overlay.addEventListener('touchend', hide, { passive: true });
+  }
+
+  function boot() { document.querySelectorAll('.js-line-chart').forEach(renderChart); }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', boot); else boot();
+})();
 """
 
 
