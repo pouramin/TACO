@@ -47,7 +47,7 @@
       </div>
       <div class="panel">
         <h2>What the score is trying to capture</h2>
-        <p>The framework treats falling equities, rising front-end rates, rising inflation expectations, and higher volatility as signs of growing market stress. When more of those signals worsen at the same time, the composite score rises. The scoring thresholds themselves remain fixed; what can change over time is the live data feeding those thresholds.</p>
+        <p>The framework treats falling equities, tighter front-end rates, firmer inflation expectations, and higher volatility as signs of growing market stress. Equity pressure is momentum-driven, but rates, inflation, and volatility all combine the current level with the latest 5-session change. That keeps the score from dropping to zero too easily when financial conditions are still objectively tight.</p>
       </div>
     </section>
 
@@ -61,13 +61,13 @@
         </article>
         <article class="metric-card">
           <h3>2) Rates pressure</h3>
-          <p>The model looks at the 5-session increase in the U.S. 2-year Treasury yield, measured in basis points.</p>
-          <p class="metric-meta">A 25 bp rise maps to 100. A 12.5 bp rise maps to 50.</p>
+          <p>The model blends the current U.S. 2-year Treasury yield level with the 5-session change in that yield.</p>
+          <p class="metric-meta">60% of the score comes from the level: 3.00% maps to 0 and 5.25% maps to 60. The other 40% comes from the 5-session change: a +25 bp rise maps to the full 40-point change score.</p>
         </article>
         <article class="metric-card">
           <h3>3) Inflation pressure</h3>
-          <p>The model looks at the 5-session increase in 5-year breakeven inflation.</p>
-          <p class="metric-meta">A 20 bp rise maps to 100. A 10 bp rise maps to 50.</p>
+          <p>The model blends the current 5-year breakeven inflation level with the 5-session change in that breakeven.</p>
+          <p class="metric-meta">60% of the score comes from the level: 2.00% maps to 0 and 3.00% maps to 60. The other 40% comes from the 5-session change: a +20 bp rise maps to the full 40-point change score.</p>
         </article>
         <article class="metric-card">
           <h3>4) Volatility pressure</h3>
@@ -96,7 +96,7 @@
 
     <section class="panel">
       <h2>How to interpret the site</h2>
-      <p>A higher score does not mean a policy reversal must happen. It means the market backdrop is putting more stress on the system across several channels at once. This is a custom heuristic model designed for monitoring pressure, not an official Deutsche Bank model and not a guaranteed forecast of political behavior.</p>
+      <p>A higher score does not mean a policy reversal must happen. It means the market backdrop is putting more stress on the system across several channels at once. This is a custom heuristic model designed for monitoring pressure, not an official Deutsche Bank model and not a guaranteed forecast of political behavior. The current build intentionally gives rates and inflation a level-sensitive floor so those components do not collapse to zero merely because the last 5 sessions were flat.</p>
     </section>
   </section>
 </main>

@@ -409,11 +409,15 @@ def component_scores(rows: List[dict], idx: int) -> Dict[str, dict]:
     eq_drop_pct = max(0.0, (prev5["sp500"] - today["sp500"]) / prev5["sp500"] * 100.0)
     eq_score = clamp(eq_drop_pct / 5.0 * 100)
 
-    y2_bps = max(0.0, (today["dgs2"] - prev5["dgs2"]) * 100)
-    y2_score = clamp(y2_bps / 25.0 * 100)
+    y2_delta_bps = (today["dgs2"] - prev5["dgs2"]) * 100
+    y2_level_score = clamp((today["dgs2"] - 3.0) / (5.25 - 3.0) * 60.0)
+    y2_change_score = clamp(max(0.0, y2_delta_bps) / 25.0 * 40.0)
+    y2_score = clamp(y2_level_score + y2_change_score)
 
-    inf_bps = max(0.0, (today["t5yie"] - prev5["t5yie"]) * 100)
-    inf_score = clamp(inf_bps / 20.0 * 100)
+    inf_delta_bps = (today["t5yie"] - prev5["t5yie"]) * 100
+    inf_level_score = clamp((today["t5yie"] - 2.0) / (3.0 - 2.0) * 60.0)
+    inf_change_score = clamp(max(0.0, inf_delta_bps) / 20.0 * 40.0)
+    inf_score = clamp(inf_level_score + inf_change_score)
 
     vix_level_score = clamp((today["vix"] - 12.0) / (35.0 - 12.0) * 70.0)
     vix_jump_score = clamp(max(0.0, today["vix"] - prev5["vix"]) / 8.0 * 30.0)
@@ -431,21 +435,21 @@ def component_scores(rows: List[dict], idx: int) -> Dict[str, dict]:
         },
         "rates": {
             "label": "2Y Treasury rate pressure",
-            "raw": round(y2_bps, 2),
-            "unit": "bps 5-session increase",
+            "raw": f"{today['dgs2']:.2f}% level, {y2_delta_bps:+.2f} bp vs 5 sessions",
+            "unit": "60% level + 40% change",
             "score": round(y2_score, 2),
             "latest_value": today["dgs2"],
             "latest_date": today["date"],
-            "note": "A rise in front-end yields can tighten financial conditions.",
+            "note": "Rates pressure reflects both the current 2Y level and any fresh 5-session rise.",
         },
         "inflation": {
             "label": "Inflation expectations pressure",
-            "raw": round(inf_bps, 2),
-            "unit": "bps 5-session increase",
+            "raw": f"{today['t5yie']:.2f}% level, {inf_delta_bps:+.2f} bp vs 5 sessions",
+            "unit": "60% level + 40% change",
             "score": round(inf_score, 2),
             "latest_value": today["t5yie"],
             "latest_date": today["date"],
-            "note": "Higher breakevens imply more inflation pressure.",
+            "note": "Inflation pressure reflects both the breakeven level and any fresh 5-session rise.",
         },
         "volatility": {
             "label": "VIX volatility pressure",
@@ -844,7 +848,7 @@ def make_post_page(config: dict, post: dict, recent_history: List[dict]) -> str:
 
     <section>
       <h2>Method in one paragraph</h2>
-      <p>The TACO Pressure Index converts four live market inputs into 0–100 pressure scores and averages them into a composite reading. The framework penalizes S&amp;P 500 drawdowns, rising 2-year Treasury yields, higher 5-year breakeven inflation, and elevated VIX readings, then groups the result into LOW, ELEVATED, HIGH, and EXTREME regimes.</p>
+      <p>The TACO Pressure Index converts four live market inputs into 0–100 pressure scores and averages them into a composite reading. Equity pressure still comes from 5-session S&amp;P 500 drawdowns, while rates, inflation, and volatility now combine a level component with a 5-session change component. That keeps the index focused on pressure, not just short-term momentum, before grouping the result into LOW, ELEVATED, HIGH, and EXTREME regimes.</p>
     </section>
   </article>
 </main>
@@ -973,7 +977,7 @@ def make_about_page(config: dict) -> str:
       </div>
       <div class="panel">
         <h2>What the score is trying to capture</h2>
-        <p>The framework treats falling equities, rising front-end rates, rising inflation expectations, and higher volatility as signs of growing market stress. When more of those signals worsen at the same time, the composite score rises. The scoring thresholds themselves remain fixed; what can change over time is the live data feeding those thresholds.</p>
+        <p>The framework treats falling equities, tighter front-end rates, firmer inflation expectations, and higher volatility as signs of growing market stress. Equity pressure is momentum-driven, but rates, inflation, and volatility all combine the current level with the latest 5-session change. That keeps the score from dropping to zero too easily when financial conditions are still objectively tight.</p>
       </div>
     </section>
 
@@ -987,13 +991,13 @@ def make_about_page(config: dict) -> str:
         </article>
         <article class="metric-card">
           <h3>2) Rates pressure</h3>
-          <p>The model looks at the 5-session increase in the U.S. 2-year Treasury yield, measured in basis points.</p>
-          <p class="metric-meta">A 25 bp rise maps to 100. A 12.5 bp rise maps to 50.</p>
+          <p>The model blends the current U.S. 2-year Treasury yield level with the 5-session change in that yield.</p>
+          <p class="metric-meta">60% of the score comes from the level: 3.00% maps to 0 and 5.25% maps to 60. The other 40% comes from the 5-session change: a +25 bp rise maps to the full 40-point change score.</p>
         </article>
         <article class="metric-card">
           <h3>3) Inflation pressure</h3>
-          <p>The model looks at the 5-session increase in 5-year breakeven inflation.</p>
-          <p class="metric-meta">A 20 bp rise maps to 100. A 10 bp rise maps to 50.</p>
+          <p>The model blends the current 5-year breakeven inflation level with the 5-session change in that breakeven.</p>
+          <p class="metric-meta">60% of the score comes from the level: 2.00% maps to 0 and 3.00% maps to 60. The other 40% comes from the 5-session change: a +20 bp rise maps to the full 40-point change score.</p>
         </article>
         <article class="metric-card">
           <h3>4) Volatility pressure</h3>
@@ -1022,7 +1026,7 @@ def make_about_page(config: dict) -> str:
 
     <section class="panel">
       <h2>How to interpret the site</h2>
-      <p>A higher score does not mean a policy reversal must happen. It means the market backdrop is putting more stress on the system across several channels at once. This is a custom heuristic model designed for monitoring pressure, not an official Deutsche Bank model and not a guaranteed forecast of political behavior.</p>
+      <p>A higher score does not mean a policy reversal must happen. It means the market backdrop is putting more stress on the system across several channels at once. This is a custom heuristic model designed for monitoring pressure, not an official Deutsche Bank model and not a guaranteed forecast of political behavior. The current build intentionally gives rates and inflation a level-sensitive floor so those components do not collapse to zero merely because the last 5 sessions were flat.</p>
     </section>
   </section>
 </main>

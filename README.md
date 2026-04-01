@@ -64,3 +64,10 @@ The project is preconfigured for:
 ## Freshness and cache safety
 
 This project will only fall back to cached history if the cache is both recent and substantial. Tiny or stale seed caches are rejected so the site does not silently publish outdated posts.
+
+
+Scoring logic:
+- **Equity** = 5-session S&P 500 drawdown only
+- **Rates** = 60% current 2Y level + 40% positive 5-session rise
+- **Inflation** = 60% current 5Y breakeven level + 40% positive 5-session rise
+- **Volatility** = current VIX level + positive 5-session jump
