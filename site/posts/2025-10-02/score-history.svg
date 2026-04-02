@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="960" height="430" viewBox="0 0 960 430" role="img" aria-label="Composite score history">
 <rect width="100%" height="100%" fill="#0b1020" rx="20"/>
 <text x="70" y="32" fill="#f5f7fb" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700">Composite score history</text>
-<text x="70" y="52" fill="#93a4c3" font-family="Inter, Arial, sans-serif" font-size="13">Trailing 57 sessions through 2025-10-02</text>
+<text x="70" y="52" fill="#93a4c3" font-family="Inter, Arial, sans-serif" font-size="13">Trailing 56 sessions through 2025-10-02</text>
 <line x1="70" x2="935" y1="375.00" y2="375.00" stroke="#27314e" stroke-width="1"/>
 <text x="58" y="379.00" text-anchor="end" fill="#93a4c3" font-family="Inter, Arial, sans-serif" font-size="12">12</text>
 <line x1="70" x2="935" y1="312.00" y2="312.00" stroke="#27314e" stroke-width="1"/>
@@ -14,10 +14,10 @@
 <text x="58" y="127.00" text-anchor="end" fill="#93a4c3" font-family="Inter, Arial, sans-serif" font-size="12">29</text>
 <line x1="70" x2="935" y1="60.00" y2="60.00" stroke="#27314e" stroke-width="1"/>
 <text x="58" y="64.00" text-anchor="end" fill="#93a4c3" font-family="Inter, Arial, sans-serif" font-size="12">34</text>
-<text x="70.00" y="412" text-anchor="middle" fill="#93a4c3" font-family="Inter, Arial, sans-serif" font-size="12">2025-07-15</text>
-<text x="502.50" y="412" text-anchor="middle" fill="#93a4c3" font-family="Inter, Arial, sans-serif" font-size="12">2025-08-22</text>
+<text x="70.00" y="412" text-anchor="middle" fill="#93a4c3" font-family="Inter, Arial, sans-serif" font-size="12">2025-07-16</text>
+<text x="510.36" y="412" text-anchor="middle" fill="#93a4c3" font-family="Inter, Arial, sans-serif" font-size="12">2025-08-25</text>
 <text x="935.00" y="412" text-anchor="middle" fill="#93a4c3" font-family="Inter, Arial, sans-serif" font-size="12">2025-10-02</text>
-<path d="M 70.00 289.52 L 85.45 289.23 L 100.89 255.85 L 116.34 288.08 L 131.79 297.72 L 147.23 312.69 L 162.68 326.79 L 178.12 310.68 L 193.57 304.92 L 209.02 286.64 L 224.46 288.95 L 239.91 246.35 L 255.36 239.59 L 270.80 60.00 L 286.25 226.93 L 301.70 215.27 L 317.14 300.75 L 332.59 335.43 L 348.04 238.58 L 363.48 248.08 L 378.93 336.87 L 394.38 346.51 L 409.82 322.33 L 425.27 346.65 L 440.71 340.03 L 456.16 280.89 L 471.61 210.09 L 487.05 152.67 L 502.50 306.79 L 517.95 275.42 L 533.39 268.80 L 548.84 275.42 L 564.29 315.28 L 579.73 325.50 L 595.18 260.89 L 610.62 294.56 L 626.07 349.39 L 641.52 336.00 L 656.96 373.42 L 672.41 365.21 L 687.86 366.08 L 703.30 375.00 L 718.75 339.74 L 734.20 325.79 L 749.64 338.02 L 765.09 340.18 L 780.54 289.23 L 795.98 335.57 L 811.43 296.00 L 826.88 335.57 L 842.32 317.01 L 857.77 255.27 L 873.21 299.16 L 888.66 302.33 L 904.11 307.65 L 919.55 357.73 L 935.00 359.75" fill="none" stroke="#69a7ff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 70.00 296.43 L 85.73 245.78 L 101.45 295.28 L 117.18 304.92 L 132.91 312.69 L 148.64 326.79 L 164.36 310.68 L 180.09 304.92 L 195.82 286.64 L 211.55 288.95 L 227.27 246.35 L 243.00 239.59 L 258.73 60.00 L 274.45 226.93 L 290.18 215.27 L 305.91 300.75 L 321.64 335.43 L 337.36 238.58 L 353.09 248.08 L 368.82 336.87 L 384.55 346.51 L 400.27 322.33 L 416.00 346.65 L 431.73 340.03 L 447.45 280.89 L 463.18 210.09 L 478.91 152.67 L 494.64 306.79 L 510.36 275.42 L 526.09 268.80 L 541.82 275.42 L 557.55 315.28 L 573.27 325.50 L 589.00 260.89 L 604.73 294.56 L 620.45 349.39 L 636.18 336.00 L 651.91 373.42 L 667.64 365.21 L 683.36 366.08 L 699.09 375.00 L 714.82 339.74 L 730.55 325.79 L 746.27 338.02 L 762.00 340.18 L 777.73 289.23 L 793.45 335.57 L 809.18 296.00 L 824.91 335.57 L 840.64 317.01 L 856.36 255.27 L 872.09 299.16 L 887.82 302.33 L 903.55 307.65 L 919.27 357.73 L 935.00 359.75" fill="none" stroke="#69a7ff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
 <circle cx="935.00" cy="359.75" r="6" fill="#69a7ff"/>
 <text x="927.00" y="347.75" text-anchor="end" fill="#f5f7fb" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="600">12.74</text>
 </svg>

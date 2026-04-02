@@ -1,6 +1,6 @@
 {
   "date": "2025-07-18",
-  "score": 17.72,
+  "score": 17.22,
   "regime": "LOW",
   "drivers": {
     "equity": {
@@ -14,7 +14,7 @@
     },
     "rates": {
       "label": "2Y Treasury rate pressure",
-      "raw": "3.88% level, -7.00 bp vs 5 sessions",
+      "raw": "3.88% level, +0.00 bp vs 5 sessions",
       "unit": "60% level + 40% change",
       "score": 23.47,
       "latest_value": 3.88,
@@ -23,9 +23,9 @@
     },
     "inflation": {
       "label": "Inflation expectations pressure",
-      "raw": "2.50% level, +2.00 bp vs 5 sessions",
+      "raw": "2.50% level, +1.00 bp vs 5 sessions",
       "unit": "60% level + 40% change",
-      "score": 34.0,
+      "score": 32.0,
       "latest_value": 2.5,
       "latest_date": "2025-07-18",
       "note": "Inflation pressure reflects both the breakeven level and any fresh 5-session rise."
@@ -40,7 +40,7 @@
       "note": "Higher implied volatility usually means greater market stress."
     }
   },
-  "title": "2025-07-18 TACO Pressure Index Update: Low at 17.72",
-  "description": "Daily pressure check for 2025-07-18: the TACO Pressure Index closed at 17.72/100, signaling a low pressure regime as inflation expectations and front-end rate pressure shaped the daily read. See the chart pack, score regime, and what drove the latest reading.",
-  "hero_summary": "The daily signal helps separate noise from persistent multi-factor stress. On 2025-07-18, the score printed 17.72/100 in the low regime, with inflation expectations and front-end rate pressure doing most of the work."
+  "title": "2025-07-18 TACO Pressure Index Update: Low at 17.22",
+  "description": "Daily pressure check for 2025-07-18: the TACO Pressure Index closed at 17.22/100, signaling a low pressure regime as inflation expectations and front-end rate pressure shaped the daily read. See the chart pack, score regime, and what drove the latest reading.",
+  "hero_summary": "The daily signal helps separate noise from persistent multi-factor stress. On 2025-07-18, the score printed 17.22/100 in the low regime, with inflation expectations and front-end rate pressure doing most of the work."
 }
