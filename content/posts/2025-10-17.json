@@ -4,13 +4,15 @@
   "regime": "LOW",
   "drivers": {
     "equity": {
-      "label": "S&P 500 equity pressure",
-      "raw": 1.06,
-      "unit": "% 5-session drop",
+      "label": "S&P 500 equity signal",
+      "raw": "-1.06% vs 5 sessions | pressure 21.11 | relief 0.00",
+      "unit": "signed 5-session move",
       "score": 21.11,
+      "pressure_score": 21.11,
+      "relief_score": 0.0,
       "latest_value": 6664.009765625,
       "latest_date": "2025-10-17",
-      "note": "Bigger equity drawdowns imply more stress."
+      "note": "A 5-session drawdown adds pressure. A 5-session rally adds relief and can partially offset the composite score."
     },
     "rates": {
       "label": "2Y Treasury rate pressure",
@@ -41,6 +43,6 @@
     }
   },
   "title": "2025-10-17 TACO Pressure Index Update: Low at 23.45",
-  "description": "Today’s retreat-pressure snapshot for 2025-10-17: the TACO Pressure Index closed at 23.45/100, signaling a low pressure regime as volatility and equity stress shaped the daily read. Explore the score history, daily post, and the four-factor dashboard.",
-  "hero_summary": "The daily signal helps separate noise from persistent multi-factor stress. On 2025-10-17, the score printed 23.45/100 in the low regime, with volatility and equity stress doing most of the work."
+  "description": "Today’s retreat-pressure snapshot for 2025-10-17: the TACO Pressure Index closed at 23.45/100, signaling a low pressure regime as volatility and equity signal shaped the daily read. Explore the score history, daily post, and the four-factor dashboard.",
+  "hero_summary": "The daily signal helps separate noise from persistent multi-factor stress. On 2025-10-17, the score printed 23.45/100 in the low regime, with volatility and equity signal doing most of the work."
 }

@@ -1,16 +1,18 @@
 {
   "date": "2026-03-05",
-  "score": 40.84,
+  "score": 40.85,
   "regime": "ELEVATED",
   "drivers": {
     "equity": {
-      "label": "S&P 500 equity pressure",
-      "raw": 1.13,
-      "unit": "% 5-session drop",
+      "label": "S&P 500 equity signal",
+      "raw": "-1.13% vs 5 sessions | pressure 22.62 | relief 0.00",
+      "unit": "signed 5-session move",
       "score": 22.62,
+      "pressure_score": 22.62,
+      "relief_score": 0.0,
       "latest_value": 6830.7099609375,
       "latest_date": "2026-03-05",
-      "note": "Bigger equity drawdowns imply more stress."
+      "note": "A 5-session drawdown adds pressure. A 5-session rally adds relief and can partially offset the composite score."
     },
     "rates": {
       "label": "2Y Treasury rate pressure",
@@ -40,7 +42,7 @@
       "note": "Higher implied volatility usually means greater market stress."
     }
   },
-  "title": "2026-03-05 TACO Pressure Index Update: Elevated at 40.84",
-  "description": "Policy pressure tracker for 2026-03-05: the TACO Pressure Index closed at 40.84/100, signaling a elevated pressure regime as volatility and inflation expectations shaped the daily read. Read the charts, latest moves, and a concise market interpretation.",
-  "hero_summary": "The daily signal helps separate noise from persistent multi-factor stress. On 2026-03-05, the score printed 40.84/100 in the elevated regime, with volatility and inflation expectations doing most of the work."
+  "title": "2026-03-05 TACO Pressure Index Update: Elevated at 40.85",
+  "description": "Policy pressure tracker for 2026-03-05: the TACO Pressure Index closed at 40.85/100, signaling a elevated pressure regime as volatility and inflation expectations shaped the daily read. Read the charts, latest moves, and a concise market interpretation.",
+  "hero_summary": "The daily signal helps separate noise from persistent multi-factor stress. On 2026-03-05, the score printed 40.85/100 in the elevated regime, with volatility and inflation expectations doing most of the work."
 }

@@ -4,13 +4,15 @@
   "regime": "ELEVATED",
   "drivers": {
     "equity": {
-      "label": "S&P 500 equity pressure",
-      "raw": 1.85,
-      "unit": "% 5-session drop",
+      "label": "S&P 500 equity signal",
+      "raw": "-1.85% vs 5 sessions | pressure 36.91 | relief 0.00",
+      "unit": "signed 5-session move",
       "score": 36.91,
+      "pressure_score": 36.91,
+      "relief_score": 0.0,
       "latest_value": 6629.06982421875,
       "latest_date": "2025-10-16",
-      "note": "Bigger equity drawdowns imply more stress."
+      "note": "A 5-session drawdown adds pressure. A 5-session rally adds relief and can partially offset the composite score."
     },
     "rates": {
       "label": "2Y Treasury rate pressure",
@@ -41,6 +43,6 @@
     }
   },
   "title": "2025-10-16 TACO Pressure Index Update: Elevated at 34.88",
-  "description": "Automated market-pressure update for 2025-10-16: the TACO Pressure Index closed at 34.88/100, signaling a elevated pressure regime as volatility and equity stress shaped the daily read. Includes charts, a component breakdown, and a narrative summary.",
-  "hero_summary": "This custom framework combines equities, front-end rates, inflation expectations, and volatility into one daily score. On 2025-10-16, the score printed 34.88/100 in the elevated regime, with volatility and equity stress doing most of the work."
+  "description": "Automated market-pressure update for 2025-10-16: the TACO Pressure Index closed at 34.88/100, signaling a elevated pressure regime as volatility and equity signal shaped the daily read. Includes charts, a component breakdown, and a narrative summary.",
+  "hero_summary": "This custom framework combines equities, front-end rates, inflation expectations, and volatility into one daily score. On 2025-10-16, the score printed 34.88/100 in the elevated regime, with volatility and equity signal doing most of the work."
 }

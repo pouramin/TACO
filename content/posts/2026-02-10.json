@@ -1,16 +1,18 @@
 {
   "date": "2026-02-10",
-  "score": 14.46,
+  "score": 13.59,
   "regime": "LOW",
   "drivers": {
     "equity": {
-      "label": "S&P 500 equity pressure",
-      "raw": 0.0,
-      "unit": "% 5-session drop",
-      "score": 0.0,
+      "label": "S&P 500 equity signal",
+      "raw": "+0.35% vs 5 sessions | pressure 0.00 | relief 6.94",
+      "unit": "signed 5-session move",
+      "score": -3.47,
+      "pressure_score": 0.0,
+      "relief_score": 6.94,
       "latest_value": 6941.81005859375,
       "latest_date": "2026-02-10",
-      "note": "Bigger equity drawdowns imply more stress."
+      "note": "A 5-session drawdown adds pressure. A 5-session rally adds relief and can partially offset the composite score."
     },
     "rates": {
       "label": "2Y Treasury rate pressure",
@@ -40,7 +42,7 @@
       "note": "Higher implied volatility usually means greater market stress."
     }
   },
-  "title": "2026-02-10 TACO Pressure Index Update: Low at 14.46",
-  "description": "Automated market-pressure update for 2026-02-10: the TACO Pressure Index closed at 14.46/100, signaling a low pressure regime as inflation expectations and volatility shaped the daily read. See the chart pack, score regime, and what drove the latest reading.",
-  "hero_summary": "This custom framework combines equities, front-end rates, inflation expectations, and volatility into one daily score. On 2026-02-10, the score printed 14.46/100 in the low regime, with inflation expectations and volatility doing most of the work."
+  "title": "2026-02-10 TACO Pressure Index Update: Low at 13.59",
+  "description": "Automated market-pressure update for 2026-02-10: the TACO Pressure Index closed at 13.59/100, signaling a low pressure regime as inflation expectations and volatility shaped the daily read. See the chart pack, score regime, and what drove the latest reading.",
+  "hero_summary": "This custom framework combines equities, front-end rates, inflation expectations, and volatility into one daily score. On 2026-02-10, the score printed 13.59/100 in the low regime, with inflation expectations and volatility doing most of the work."
 }

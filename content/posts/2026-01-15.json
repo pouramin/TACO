@@ -1,16 +1,18 @@
 {
   "date": "2026-01-15",
-  "score": 17.72,
+  "score": 16.89,
   "regime": "LOW",
   "drivers": {
     "equity": {
-      "label": "S&P 500 equity pressure",
-      "raw": 0.0,
-      "unit": "% 5-session drop",
-      "score": 0.0,
+      "label": "S&P 500 equity signal",
+      "raw": "+0.33% vs 5 sessions | pressure 0.00 | relief 6.65",
+      "unit": "signed 5-session move",
+      "score": -3.32,
+      "pressure_score": 0.0,
+      "relief_score": 6.65,
       "latest_value": 6944.47021484375,
       "latest_date": "2026-01-15",
-      "note": "Bigger equity drawdowns imply more stress."
+      "note": "A 5-session drawdown adds pressure. A 5-session rally adds relief and can partially offset the composite score."
     },
     "rates": {
       "label": "2Y Treasury rate pressure",
@@ -40,7 +42,7 @@
       "note": "Higher implied volatility usually means greater market stress."
     }
   },
-  "title": "2026-01-15 TACO Pressure Index Update: Low at 17.72",
-  "description": "Today’s retreat-pressure snapshot for 2026-01-15: the TACO Pressure Index closed at 17.72/100, signaling a low pressure regime as inflation expectations and front-end rate pressure shaped the daily read. Explore the score history, daily post, and the four-factor dashboard.",
-  "hero_summary": "The daily signal helps separate noise from persistent multi-factor stress. On 2026-01-15, the score printed 17.72/100 in the low regime, with inflation expectations and front-end rate pressure doing most of the work."
+  "title": "2026-01-15 TACO Pressure Index Update: Low at 16.89",
+  "description": "Today’s retreat-pressure snapshot for 2026-01-15: the TACO Pressure Index closed at 16.89/100, signaling a low pressure regime as inflation expectations and front-end rate pressure shaped the daily read. Explore the score history, daily post, and the four-factor dashboard.",
+  "hero_summary": "The daily signal helps separate noise from persistent multi-factor stress. On 2026-01-15, the score printed 16.89/100 in the low regime, with inflation expectations and front-end rate pressure doing most of the work."
 }

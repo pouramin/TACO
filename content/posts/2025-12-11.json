@@ -1,16 +1,18 @@
 {
   "date": "2025-12-11",
-  "score": 10.43,
+  "score": 8.83,
   "regime": "LOW",
   "drivers": {
     "equity": {
-      "label": "S&P 500 equity pressure",
-      "raw": 0.0,
-      "unit": "% 5-session drop",
-      "score": 0.0,
+      "label": "S&P 500 equity signal",
+      "raw": "+0.64% vs 5 sessions | pressure 0.00 | relief 12.80",
+      "unit": "signed 5-session move",
+      "score": -6.4,
+      "pressure_score": 0.0,
+      "relief_score": 12.8,
       "latest_value": 6901.0,
       "latest_date": "2025-12-11",
-      "note": "Bigger equity drawdowns imply more stress."
+      "note": "A 5-session drawdown adds pressure. A 5-session rally adds relief and can partially offset the composite score."
     },
     "rates": {
       "label": "2Y Treasury rate pressure",
@@ -40,7 +42,7 @@
       "note": "Higher implied volatility usually means greater market stress."
     }
   },
-  "title": "2025-12-11 TACO Pressure Index Update: Low at 10.43",
-  "description": "Daily pressure check for 2025-12-11: the TACO Pressure Index closed at 10.43/100, signaling a low pressure regime as inflation expectations and front-end rate pressure shaped the daily read. Read the charts, latest moves, and a concise market interpretation.",
-  "hero_summary": "The index is designed to approximate how market stress can build pressure for a softer policy posture. On 2025-12-11, the score printed 10.43/100 in the low regime, with inflation expectations and front-end rate pressure doing most of the work."
+  "title": "2025-12-11 TACO Pressure Index Update: Low at 8.83",
+  "description": "Daily pressure check for 2025-12-11: the TACO Pressure Index closed at 8.83/100, signaling a low pressure regime as inflation expectations and front-end rate pressure shaped the daily read. A positive 5-session S&P move also added equity relief. Read the charts, latest moves, and a concise market interpretation.",
+  "hero_summary": "The index is designed to approximate how market stress can build pressure for a softer policy posture. On 2025-12-11, the score printed 8.83/100 in the low regime, with inflation expectations and front-end rate pressure doing most of the work. Equities also provided visible relief through a positive 5-session move."
 }

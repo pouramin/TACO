@@ -1,16 +1,18 @@
 {
   "date": "2026-01-09",
-  "score": 15.1,
+  "score": 11.16,
   "regime": "LOW",
   "drivers": {
     "equity": {
-      "label": "S&P 500 equity pressure",
-      "raw": 0.0,
-      "unit": "% 5-session drop",
-      "score": 0.0,
+      "label": "S&P 500 equity signal",
+      "raw": "+1.57% vs 5 sessions | pressure 0.00 | relief 31.44",
+      "unit": "signed 5-session move",
+      "score": -15.72,
+      "pressure_score": 0.0,
+      "relief_score": 31.44,
       "latest_value": 6966.27978515625,
       "latest_date": "2026-01-09",
-      "note": "Bigger equity drawdowns imply more stress."
+      "note": "A 5-session drawdown adds pressure. A 5-session rally adds relief and can partially offset the composite score."
     },
     "rates": {
       "label": "2Y Treasury rate pressure",
@@ -40,7 +42,7 @@
       "note": "Higher implied volatility usually means greater market stress."
     }
   },
-  "title": "2026-01-09 TACO Pressure Index Update: Low at 15.10",
-  "description": "Policy pressure tracker for 2026-01-09: the TACO Pressure Index closed at 15.10/100, signaling a low pressure regime as inflation expectations and front-end rate pressure shaped the daily read. Read the charts, latest moves, and a concise market interpretation.",
-  "hero_summary": "This custom framework combines equities, front-end rates, inflation expectations, and volatility into one daily score. On 2026-01-09, the score printed 15.10/100 in the low regime, with inflation expectations and front-end rate pressure doing most of the work."
+  "title": "2026-01-09 TACO Pressure Index Update: Low at 11.16",
+  "description": "Policy pressure tracker for 2026-01-09: the TACO Pressure Index closed at 11.16/100, signaling a low pressure regime as inflation expectations and front-end rate pressure shaped the daily read. A positive 5-session S&P move also added equity relief. Read the charts, latest moves, and a concise market interpretation.",
+  "hero_summary": "This custom framework combines equities, front-end rates, inflation expectations, and volatility into one daily score. On 2026-01-09, the score printed 11.16/100 in the low regime, with inflation expectations and front-end rate pressure doing most of the work. Equities also provided visible relief through a positive 5-session move."
 }

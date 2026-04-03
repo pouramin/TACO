@@ -1,16 +1,18 @@
 {
   "date": "2025-11-24",
-  "score": 14.05,
+  "score": 12.82,
   "regime": "LOW",
   "drivers": {
     "equity": {
-      "label": "S&P 500 equity pressure",
-      "raw": 0.0,
-      "unit": "% 5-session drop",
-      "score": 0.0,
+      "label": "S&P 500 equity signal",
+      "raw": "+0.49% vs 5 sessions | pressure 0.00 | relief 9.80",
+      "unit": "signed 5-session move",
+      "score": -4.9,
+      "pressure_score": 0.0,
+      "relief_score": 9.8,
       "latest_value": 6705.1201171875,
       "latest_date": "2025-11-24",
-      "note": "Bigger equity drawdowns imply more stress."
+      "note": "A 5-session drawdown adds pressure. A 5-session rally adds relief and can partially offset the composite score."
     },
     "rates": {
       "label": "2Y Treasury rate pressure",
@@ -40,7 +42,7 @@
       "note": "Higher implied volatility usually means greater market stress."
     }
   },
-  "title": "2025-11-24 TACO Pressure Index Update: Low at 14.05",
-  "description": "Fresh macro pressure read for 2025-11-24: the TACO Pressure Index closed at 14.05/100, signaling a low pressure regime as volatility and inflation expectations shaped the daily read. See the chart pack, score regime, and what drove the latest reading.",
-  "hero_summary": "It is not a forecast of policy decisions; it is a structured way to monitor pressure building across markets. On 2025-11-24, the score printed 14.05/100 in the low regime, with volatility and inflation expectations doing most of the work."
+  "title": "2025-11-24 TACO Pressure Index Update: Low at 12.82",
+  "description": "Fresh macro pressure read for 2025-11-24: the TACO Pressure Index closed at 12.82/100, signaling a low pressure regime as volatility and inflation expectations shaped the daily read. A positive 5-session S&P move also added equity relief. See the chart pack, score regime, and what drove the latest reading.",
+  "hero_summary": "It is not a forecast of policy decisions; it is a structured way to monitor pressure building across markets. On 2025-11-24, the score printed 12.82/100 in the low regime, with volatility and inflation expectations doing most of the work. Equities also provided visible relief through a positive 5-session move."
 }

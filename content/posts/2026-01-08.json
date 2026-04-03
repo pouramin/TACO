@@ -1,16 +1,18 @@
 {
   "date": "2026-01-08",
-  "score": 14.31,
+  "score": 11.54,
   "regime": "LOW",
   "drivers": {
     "equity": {
-      "label": "S&P 500 equity pressure",
-      "raw": 0.0,
-      "unit": "% 5-session drop",
-      "score": 0.0,
+      "label": "S&P 500 equity signal",
+      "raw": "+1.11% vs 5 sessions | pressure 0.00 | relief 22.19",
+      "unit": "signed 5-session move",
+      "score": -11.1,
+      "pressure_score": 0.0,
+      "relief_score": 22.19,
       "latest_value": 6921.4599609375,
       "latest_date": "2026-01-08",
-      "note": "Bigger equity drawdowns imply more stress."
+      "note": "A 5-session drawdown adds pressure. A 5-session rally adds relief and can partially offset the composite score."
     },
     "rates": {
       "label": "2Y Treasury rate pressure",
@@ -40,7 +42,7 @@
       "note": "Higher implied volatility usually means greater market stress."
     }
   },
-  "title": "2026-01-08 TACO Pressure Index Update: Low at 14.31",
-  "description": "New daily signal for 2026-01-08: the TACO Pressure Index closed at 14.31/100, signaling a low pressure regime as inflation expectations and front-end rate pressure shaped the daily read. Read the charts, latest moves, and a concise market interpretation.",
-  "hero_summary": "The daily signal helps separate noise from persistent multi-factor stress. On 2026-01-08, the score printed 14.31/100 in the low regime, with inflation expectations and front-end rate pressure doing most of the work."
+  "title": "2026-01-08 TACO Pressure Index Update: Low at 11.54",
+  "description": "New daily signal for 2026-01-08: the TACO Pressure Index closed at 11.54/100, signaling a low pressure regime as inflation expectations and front-end rate pressure shaped the daily read. A positive 5-session S&P move also added equity relief. Read the charts, latest moves, and a concise market interpretation.",
+  "hero_summary": "The daily signal helps separate noise from persistent multi-factor stress. On 2026-01-08, the score printed 11.54/100 in the low regime, with inflation expectations and front-end rate pressure doing most of the work. Equities also provided visible relief through a positive 5-session move."
 }
