@@ -1,6 +1,6 @@
 {
   "date": "2025-07-17",
-  "score": 19.96,
+  "score": 17.46,
   "regime": "LOW",
   "drivers": {
     "equity": {
@@ -14,7 +14,7 @@
     },
     "rates": {
       "label": "2Y Treasury rate pressure",
-      "raw": "3.91% level, -4.00 bp vs 5 sessions",
+      "raw": "3.91% level, +0.00 bp vs 5 sessions",
       "unit": "60% level + 40% change",
       "score": 24.27,
       "latest_value": 3.91,
@@ -23,9 +23,9 @@
     },
     "inflation": {
       "label": "Inflation expectations pressure",
-      "raw": "2.53% level, +5.00 bp vs 5 sessions",
+      "raw": "2.53% level, +0.00 bp vs 5 sessions",
       "unit": "60% level + 40% change",
-      "score": 41.8,
+      "score": 31.8,
       "latest_value": 2.53,
       "latest_date": "2025-07-17",
       "note": "Inflation pressure reflects both the breakeven level and any fresh 5-session rise."
@@ -40,7 +40,7 @@
       "note": "Higher implied volatility usually means greater market stress."
     }
   },
-  "title": "2025-07-17 TACO Pressure Index Update: Low at 19.96",
-  "description": "Today’s retreat-pressure snapshot for 2025-07-17: the TACO Pressure Index closed at 19.96/100, signaling a low pressure regime as inflation expectations and front-end rate pressure shaped the daily read. Includes charts, a component breakdown, and a narrative summary.",
-  "hero_summary": "The index is designed to approximate how market stress can build pressure for a softer policy posture. On 2025-07-17, the score printed 19.96/100 in the low regime, with inflation expectations and front-end rate pressure doing most of the work."
+  "title": "2025-07-17 TACO Pressure Index Update: Low at 17.46",
+  "description": "Today’s retreat-pressure snapshot for 2025-07-17: the TACO Pressure Index closed at 17.46/100, signaling a low pressure regime as inflation expectations and front-end rate pressure shaped the daily read. Includes charts, a component breakdown, and a narrative summary.",
+  "hero_summary": "The index is designed to approximate how market stress can build pressure for a softer policy posture. On 2025-07-17, the score printed 17.46/100 in the low regime, with inflation expectations and front-end rate pressure doing most of the work."
 }

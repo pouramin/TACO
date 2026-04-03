@@ -6,32 +6,214 @@
   "description": "A live-data daily tracker of market pressure, financial stress, and TACO-style retreat conditions.",
   "items": [
     {
+      "id": "https://freeiran.it/posts/2026-04-02/",
+      "url": "https://freeiran.it/posts/2026-04-02/",
+      "title": "2026-04-02 TACO Pressure Index Update: Low at 23.35",
+      "summary": "Today’s retreat-pressure snapshot for 2026-04-02: the TACO Pressure Index closed at 23.35/100, signaling a low pressure regime as inflation expectations and volatility shaped the daily read. Explore the score history, daily post, and the four-factor dashboard.",
+      "date_published": "2026-04-02T00:00:00Z"
+    },
+    {
+      "id": "https://freeiran.it/posts/2026-04-01/",
+      "url": "https://freeiran.it/posts/2026-04-01/",
+      "title": "2026-04-01 TACO Pressure Index Update: Elevated at 26.45",
+      "summary": "New daily signal for 2026-04-01: the TACO Pressure Index closed at 26.45/100, signaling a elevated pressure regime as inflation expectations and volatility shaped the daily read. See the chart pack, score regime, and what drove the latest reading.",
+      "date_published": "2026-04-01T00:00:00Z"
+    },
+    {
+      "id": "https://freeiran.it/posts/2026-03-31/",
+      "url": "https://freeiran.it/posts/2026-03-31/",
+      "title": "2026-03-31 TACO Pressure Index Update: Elevated at 25.57",
+      "summary": "New daily signal for 2026-03-31: the TACO Pressure Index closed at 25.57/100, signaling a elevated pressure regime as volatility and inflation expectations shaped the daily read. Includes charts, a component breakdown, and a narrative summary.",
+      "date_published": "2026-03-31T00:00:00Z"
+    },
+    {
+      "id": "https://freeiran.it/posts/2026-03-30/",
+      "url": "https://freeiran.it/posts/2026-03-30/",
+      "title": "2026-03-30 TACO Pressure Index Update: High at 52.38",
+      "summary": "Automated market-pressure update for 2026-03-30: the TACO Pressure Index closed at 52.38/100, signaling a high pressure regime as volatility and equity stress shaped the daily read. Read the charts, latest moves, and a concise market interpretation.",
+      "date_published": "2026-03-30T00:00:00Z"
+    },
+    {
       "id": "https://freeiran.it/posts/2026-03-27/",
       "url": "https://freeiran.it/posts/2026-03-27/",
-      "title": "2026-03-27 TACO Pressure Index Update: High at 50.00",
-      "summary": "Automated market-pressure update for 2026-03-27: the TACO Pressure Index closed at 50.00/100, signaling a high pressure regime as volatility and equity stress shaped the daily read. Includes charts, a component breakdown, and a narrative summary.",
+      "title": "2026-03-27 TACO Pressure Index Update: Elevated at 43.34",
+      "summary": "Automated market-pressure update for 2026-03-27: the TACO Pressure Index closed at 43.34/100, signaling a elevated pressure regime as volatility and equity stress shaped the daily read. Includes charts, a component breakdown, and a narrative summary.",
       "date_published": "2026-03-27T00:00:00Z"
     },
     {
       "id": "https://freeiran.it/posts/2026-03-26/",
       "url": "https://freeiran.it/posts/2026-03-26/",
-      "title": "2026-03-26 TACO Pressure Index Update: Elevated at 40.00",
-      "summary": "Policy pressure tracker for 2026-03-26: the TACO Pressure Index closed at 40.00/100, signaling a elevated pressure regime as equity stress and volatility shaped the daily read. Read the charts, latest moves, and a concise market interpretation.",
+      "title": "2026-03-26 TACO Pressure Index Update: Elevated at 46.30",
+      "summary": "Policy pressure tracker for 2026-03-26: the TACO Pressure Index closed at 46.30/100, signaling a elevated pressure regime as volatility and front-end rate pressure shaped the daily read. Read the charts, latest moves, and a concise market interpretation.",
       "date_published": "2026-03-26T00:00:00Z"
     },
     {
       "id": "https://freeiran.it/posts/2026-03-25/",
       "url": "https://freeiran.it/posts/2026-03-25/",
-      "title": "2026-03-25 TACO Pressure Index Update: Elevated at 30.00",
-      "summary": "Automated market-pressure update for 2026-03-25: the TACO Pressure Index closed at 30.00/100, signaling a elevated pressure regime as equity stress and volatility shaped the daily read. See the chart pack, score regime, and what drove the latest reading.",
+      "title": "2026-03-25 TACO Pressure Index Update: Elevated at 29.29",
+      "summary": "Automated market-pressure update for 2026-03-25: the TACO Pressure Index closed at 29.29/100, signaling a elevated pressure regime as volatility and front-end rate pressure shaped the daily read. See the chart pack, score regime, and what drove the latest reading.",
       "date_published": "2026-03-25T00:00:00Z"
     },
     {
       "id": "https://freeiran.it/posts/2026-03-24/",
       "url": "https://freeiran.it/posts/2026-03-24/",
-      "title": "2026-03-24 TACO Pressure Index Update: Low at 20.00",
-      "summary": "Fresh macro pressure read for 2026-03-24: the TACO Pressure Index closed at 20.00/100, signaling a low pressure regime as equity stress and front-end rate pressure shaped the daily read. See the chart pack, score regime, and what drove the latest reading.",
+      "title": "2026-03-24 TACO Pressure Index Update: High at 50.61",
+      "summary": "Fresh macro pressure read for 2026-03-24: the TACO Pressure Index closed at 50.61/100, signaling a high pressure regime as volatility and front-end rate pressure shaped the daily read. See the chart pack, score regime, and what drove the latest reading.",
       "date_published": "2026-03-24T00:00:00Z"
+    },
+    {
+      "id": "https://freeiran.it/posts/2026-03-23/",
+      "url": "https://freeiran.it/posts/2026-03-23/",
+      "title": "2026-03-23 TACO Pressure Index Update: Elevated at 41.56",
+      "summary": "New daily signal for 2026-03-23: the TACO Pressure Index closed at 41.56/100, signaling a elevated pressure regime as volatility and front-end rate pressure shaped the daily read. Read the charts, latest moves, and a concise market interpretation.",
+      "date_published": "2026-03-23T00:00:00Z"
+    },
+    {
+      "id": "https://freeiran.it/posts/2026-03-20/",
+      "url": "https://freeiran.it/posts/2026-03-20/",
+      "title": "2026-03-20 TACO Pressure Index Update: Elevated at 43.04",
+      "summary": "Fresh macro pressure read for 2026-03-20: the TACO Pressure Index closed at 43.04/100, signaling a elevated pressure regime as front-end rate pressure and volatility shaped the daily read. See the chart pack, score regime, and what drove the latest reading.",
+      "date_published": "2026-03-20T00:00:00Z"
+    },
+    {
+      "id": "https://freeiran.it/posts/2026-03-19/",
+      "url": "https://freeiran.it/posts/2026-03-19/",
+      "title": "2026-03-19 TACO Pressure Index Update: Elevated at 29.75",
+      "summary": "Daily pressure check for 2026-03-19: the TACO Pressure Index closed at 29.75/100, signaling a elevated pressure regime as volatility and inflation expectations shaped the daily read. Explore the score history, daily post, and the four-factor dashboard.",
+      "date_published": "2026-03-19T00:00:00Z"
+    },
+    {
+      "id": "https://freeiran.it/posts/2026-03-18/",
+      "url": "https://freeiran.it/posts/2026-03-18/",
+      "title": "2026-03-18 TACO Pressure Index Update: Elevated at 45.68",
+      "summary": "Automated market-pressure update for 2026-03-18: the TACO Pressure Index closed at 45.68/100, signaling a elevated pressure regime as inflation expectations and equity stress shaped the daily read. Includes charts, a component breakdown, and a narrative summary.",
+      "date_published": "2026-03-18T00:00:00Z"
+    },
+    {
+      "id": "https://freeiran.it/posts/2026-03-17/",
+      "url": "https://freeiran.it/posts/2026-03-17/",
+      "title": "2026-03-17 TACO Pressure Index Update: Elevated at 35.44",
+      "summary": "Fresh macro pressure read for 2026-03-17: the TACO Pressure Index closed at 35.44/100, signaling a elevated pressure regime as inflation expectations and front-end rate pressure shaped the daily read. Includes charts, a component breakdown, and a narrative summary.",
+      "date_published": "2026-03-17T00:00:00Z"
+    },
+    {
+      "id": "https://freeiran.it/posts/2026-03-16/",
+      "url": "https://freeiran.it/posts/2026-03-16/",
+      "title": "2026-03-16 TACO Pressure Index Update: Elevated at 34.90",
+      "summary": "Daily pressure check for 2026-03-16: the TACO Pressure Index closed at 34.90/100, signaling a elevated pressure regime as inflation expectations and front-end rate pressure shaped the daily read. See the chart pack, score regime, and what drove the latest reading.",
+      "date_published": "2026-03-16T00:00:00Z"
+    },
+    {
+      "id": "https://freeiran.it/posts/2026-03-13/",
+      "url": "https://freeiran.it/posts/2026-03-13/",
+      "title": "2026-03-13 TACO Pressure Index Update: Elevated at 42.88",
+      "summary": "Fresh macro pressure read for 2026-03-13: the TACO Pressure Index closed at 42.88/100, signaling a elevated pressure regime as front-end rate pressure and inflation expectations shaped the daily read. Read the charts, latest moves, and a concise market interpretation.",
+      "date_published": "2026-03-13T00:00:00Z"
+    },
+    {
+      "id": "https://freeiran.it/posts/2026-03-12/",
+      "url": "https://freeiran.it/posts/2026-03-12/",
+      "title": "2026-03-12 TACO Pressure Index Update: High at 54.64",
+      "summary": "Policy pressure tracker for 2026-03-12: the TACO Pressure Index closed at 54.64/100, signaling a high pressure regime as inflation expectations and volatility shaped the daily read. Explore the score history, daily post, and the four-factor dashboard.",
+      "date_published": "2026-03-12T00:00:00Z"
+    },
+    {
+      "id": "https://freeiran.it/posts/2026-03-11/",
+      "url": "https://freeiran.it/posts/2026-03-11/",
+      "title": "2026-03-11 TACO Pressure Index Update: Elevated at 41.98",
+      "summary": "Daily pressure check for 2026-03-11: the TACO Pressure Index closed at 41.98/100, signaling a elevated pressure regime as inflation expectations and volatility shaped the daily read. See the chart pack, score regime, and what drove the latest reading.",
+      "date_published": "2026-03-11T00:00:00Z"
+    },
+    {
+      "id": "https://freeiran.it/posts/2026-03-10/",
+      "url": "https://freeiran.it/posts/2026-03-10/",
+      "title": "2026-03-10 TACO Pressure Index Update: Elevated at 31.34",
+      "summary": "Today’s retreat-pressure snapshot for 2026-03-10: the TACO Pressure Index closed at 31.34/100, signaling a elevated pressure regime as inflation expectations and volatility shaped the daily read. See the chart pack, score regime, and what drove the latest reading.",
+      "date_published": "2026-03-10T00:00:00Z"
+    },
+    {
+      "id": "https://freeiran.it/posts/2026-03-09/",
+      "url": "https://freeiran.it/posts/2026-03-09/",
+      "title": "2026-03-09 TACO Pressure Index Update: Elevated at 41.03",
+      "summary": "Policy pressure tracker for 2026-03-09: the TACO Pressure Index closed at 41.03/100, signaling a elevated pressure regime as volatility and inflation expectations shaped the daily read. Read the charts, latest moves, and a concise market interpretation.",
+      "date_published": "2026-03-09T00:00:00Z"
+    },
+    {
+      "id": "https://freeiran.it/posts/2026-03-06/",
+      "url": "https://freeiran.it/posts/2026-03-06/",
+      "title": "2026-03-06 TACO Pressure Index Update: High at 59.76",
+      "summary": "Today’s retreat-pressure snapshot for 2026-03-06: the TACO Pressure Index closed at 59.76/100, signaling a high pressure regime as volatility and inflation expectations shaped the daily read. Includes charts, a component breakdown, and a narrative summary.",
+      "date_published": "2026-03-06T00:00:00Z"
+    },
+    {
+      "id": "https://freeiran.it/posts/2026-03-05/",
+      "url": "https://freeiran.it/posts/2026-03-05/",
+      "title": "2026-03-05 TACO Pressure Index Update: Elevated at 40.84",
+      "summary": "Policy pressure tracker for 2026-03-05: the TACO Pressure Index closed at 40.84/100, signaling a elevated pressure regime as volatility and inflation expectations shaped the daily read. Read the charts, latest moves, and a concise market interpretation.",
+      "date_published": "2026-03-05T00:00:00Z"
+    },
+    {
+      "id": "https://freeiran.it/posts/2026-03-04/",
+      "url": "https://freeiran.it/posts/2026-03-04/",
+      "title": "2026-03-04 TACO Pressure Index Update: Elevated at 31.59",
+      "summary": "Fresh macro pressure read for 2026-03-04: the TACO Pressure Index closed at 31.59/100, signaling a elevated pressure regime as volatility and inflation expectations shaped the daily read. Explore the score history, daily post, and the four-factor dashboard.",
+      "date_published": "2026-03-04T00:00:00Z"
+    },
+    {
+      "id": "https://freeiran.it/posts/2026-03-03/",
+      "url": "https://freeiran.it/posts/2026-03-03/",
+      "title": "2026-03-03 TACO Pressure Index Update: Elevated at 34.40",
+      "summary": "Today’s retreat-pressure snapshot for 2026-03-03: the TACO Pressure Index closed at 34.40/100, signaling a elevated pressure regime as volatility and inflation expectations shaped the daily read. See the chart pack, score regime, and what drove the latest reading.",
+      "date_published": "2026-03-03T00:00:00Z"
+    },
+    {
+      "id": "https://freeiran.it/posts/2026-03-02/",
+      "url": "https://freeiran.it/posts/2026-03-02/",
+      "title": "2026-03-02 TACO Pressure Index Update: Low at 22.22",
+      "summary": "Automated market-pressure update for 2026-03-02: the TACO Pressure Index closed at 22.22/100, signaling a low pressure regime as inflation expectations and volatility shaped the daily read. Explore the score history, daily post, and the four-factor dashboard.",
+      "date_published": "2026-03-02T00:00:00Z"
+    },
+    {
+      "id": "https://freeiran.it/posts/2026-02-27/",
+      "url": "https://freeiran.it/posts/2026-02-27/",
+      "title": "2026-02-27 TACO Pressure Index Update: Low at 17.45",
+      "summary": "Today’s retreat-pressure snapshot for 2026-02-27: the TACO Pressure Index closed at 17.45/100, signaling a low pressure regime as volatility and inflation expectations shaped the daily read. Includes charts, a component breakdown, and a narrative summary.",
+      "date_published": "2026-02-27T00:00:00Z"
+    },
+    {
+      "id": "https://freeiran.it/posts/2026-02-26/",
+      "url": "https://freeiran.it/posts/2026-02-26/",
+      "title": "2026-02-26 TACO Pressure Index Update: Low at 14.29",
+      "summary": "New daily signal for 2026-02-26: the TACO Pressure Index closed at 14.29/100, signaling a low pressure regime as inflation expectations and volatility shaped the daily read. Read the charts, latest moves, and a concise market interpretation.",
+      "date_published": "2026-02-26T00:00:00Z"
+    },
+    {
+      "id": "https://freeiran.it/posts/2026-02-25/",
+      "url": "https://freeiran.it/posts/2026-02-25/",
+      "title": "2026-02-25 TACO Pressure Index Update: Low at 13.81",
+      "summary": "Policy pressure tracker for 2026-02-25: the TACO Pressure Index closed at 13.81/100, signaling a low pressure regime as inflation expectations and volatility shaped the daily read. Read the charts, latest moves, and a concise market interpretation.",
+      "date_published": "2026-02-25T00:00:00Z"
+    },
+    {
+      "id": "https://freeiran.it/posts/2026-02-24/",
+      "url": "https://freeiran.it/posts/2026-02-24/",
+      "title": "2026-02-24 TACO Pressure Index Update: Low at 15.11",
+      "summary": "Today’s retreat-pressure snapshot for 2026-02-24: the TACO Pressure Index closed at 15.11/100, signaling a low pressure regime as inflation expectations and volatility shaped the daily read. See the chart pack, score regime, and what drove the latest reading.",
+      "date_published": "2026-02-24T00:00:00Z"
+    },
+    {
+      "id": "https://freeiran.it/posts/2026-02-23/",
+      "url": "https://freeiran.it/posts/2026-02-23/",
+      "title": "2026-02-23 TACO Pressure Index Update: Low at 17.31",
+      "summary": "Fresh macro pressure read for 2026-02-23: the TACO Pressure Index closed at 17.31/100, signaling a low pressure regime as volatility and inflation expectations shaped the daily read. Explore the score history, daily post, and the four-factor dashboard.",
+      "date_published": "2026-02-23T00:00:00Z"
+    },
+    {
+      "id": "https://freeiran.it/posts/2026-02-20/",
+      "url": "https://freeiran.it/posts/2026-02-20/",
+      "title": "2026-02-20 TACO Pressure Index Update: Low at 15.45",
+      "summary": "Fresh macro pressure read for 2026-02-20: the TACO Pressure Index closed at 15.45/100, signaling a low pressure regime as inflation expectations and volatility shaped the daily read. Explore the score history, daily post, and the four-factor dashboard.",
+      "date_published": "2026-02-20T00:00:00Z"
     }
   ]
 }

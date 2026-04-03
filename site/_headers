@@ -1,2 +1,8 @@
 /*
-  Cache-Control: public, max-age=300
+  Cache-Control: public, max-age=60, must-revalidate
+
+/posts/*/*.svg
+  Cache-Control: public, max-age=60, must-revalidate
+
+/assets/latest-score-history.svg
+  Cache-Control: public, max-age=60, must-revalidate

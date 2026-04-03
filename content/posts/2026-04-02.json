@@ -1,0 +1,46 @@
+{
+  "date": "2026-04-02",
+  "score": 23.35,
+  "regime": "LOW",
+  "drivers": {
+    "equity": {
+      "label": "S&P 500 equity pressure",
+      "raw": 0.0,
+      "unit": "% 5-session drop",
+      "score": 0.0,
+      "latest_value": 6582.68994140625,
+      "latest_date": "2026-04-02",
+      "note": "Bigger equity drawdowns imply more stress."
+    },
+    "rates": {
+      "label": "2Y Treasury rate pressure",
+      "raw": "3.79% level, -17.00 bp vs 5 sessions",
+      "unit": "60% level + 40% change",
+      "score": 21.07,
+      "latest_value": 3.79,
+      "latest_date": "2026-04-02",
+      "note": "Rates pressure reflects both the current 2Y level and any fresh 5-session rise."
+    },
+    "inflation": {
+      "label": "Inflation expectations pressure",
+      "raw": "2.57% level, +1.00 bp vs 5 sessions",
+      "unit": "60% level + 40% change",
+      "score": 36.2,
+      "latest_value": 2.57,
+      "latest_date": "2026-04-02",
+      "note": "Inflation pressure reflects both the breakeven level and any fresh 5-session rise."
+    },
+    "volatility": {
+      "label": "VIX volatility pressure",
+      "raw": 23.87,
+      "unit": "index level",
+      "score": 36.13,
+      "latest_value": 23.87,
+      "latest_date": "2026-04-02",
+      "note": "Higher implied volatility usually means greater market stress."
+    }
+  },
+  "title": "2026-04-02 TACO Pressure Index Update: Low at 23.35",
+  "description": "Today’s retreat-pressure snapshot for 2026-04-02: the TACO Pressure Index closed at 23.35/100, signaling a low pressure regime as inflation expectations and volatility shaped the daily read. Explore the score history, daily post, and the four-factor dashboard.",
+  "hero_summary": "The index is designed to approximate how market stress can build pressure for a softer policy posture. On 2026-04-02, the score printed 23.35/100 in the low regime, with inflation expectations and volatility doing most of the work."
+}

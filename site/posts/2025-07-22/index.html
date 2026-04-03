@@ -17,6 +17,7 @@
   <meta name="twitter:image" content="https://freeiran.it/posts/2025-07-22/og.svg">
   <link rel="alternate" type="application/rss+xml" title="TACO | Trump Always Chickens Out" href="/rss.xml">
   <link rel="stylesheet" href="/assets/style.css">
+  <script defer src="/assets/app.js"></script>
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "2025-07-22 TACO Pressure Index Update: Low at 16.01", "description": "Automated market-pressure update for 2025-07-22: the TACO Pressure Index closed at 16.01/100, signaling a low pressure regime as inflation expectations and front-end rate pressure shaped the daily read. Explore the score history, daily post, and the four-factor dashboard.", "datePublished": "2025-07-22", "dateModified": "2025-07-22", "inLanguage": "en", "author": {"@type": "Person", "name": "Amin Pour Abdollahi"}, "mainEntityOfPage": "https://freeiran.it/posts/2025-07-22/", "publisher": {"@type": "Organization", "name": "TACO | Trump Always Chickens Out"}, "image": "https://freeiran.it/posts/2025-07-22/og.svg"}</script>
 </head>
 <body>
@@ -58,12 +59,27 @@
 
     <section class="chart-section">
       <h2>Pressure history</h2>
-      <img src="./score-history.svg" alt="Score history chart for the last 90 sessions">
+      
+    <div class="interactive-line-chart js-line-chart" id="score-history-2025-07-22">
+      <div class="chart-header">
+        <h3>Composite score history</h3>
+        <p>Trailing 4 sessions through 2025-07-22</p>
+      </div>
+      <div class="chart-canvas-wrap">
+        <div class="chart-tooltip" hidden></div>
+        <svg class="chart-svg" viewBox="0 0 960 430" preserveAspectRatio="none" aria-label="Composite score history interactive chart"></svg>
+        <script type="application/json" class="chart-data">[{"date": "2025-07-17", "value": 17.46}, {"date": "2025-07-18", "value": 16.77}, {"date": "2025-07-21", "value": 16.68}, {"date": "2025-07-22", "value": 16.01}]</script>
+      </div>
+      <noscript>
+        <img src="./score-history.svg?v=453c81d5a4" alt="Composite score history chart">
+      </noscript>
+    </div>
+    
     </section>
 
     <section class="chart-section">
       <h2>Latest component scores</h2>
-      <img src="./component-scores.svg" alt="Bar chart of the latest component scores">
+      <img src="./component-scores.svg?v=6d4cfa5a17" alt="Bar chart of the latest component scores">
     </section>
 
     <section>
@@ -73,7 +89,7 @@
           <article class="metric-card">
             <h3>Inflation expectations pressure</h3>
             <p class="metric-score">28.20<span>/100</span></p>
-            <p class="metric-meta">2.47% level, -1.00 bp vs 5 sessions 60% level + 40% change</p>
+            <p class="metric-meta">2.47% level, -6.00 bp vs 5 sessions 60% level + 40% change</p>
             <p class="metric-meta">Latest: 2.47 on 2025-07-22</p>
             <p>Inflation pressure reflects both the breakeven level and any fresh 5-session rise.</p>
           </article>
@@ -81,7 +97,7 @@
           <article class="metric-card">
             <h3>2Y Treasury rate pressure</h3>
             <p class="metric-score">22.13<span>/100</span></p>
-            <p class="metric-meta">3.83% level, -12.00 bp vs 5 sessions 60% level + 40% change</p>
+            <p class="metric-meta">3.83% level, -8.00 bp vs 5 sessions 60% level + 40% change</p>
             <p class="metric-meta">Latest: 3.83 on 2025-07-22</p>
             <p>Rates pressure reflects both the current 2Y level and any fresh 5-session rise.</p>
           </article>
