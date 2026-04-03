@@ -14,7 +14,7 @@
     },
     "rates": {
       "label": "2Y Treasury rate pressure",
-      "raw": "3.88% level, +0.00 bp vs 5 sessions",
+      "raw": "3.88% level, -3.00 bp vs 5 sessions",
       "unit": "60% level + 40% change",
       "score": 23.47,
       "latest_value": 3.88,
@@ -23,7 +23,7 @@
     },
     "inflation": {
       "label": "Inflation expectations pressure",
-      "raw": "2.44% level, -5.00 bp vs 5 sessions",
+      "raw": "2.44% level, -9.00 bp vs 5 sessions",
       "unit": "60% level + 40% change",
       "score": 26.4,
       "latest_value": 2.44,
