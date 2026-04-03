@@ -1,16 +1,18 @@
 {
   "date": "2026-02-23",
-  "score": 17.31,
+  "score": 17.25,
   "regime": "LOW",
   "drivers": {
     "equity": {
-      "label": "S&P 500 equity pressure",
-      "raw": 0.0,
-      "unit": "% 5-session drop",
-      "score": 0.0,
+      "label": "S&P 500 equity signal",
+      "raw": "+0.02% vs 5 sessions | pressure 0.00 | relief 0.46",
+      "unit": "signed 5-session move",
+      "score": -0.23,
+      "pressure_score": 0.0,
+      "relief_score": 0.46,
       "latest_value": 6837.75,
       "latest_date": "2026-02-23",
-      "note": "Bigger equity drawdowns imply more stress."
+      "note": "A 5-session drawdown adds pressure. A 5-session rally adds relief and can partially offset the composite score."
     },
     "rates": {
       "label": "2Y Treasury rate pressure",
@@ -40,7 +42,7 @@
       "note": "Higher implied volatility usually means greater market stress."
     }
   },
-  "title": "2026-02-23 TACO Pressure Index Update: Low at 17.31",
-  "description": "Fresh macro pressure read for 2026-02-23: the TACO Pressure Index closed at 17.31/100, signaling a low pressure regime as volatility and inflation expectations shaped the daily read. Explore the score history, daily post, and the four-factor dashboard.",
-  "hero_summary": "The index is designed to approximate how market stress can build pressure for a softer policy posture. On 2026-02-23, the score printed 17.31/100 in the low regime, with volatility and inflation expectations doing most of the work."
+  "title": "2026-02-23 TACO Pressure Index Update: Low at 17.25",
+  "description": "Fresh macro pressure read for 2026-02-23: the TACO Pressure Index closed at 17.25/100, signaling a low pressure regime as volatility and inflation expectations shaped the daily read. Explore the score history, daily post, and the four-factor dashboard.",
+  "hero_summary": "The index is designed to approximate how market stress can build pressure for a softer policy posture. On 2026-02-23, the score printed 17.25/100 in the low regime, with volatility and inflation expectations doing most of the work."
 }

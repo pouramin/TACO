@@ -1,16 +1,18 @@
 {
   "date": "2026-02-13",
-  "score": 25.11,
+  "score": 25.1,
   "regime": "ELEVATED",
   "drivers": {
     "equity": {
-      "label": "S&P 500 equity pressure",
-      "raw": 1.39,
-      "unit": "% 5-session drop",
+      "label": "S&P 500 equity signal",
+      "raw": "-1.39% vs 5 sessions | pressure 27.73 | relief 0.00",
+      "unit": "signed 5-session move",
       "score": 27.73,
+      "pressure_score": 27.73,
+      "relief_score": 0.0,
       "latest_value": 6836.169921875,
       "latest_date": "2026-02-13",
-      "note": "Bigger equity drawdowns imply more stress."
+      "note": "A 5-session drawdown adds pressure. A 5-session rally adds relief and can partially offset the composite score."
     },
     "rates": {
       "label": "2Y Treasury rate pressure",
@@ -40,7 +42,7 @@
       "note": "Higher implied volatility usually means greater market stress."
     }
   },
-  "title": "2026-02-13 TACO Pressure Index Update: Elevated at 25.11",
-  "description": "Policy pressure tracker for 2026-02-13: the TACO Pressure Index closed at 25.11/100, signaling a elevated pressure regime as volatility and equity stress shaped the daily read. See the chart pack, score regime, and what drove the latest reading.",
-  "hero_summary": "This custom framework combines equities, front-end rates, inflation expectations, and volatility into one daily score. On 2026-02-13, the score printed 25.11/100 in the elevated regime, with volatility and equity stress doing most of the work."
+  "title": "2026-02-13 TACO Pressure Index Update: Elevated at 25.10",
+  "description": "Policy pressure tracker for 2026-02-13: the TACO Pressure Index closed at 25.10/100, signaling a elevated pressure regime as volatility and equity signal shaped the daily read. See the chart pack, score regime, and what drove the latest reading.",
+  "hero_summary": "This custom framework combines equities, front-end rates, inflation expectations, and volatility into one daily score. On 2026-02-13, the score printed 25.10/100 in the elevated regime, with volatility and equity signal doing most of the work."
 }

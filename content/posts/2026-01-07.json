@@ -1,16 +1,18 @@
 {
   "date": "2026-01-07",
-  "score": 14.49,
+  "score": 13.59,
   "regime": "LOW",
   "drivers": {
     "equity": {
-      "label": "S&P 500 equity pressure",
-      "raw": 0.0,
-      "unit": "% 5-session drop",
-      "score": 0.0,
+      "label": "S&P 500 equity signal",
+      "raw": "+0.36% vs 5 sessions | pressure 0.00 | relief 7.16",
+      "unit": "signed 5-session move",
+      "score": -3.58,
+      "pressure_score": 0.0,
+      "relief_score": 7.16,
       "latest_value": 6920.93017578125,
       "latest_date": "2026-01-07",
-      "note": "Bigger equity drawdowns imply more stress."
+      "note": "A 5-session drawdown adds pressure. A 5-session rally adds relief and can partially offset the composite score."
     },
     "rates": {
       "label": "2Y Treasury rate pressure",
@@ -40,7 +42,7 @@
       "note": "Higher implied volatility usually means greater market stress."
     }
   },
-  "title": "2026-01-07 TACO Pressure Index Update: Low at 14.49",
-  "description": "Fresh macro pressure read for 2026-01-07: the TACO Pressure Index closed at 14.49/100, signaling a low pressure regime as inflation expectations and front-end rate pressure shaped the daily read. Includes charts, a component breakdown, and a narrative summary.",
-  "hero_summary": "The daily signal helps separate noise from persistent multi-factor stress. On 2026-01-07, the score printed 14.49/100 in the low regime, with inflation expectations and front-end rate pressure doing most of the work."
+  "title": "2026-01-07 TACO Pressure Index Update: Low at 13.59",
+  "description": "Fresh macro pressure read for 2026-01-07: the TACO Pressure Index closed at 13.59/100, signaling a low pressure regime as inflation expectations and front-end rate pressure shaped the daily read. Includes charts, a component breakdown, and a narrative summary.",
+  "hero_summary": "The daily signal helps separate noise from persistent multi-factor stress. On 2026-01-07, the score printed 13.59/100 in the low regime, with inflation expectations and front-end rate pressure doing most of the work."
 }

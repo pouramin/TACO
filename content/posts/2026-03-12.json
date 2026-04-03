@@ -4,13 +4,15 @@
   "regime": "HIGH",
   "drivers": {
     "equity": {
-      "label": "S&P 500 equity pressure",
-      "raw": 2.31,
-      "unit": "% 5-session drop",
+      "label": "S&P 500 equity signal",
+      "raw": "-2.31% vs 5 sessions | pressure 46.29 | relief 0.00",
+      "unit": "signed 5-session move",
       "score": 46.29,
+      "pressure_score": 46.29,
+      "relief_score": 0.0,
       "latest_value": 6672.6201171875,
       "latest_date": "2026-03-12",
-      "note": "Bigger equity drawdowns imply more stress."
+      "note": "A 5-session drawdown adds pressure. A 5-session rally adds relief and can partially offset the composite score."
     },
     "rates": {
       "label": "2Y Treasury rate pressure",

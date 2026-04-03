@@ -4,13 +4,15 @@
   "regime": "LOW",
   "drivers": {
     "equity": {
-      "label": "S&P 500 equity pressure",
-      "raw": 0.34,
-      "unit": "% 5-session drop",
+      "label": "S&P 500 equity signal",
+      "raw": "-0.34% vs 5 sessions | pressure 6.75 | relief 0.00",
+      "unit": "signed 5-session move",
       "score": 6.75,
+      "pressure_score": 6.75,
+      "relief_score": 0.0,
       "latest_value": 6851.97021484375,
       "latest_date": "2025-11-03",
-      "note": "Bigger equity drawdowns imply more stress."
+      "note": "A 5-session drawdown adds pressure. A 5-session rally adds relief and can partially offset the composite score."
     },
     "rates": {
       "label": "2Y Treasury rate pressure",

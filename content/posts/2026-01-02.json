@@ -4,13 +4,15 @@
   "regime": "LOW",
   "drivers": {
     "equity": {
-      "label": "S&P 500 equity pressure",
-      "raw": 1.06,
-      "unit": "% 5-session drop",
+      "label": "S&P 500 equity signal",
+      "raw": "-1.06% vs 5 sessions | pressure 21.23 | relief 0.00",
+      "unit": "signed 5-session move",
       "score": 21.23,
+      "pressure_score": 21.23,
+      "relief_score": 0.0,
       "latest_value": 6858.47021484375,
       "latest_date": "2026-01-02",
-      "note": "Bigger equity drawdowns imply more stress."
+      "note": "A 5-session drawdown adds pressure. A 5-session rally adds relief and can partially offset the composite score."
     },
     "rates": {
       "label": "2Y Treasury rate pressure",
@@ -41,6 +43,6 @@
     }
   },
   "title": "2026-01-02 TACO Pressure Index Update: Low at 17.52",
-  "description": "Policy pressure tracker for 2026-01-02: the TACO Pressure Index closed at 17.52/100, signaling a low pressure regime as inflation expectations and equity stress shaped the daily read. Read the charts, latest moves, and a concise market interpretation.",
-  "hero_summary": "The index is designed to approximate how market stress can build pressure for a softer policy posture. On 2026-01-02, the score printed 17.52/100 in the low regime, with inflation expectations and equity stress doing most of the work."
+  "description": "Policy pressure tracker for 2026-01-02: the TACO Pressure Index closed at 17.52/100, signaling a low pressure regime as inflation expectations and equity signal shaped the daily read. Read the charts, latest moves, and a concise market interpretation.",
+  "hero_summary": "The index is designed to approximate how market stress can build pressure for a softer policy posture. On 2026-01-02, the score printed 17.52/100 in the low regime, with inflation expectations and equity signal doing most of the work."
 }

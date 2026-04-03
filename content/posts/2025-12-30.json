@@ -1,16 +1,18 @@
 {
   "date": "2025-12-30",
-  "score": 9.16,
+  "score": 8.51,
   "regime": "LOW",
   "drivers": {
     "equity": {
-      "label": "S&P 500 equity pressure",
-      "raw": 0.0,
-      "unit": "% 5-session drop",
-      "score": 0.0,
+      "label": "S&P 500 equity signal",
+      "raw": "+0.26% vs 5 sessions | pressure 0.00 | relief 5.16",
+      "unit": "signed 5-session move",
+      "score": -2.58,
+      "pressure_score": 0.0,
+      "relief_score": 5.16,
       "latest_value": 6896.240234375,
       "latest_date": "2025-12-30",
-      "note": "Bigger equity drawdowns imply more stress."
+      "note": "A 5-session drawdown adds pressure. A 5-session rally adds relief and can partially offset the composite score."
     },
     "rates": {
       "label": "2Y Treasury rate pressure",
@@ -40,7 +42,7 @@
       "note": "Higher implied volatility usually means greater market stress."
     }
   },
-  "title": "2025-12-30 TACO Pressure Index Update: Low at 9.16",
-  "description": "New daily signal for 2025-12-30: the TACO Pressure Index closed at 9.16/100, signaling a low pressure regime as inflation expectations and front-end rate pressure shaped the daily read. Read the charts, latest moves, and a concise market interpretation.",
-  "hero_summary": "The daily signal helps separate noise from persistent multi-factor stress. On 2025-12-30, the score printed 9.16/100 in the low regime, with inflation expectations and front-end rate pressure doing most of the work."
+  "title": "2025-12-30 TACO Pressure Index Update: Low at 8.51",
+  "description": "New daily signal for 2025-12-30: the TACO Pressure Index closed at 8.51/100, signaling a low pressure regime as inflation expectations and front-end rate pressure shaped the daily read. Read the charts, latest moves, and a concise market interpretation.",
+  "hero_summary": "The daily signal helps separate noise from persistent multi-factor stress. On 2025-12-30, the score printed 8.51/100 in the low regime, with inflation expectations and front-end rate pressure doing most of the work."
 }

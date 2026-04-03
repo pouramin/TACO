@@ -1,16 +1,18 @@
 {
   "date": "2026-02-02",
-  "score": 18.98,
+  "score": 18.04,
   "regime": "LOW",
   "drivers": {
     "equity": {
-      "label": "S&P 500 equity pressure",
-      "raw": 0.0,
-      "unit": "% 5-session drop",
-      "score": 0.0,
+      "label": "S&P 500 equity signal",
+      "raw": "+0.38% vs 5 sessions | pressure 0.00 | relief 7.54",
+      "unit": "signed 5-session move",
+      "score": -3.77,
+      "pressure_score": 0.0,
+      "relief_score": 7.54,
       "latest_value": 6976.43994140625,
       "latest_date": "2026-02-02",
-      "note": "Bigger equity drawdowns imply more stress."
+      "note": "A 5-session drawdown adds pressure. A 5-session rally adds relief and can partially offset the composite score."
     },
     "rates": {
       "label": "2Y Treasury rate pressure",
@@ -40,7 +42,7 @@
       "note": "Higher implied volatility usually means greater market stress."
     }
   },
-  "title": "2026-02-02 TACO Pressure Index Update: Low at 18.98",
-  "description": "Today’s retreat-pressure snapshot for 2026-02-02: the TACO Pressure Index closed at 18.98/100, signaling a low pressure regime as inflation expectations and front-end rate pressure shaped the daily read. Explore the score history, daily post, and the four-factor dashboard.",
-  "hero_summary": "The index is designed to approximate how market stress can build pressure for a softer policy posture. On 2026-02-02, the score printed 18.98/100 in the low regime, with inflation expectations and front-end rate pressure doing most of the work."
+  "title": "2026-02-02 TACO Pressure Index Update: Low at 18.04",
+  "description": "Today’s retreat-pressure snapshot for 2026-02-02: the TACO Pressure Index closed at 18.04/100, signaling a low pressure regime as inflation expectations and front-end rate pressure shaped the daily read. Explore the score history, daily post, and the four-factor dashboard.",
+  "hero_summary": "The index is designed to approximate how market stress can build pressure for a softer policy posture. On 2026-02-02, the score printed 18.04/100 in the low regime, with inflation expectations and front-end rate pressure doing most of the work."
 }

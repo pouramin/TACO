@@ -1,16 +1,18 @@
 {
   "date": "2025-08-22",
-  "score": 16.42,
+  "score": 15.76,
   "regime": "LOW",
   "drivers": {
     "equity": {
-      "label": "S&P 500 equity pressure",
-      "raw": 0.0,
-      "unit": "% 5-session drop",
-      "score": 0.0,
+      "label": "S&P 500 equity signal",
+      "raw": "+0.27% vs 5 sessions | pressure 0.00 | relief 5.31",
+      "unit": "signed 5-session move",
+      "score": -2.65,
+      "pressure_score": 0.0,
+      "relief_score": 5.31,
       "latest_value": 6466.91015625,
       "latest_date": "2025-08-22",
-      "note": "Bigger equity drawdowns imply more stress."
+      "note": "A 5-session drawdown adds pressure. A 5-session rally adds relief and can partially offset the composite score."
     },
     "rates": {
       "label": "2Y Treasury rate pressure",
@@ -40,7 +42,7 @@
       "note": "Higher implied volatility usually means greater market stress."
     }
   },
-  "title": "2025-08-22 TACO Pressure Index Update: Low at 16.42",
-  "description": "Policy pressure tracker for 2025-08-22: the TACO Pressure Index closed at 16.42/100, signaling a low pressure regime as inflation expectations and front-end rate pressure shaped the daily read. See the chart pack, score regime, and what drove the latest reading.",
-  "hero_summary": "It is not a forecast of policy decisions; it is a structured way to monitor pressure building across markets. On 2025-08-22, the score printed 16.42/100 in the low regime, with inflation expectations and front-end rate pressure doing most of the work."
+  "title": "2025-08-22 TACO Pressure Index Update: Low at 15.76",
+  "description": "Policy pressure tracker for 2025-08-22: the TACO Pressure Index closed at 15.76/100, signaling a low pressure regime as inflation expectations and front-end rate pressure shaped the daily read. See the chart pack, score regime, and what drove the latest reading.",
+  "hero_summary": "It is not a forecast of policy decisions; it is a structured way to monitor pressure building across markets. On 2025-08-22, the score printed 15.76/100 in the low regime, with inflation expectations and front-end rate pressure doing most of the work."
 }

@@ -1,16 +1,18 @@
 {
   "date": "2026-01-14",
-  "score": 18.3,
+  "score": 18.09,
   "regime": "LOW",
   "drivers": {
     "equity": {
-      "label": "S&P 500 equity pressure",
-      "raw": 0.0,
-      "unit": "% 5-session drop",
-      "score": 0.0,
+      "label": "S&P 500 equity signal",
+      "raw": "+0.08% vs 5 sessions | pressure 0.00 | relief 1.64",
+      "unit": "signed 5-session move",
+      "score": -0.82,
+      "pressure_score": 0.0,
+      "relief_score": 1.64,
       "latest_value": 6926.60009765625,
       "latest_date": "2026-01-14",
-      "note": "Bigger equity drawdowns imply more stress."
+      "note": "A 5-session drawdown adds pressure. A 5-session rally adds relief and can partially offset the composite score."
     },
     "rates": {
       "label": "2Y Treasury rate pressure",
@@ -40,7 +42,7 @@
       "note": "Higher implied volatility usually means greater market stress."
     }
   },
-  "title": "2026-01-14 TACO Pressure Index Update: Low at 18.30",
-  "description": "Policy pressure tracker for 2026-01-14: the TACO Pressure Index closed at 18.30/100, signaling a low pressure regime as inflation expectations and front-end rate pressure shaped the daily read. Includes charts, a component breakdown, and a narrative summary.",
-  "hero_summary": "The daily signal helps separate noise from persistent multi-factor stress. On 2026-01-14, the score printed 18.30/100 in the low regime, with inflation expectations and front-end rate pressure doing most of the work."
+  "title": "2026-01-14 TACO Pressure Index Update: Low at 18.09",
+  "description": "Policy pressure tracker for 2026-01-14: the TACO Pressure Index closed at 18.09/100, signaling a low pressure regime as inflation expectations and front-end rate pressure shaped the daily read. Includes charts, a component breakdown, and a narrative summary.",
+  "hero_summary": "The daily signal helps separate noise from persistent multi-factor stress. On 2026-01-14, the score printed 18.09/100 in the low regime, with inflation expectations and front-end rate pressure doing most of the work."
 }

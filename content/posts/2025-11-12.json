@@ -1,16 +1,18 @@
 {
   "date": "2025-11-12",
-  "score": 13.47,
+  "score": 10.54,
   "regime": "LOW",
   "drivers": {
     "equity": {
-      "label": "S&P 500 equity pressure",
-      "raw": 0.0,
-      "unit": "% 5-session drop",
-      "score": 0.0,
+      "label": "S&P 500 equity signal",
+      "raw": "+1.17% vs 5 sessions | pressure 0.00 | relief 23.44",
+      "unit": "signed 5-session move",
+      "score": -11.72,
+      "pressure_score": 0.0,
+      "relief_score": 23.44,
       "latest_value": 6850.919921875,
       "latest_date": "2025-11-12",
-      "note": "Bigger equity drawdowns imply more stress."
+      "note": "A 5-session drawdown adds pressure. A 5-session rally adds relief and can partially offset the composite score."
     },
     "rates": {
       "label": "2Y Treasury rate pressure",
@@ -40,7 +42,7 @@
       "note": "Higher implied volatility usually means greater market stress."
     }
   },
-  "title": "2025-11-12 TACO Pressure Index Update: Low at 13.47",
-  "description": "Policy pressure tracker for 2025-11-12: the TACO Pressure Index closed at 13.47/100, signaling a low pressure regime as inflation expectations and volatility shaped the daily read. See the chart pack, score regime, and what drove the latest reading.",
-  "hero_summary": "The daily signal helps separate noise from persistent multi-factor stress. On 2025-11-12, the score printed 13.47/100 in the low regime, with inflation expectations and volatility doing most of the work."
+  "title": "2025-11-12 TACO Pressure Index Update: Low at 10.54",
+  "description": "Policy pressure tracker for 2025-11-12: the TACO Pressure Index closed at 10.54/100, signaling a low pressure regime as inflation expectations and volatility shaped the daily read. A positive 5-session S&P move also added equity relief. See the chart pack, score regime, and what drove the latest reading.",
+  "hero_summary": "The daily signal helps separate noise from persistent multi-factor stress. On 2025-11-12, the score printed 10.54/100 in the low regime, with inflation expectations and volatility doing most of the work. Equities also provided visible relief through a positive 5-session move."
 }

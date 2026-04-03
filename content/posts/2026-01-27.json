@@ -1,16 +1,18 @@
 {
   "date": "2026-01-27",
-  "score": 17.39,
+  "score": 10.71,
   "regime": "LOW",
   "drivers": {
     "equity": {
-      "label": "S&P 500 equity pressure",
-      "raw": 0.0,
-      "unit": "% 5-session drop",
-      "score": 0.0,
+      "label": "S&P 500 equity signal",
+      "raw": "+2.67% vs 5 sessions | pressure 0.00 | relief 53.48",
+      "unit": "signed 5-session move",
+      "score": -26.74,
+      "pressure_score": 0.0,
+      "relief_score": 53.48,
       "latest_value": 6978.60009765625,
       "latest_date": "2026-01-27",
-      "note": "Bigger equity drawdowns imply more stress."
+      "note": "A 5-session drawdown adds pressure. A 5-session rally adds relief and can partially offset the composite score."
     },
     "rates": {
       "label": "2Y Treasury rate pressure",
@@ -40,7 +42,7 @@
       "note": "Higher implied volatility usually means greater market stress."
     }
   },
-  "title": "2026-01-27 TACO Pressure Index Update: Low at 17.39",
-  "description": "Automated market-pressure update for 2026-01-27: the TACO Pressure Index closed at 17.39/100, signaling a low pressure regime as inflation expectations and front-end rate pressure shaped the daily read. See the chart pack, score regime, and what drove the latest reading.",
-  "hero_summary": "It is not a forecast of policy decisions; it is a structured way to monitor pressure building across markets. On 2026-01-27, the score printed 17.39/100 in the low regime, with inflation expectations and front-end rate pressure doing most of the work."
+  "title": "2026-01-27 TACO Pressure Index Update: Low at 10.71",
+  "description": "Automated market-pressure update for 2026-01-27: the TACO Pressure Index closed at 10.71/100, signaling a low pressure regime as inflation expectations and front-end rate pressure shaped the daily read. A positive 5-session S&P move also added equity relief. See the chart pack, score regime, and what drove the latest reading.",
+  "hero_summary": "It is not a forecast of policy decisions; it is a structured way to monitor pressure building across markets. On 2026-01-27, the score printed 10.71/100 in the low regime, with inflation expectations and front-end rate pressure doing most of the work. Equities also provided visible relief through a positive 5-session move."
 }
