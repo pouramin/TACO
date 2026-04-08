@@ -1,7 +1,7 @@
 [
   {
-    "date": "2025-07-21",
-    "score": 16.55,
+    "date": "2025-07-22",
+    "score": 16.01,
     "regime": "LOW",
     "drivers": {
       "equity": {
@@ -11,64 +11,13 @@
         "score": 0.0,
         "pressure_score": 0.0,
         "relief_score": 0.0,
-        "latest_value": 6305.60009765625,
-        "latest_date": "2025-07-21",
-        "note": "A 5-session drawdown adds pressure. A 5-session rally adds relief and can partially offset the composite score."
-      },
-      "rates": {
-        "label": "2Y Treasury rate pressure",
-        "raw": "3.85% level, +0.00 bp vs 5 sessions",
-        "unit": "60% level + 40% change",
-        "score": 22.67,
-        "latest_value": 3.85,
-        "latest_date": "2025-07-21",
-        "note": "Rates pressure reflects both the current 2Y level and any fresh 5-session rise."
-      },
-      "inflation": {
-        "label": "Inflation expectations pressure",
-        "raw": "2.49% level, +0.00 bp vs 5 sessions",
-        "unit": "60% level + 40% change",
-        "score": 29.4,
-        "latest_value": 2.49,
-        "latest_date": "2025-07-21",
-        "note": "Inflation pressure reflects both the breakeven level and any fresh 5-session rise."
-      },
-      "volatility": {
-        "label": "VIX volatility pressure",
-        "raw": 16.65,
-        "unit": "index level",
-        "score": 14.15,
-        "latest_value": 16.65,
-        "latest_date": "2025-07-21",
-        "note": "Higher implied volatility usually means greater market stress."
-      }
-    },
-    "inputs": {
-      "sp500": 6305.60009765625,
-      "dgs2": 3.85,
-      "t5yie": 2.49,
-      "vix": 16.65
-    }
-  },
-  {
-    "date": "2025-07-22",
-    "score": 15.85,
-    "regime": "LOW",
-    "drivers": {
-      "equity": {
-        "label": "S&P 500 equity signal",
-        "raw": "+0.06% vs 5 sessions | pressure 0.00 | relief 1.28",
-        "unit": "signed 5-session move",
-        "score": -0.64,
-        "pressure_score": 0.0,
-        "relief_score": 1.28,
         "latest_value": 6309.6201171875,
         "latest_date": "2025-07-22",
         "note": "A 5-session drawdown adds pressure. A 5-session rally adds relief and can partially offset the composite score."
       },
       "rates": {
         "label": "2Y Treasury rate pressure",
-        "raw": "3.83% level, -2.00 bp vs 5 sessions",
+        "raw": "3.83% level, +0.00 bp vs 5 sessions",
         "unit": "60% level + 40% change",
         "score": 22.13,
         "latest_value": 3.83,
@@ -77,7 +26,7 @@
       },
       "inflation": {
         "label": "Inflation expectations pressure",
-        "raw": "2.47% level, -2.00 bp vs 5 sessions",
+        "raw": "2.47% level, +0.00 bp vs 5 sessions",
         "unit": "60% level + 40% change",
         "score": 28.2,
         "latest_value": 2.4699999999999998,
@@ -103,32 +52,32 @@
   },
   {
     "date": "2025-07-23",
-    "score": 14.12,
+    "score": 15.08,
     "regime": "LOW",
     "drivers": {
       "equity": {
         "label": "S&P 500 equity signal",
-        "raw": "+0.85% vs 5 sessions | pressure 0.00 | relief 16.91",
+        "raw": "+0.78% vs 5 sessions | pressure 0.00 | relief 15.62",
         "unit": "signed 5-session move",
-        "score": -8.45,
+        "score": -7.81,
         "pressure_score": 0.0,
-        "relief_score": 16.91,
+        "relief_score": 15.62,
         "latest_value": 6358.91015625,
         "latest_date": "2025-07-23",
         "note": "A 5-session drawdown adds pressure. A 5-session rally adds relief and can partially offset the composite score."
       },
       "rates": {
         "label": "2Y Treasury rate pressure",
-        "raw": "3.88% level, +3.00 bp vs 5 sessions",
+        "raw": "3.88% level, +5.00 bp vs 5 sessions",
         "unit": "60% level + 40% change",
-        "score": 28.27,
+        "score": 31.47,
         "latest_value": 3.88,
         "latest_date": "2025-07-23",
         "note": "Rates pressure reflects both the current 2Y level and any fresh 5-session rise."
       },
       "inflation": {
         "label": "Inflation expectations pressure",
-        "raw": "2.44% level, -5.00 bp vs 5 sessions",
+        "raw": "2.44% level, -3.00 bp vs 5 sessions",
         "unit": "60% level + 40% change",
         "score": 26.4,
         "latest_value": 2.44,
@@ -154,34 +103,34 @@
   },
   {
     "date": "2025-07-24",
-    "score": 16.76,
+    "score": 18.72,
     "regime": "LOW",
     "drivers": {
       "equity": {
         "label": "S&P 500 equity signal",
-        "raw": "+0.92% vs 5 sessions | pressure 0.00 | relief 18.32",
+        "raw": "+0.85% vs 5 sessions | pressure 0.00 | relief 17.03",
         "unit": "signed 5-session move",
-        "score": -9.16,
+        "score": -8.52,
         "pressure_score": 0.0,
-        "relief_score": 18.32,
+        "relief_score": 17.03,
         "latest_value": 6363.35009765625,
         "latest_date": "2025-07-24",
         "note": "A 5-session drawdown adds pressure. A 5-session rally adds relief and can partially offset the composite score."
       },
       "rates": {
         "label": "2Y Treasury rate pressure",
-        "raw": "3.91% level, +6.00 bp vs 5 sessions",
+        "raw": "3.91% level, +8.00 bp vs 5 sessions",
         "unit": "60% level + 40% change",
-        "score": 33.87,
+        "score": 37.07,
         "latest_value": 3.91,
         "latest_date": "2025-07-24",
         "note": "Rates pressure reflects both the current 2Y level and any fresh 5-session rise."
       },
       "inflation": {
         "label": "Inflation expectations pressure",
-        "raw": "2.50% level, +1.00 bp vs 5 sessions",
+        "raw": "2.50% level, +3.00 bp vs 5 sessions",
         "unit": "60% level + 40% change",
-        "score": 32.0,
+        "score": 36.0,
         "latest_value": 2.5,
         "latest_date": "2025-07-24",
         "note": "Inflation pressure reflects both the breakeven level and any fresh 5-session rise."
@@ -205,32 +154,32 @@
   },
   {
     "date": "2025-07-25",
-    "score": 14.45,
+    "score": 15.42,
     "regime": "LOW",
     "drivers": {
       "equity": {
         "label": "S&P 500 equity signal",
-        "raw": "+1.32% vs 5 sessions | pressure 0.00 | relief 26.34",
+        "raw": "+1.25% vs 5 sessions | pressure 0.00 | relief 25.05",
         "unit": "signed 5-session move",
-        "score": -13.17,
+        "score": -12.52,
         "pressure_score": 0.0,
-        "relief_score": 26.34,
+        "relief_score": 25.05,
         "latest_value": 6388.64013671875,
         "latest_date": "2025-07-25",
         "note": "A 5-session drawdown adds pressure. A 5-session rally adds relief and can partially offset the composite score."
       },
       "rates": {
         "label": "2Y Treasury rate pressure",
-        "raw": "3.91% level, +6.00 bp vs 5 sessions",
+        "raw": "3.91% level, +8.00 bp vs 5 sessions",
         "unit": "60% level + 40% change",
-        "score": 33.87,
+        "score": 37.07,
         "latest_value": 3.91,
         "latest_date": "2025-07-25",
         "note": "Rates pressure reflects both the current 2Y level and any fresh 5-session rise."
       },
       "inflation": {
         "label": "Inflation expectations pressure",
-        "raw": "2.47% level, -2.00 bp vs 5 sessions",
+        "raw": "2.47% level, +0.00 bp vs 5 sessions",
         "unit": "60% level + 40% change",
         "score": 28.2,
         "latest_value": 2.47,
@@ -256,32 +205,32 @@
   },
   {
     "date": "2025-07-28",
-    "score": 14.48,
+    "score": 15.45,
     "regime": "LOW",
     "drivers": {
       "equity": {
         "label": "S&P 500 equity signal",
-        "raw": "+1.33% vs 5 sessions | pressure 0.00 | relief 26.70",
+        "raw": "+1.27% vs 5 sessions | pressure 0.00 | relief 25.41",
         "unit": "signed 5-session move",
-        "score": -13.35,
+        "score": -12.7,
         "pressure_score": 0.0,
-        "relief_score": 26.7,
+        "relief_score": 25.41,
         "latest_value": 6389.77001953125,
         "latest_date": "2025-07-28",
         "note": "A 5-session drawdown adds pressure. A 5-session rally adds relief and can partially offset the composite score."
       },
       "rates": {
         "label": "2Y Treasury rate pressure",
-        "raw": "3.91% level, +6.00 bp vs 5 sessions",
+        "raw": "3.91% level, +8.00 bp vs 5 sessions",
         "unit": "60% level + 40% change",
-        "score": 33.87,
+        "score": 37.07,
         "latest_value": 3.91,
         "latest_date": "2025-07-28",
         "note": "Rates pressure reflects both the current 2Y level and any fresh 5-session rise."
       },
       "inflation": {
         "label": "Inflation expectations pressure",
-        "raw": "2.47% level, -2.00 bp vs 5 sessions",
+        "raw": "2.47% level, +0.00 bp vs 5 sessions",
         "unit": "60% level + 40% change",
         "score": 28.2,
         "latest_value": 2.4699999999999998,
