@@ -1,15 +1,15 @@
 {
   "date": "2025-07-29",
-  "score": 16.22,
+  "score": 18.84,
   "regime": "LOW",
   "drivers": {
     "equity": {
       "label": "S&P 500 equity signal",
-      "raw": "+0.12% vs 5 sessions | pressure 0.00 | relief 2.36",
+      "raw": "-0.28% vs 5 sessions | pressure 5.57 | relief 0.00",
       "unit": "signed 5-session move",
-      "score": -1.18,
-      "pressure_score": 0.0,
-      "relief_score": 2.36,
+      "score": 5.57,
+      "pressure_score": 5.57,
+      "relief_score": 0.0,
       "latest_value": 6370.85986328125,
       "latest_date": "2025-07-29",
       "note": "A 5-session drawdown adds pressure. A 5-session rally adds relief and can partially offset the composite score."
@@ -25,9 +25,9 @@
     },
     "inflation": {
       "label": "Inflation expectations pressure",
-      "raw": "2.48% level, -2.00 bp vs 5 sessions",
+      "raw": "2.48% level, +1.00 bp vs 5 sessions",
       "unit": "60% level + 40% change",
-      "score": 28.8,
+      "score": 30.8,
       "latest_value": 2.48,
       "latest_date": "2025-07-29",
       "note": "Inflation pressure reflects both the breakeven level and any fresh 5-session rise."
@@ -36,13 +36,13 @@
       "label": "VIX volatility pressure",
       "raw": 15.98,
       "unit": "index level",
-      "score": 14.33,
+      "score": 16.05,
       "latest_value": 15.98,
       "latest_date": "2025-07-29",
       "note": "Higher implied volatility usually means greater market stress."
     }
   },
-  "title": "2025-07-29 TACO Pressure Index Update: Low at 16.22",
-  "description": "Today’s retreat-pressure snapshot for 2025-07-29: the TACO Pressure Index closed at 16.22/100, signaling a low pressure regime as inflation expectations and front-end rate pressure shaped the daily read. Explore the score history, daily post, and the four-factor dashboard.",
-  "hero_summary": "The daily signal helps separate noise from persistent multi-factor stress. On 2025-07-29, the score printed 16.22/100 in the low regime, with inflation expectations and front-end rate pressure doing most of the work."
+  "title": "2025-07-29 TACO Pressure Index Update: Low at 18.84",
+  "description": "Today’s retreat-pressure snapshot for 2025-07-29: the TACO Pressure Index closed at 18.84/100, signaling a low pressure regime as inflation expectations and front-end rate pressure shaped the daily read. Explore the score history, daily post, and the four-factor dashboard.",
+  "hero_summary": "The daily signal helps separate noise from persistent multi-factor stress. On 2025-07-29, the score printed 18.84/100 in the low regime, with inflation expectations and front-end rate pressure doing most of the work."
 }
