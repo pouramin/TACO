@@ -5,10 +5,10 @@
   "drivers": {
     "equity": {
       "label": "S&P 500 equity signal",
-      "raw": "-0.77% vs 5 sessions | pressure 15.42 | relief 0.00",
+      "raw": "-0.79% vs 5 sessions | pressure 15.77 | relief 0.00",
       "unit": "signed 5-session move",
-      "score": 15.42,
-      "pressure_score": 15.42,
+      "score": 15.77,
+      "pressure_score": 15.77,
       "relief_score": 0.0,
       "latest_value": 6339.39013671875,
       "latest_date": "2025-07-31",
@@ -36,7 +36,7 @@
       "label": "VIX volatility pressure",
       "raw": 16.72,
       "unit": "index level",
-      "score": 21.08,
+      "score": 20.7,
       "latest_value": 16.72,
       "latest_date": "2025-07-31",
       "note": "Higher implied volatility usually means greater market stress."
