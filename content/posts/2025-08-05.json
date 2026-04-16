@@ -1,14 +1,14 @@
 {
   "date": "2025-08-05",
-  "score": 22.78,
+  "score": 22.63,
   "regime": "LOW",
   "drivers": {
     "equity": {
       "label": "S&P 500 equity signal",
-      "raw": "-1.12% vs 5 sessions | pressure 22.50 | relief 0.00",
+      "raw": "-1.00% vs 5 sessions | pressure 20.03 | relief 0.00",
       "unit": "signed 5-session move",
-      "score": 22.5,
-      "pressure_score": 22.5,
+      "score": 20.03,
+      "pressure_score": 20.03,
       "relief_score": 0.0,
       "latest_value": 6299.18994140625,
       "latest_date": "2025-08-05",
@@ -16,7 +16,7 @@
     },
     "rates": {
       "label": "2Y Treasury rate pressure",
-      "raw": "3.72% level, -14.00 bp vs 5 sessions",
+      "raw": "3.72% level, -22.00 bp vs 5 sessions",
       "unit": "60% level + 40% change",
       "score": 19.2,
       "latest_value": 3.72,
@@ -36,13 +36,13 @@
       "label": "VIX volatility pressure",
       "raw": 17.85,
       "unit": "index level",
-      "score": 24.82,
+      "score": 26.69,
       "latest_value": 17.85,
       "latest_date": "2025-08-05",
       "note": "Higher implied volatility usually means greater market stress."
     }
   },
-  "title": "2025-08-05 TACO Pressure Index Update: Low at 22.78",
-  "description": "Today’s retreat-pressure snapshot for 2025-08-05: the TACO Pressure Index closed at 22.78/100, signaling a low pressure regime as volatility and inflation expectations shaped the daily read. See the chart pack, score regime, and what drove the latest reading.",
-  "hero_summary": "This custom framework combines equities, front-end rates, inflation expectations, and volatility into one daily score. On 2025-08-05, the score printed 22.78/100 in the low regime, with volatility and inflation expectations doing most of the work."
+  "title": "2025-08-05 TACO Pressure Index Update: Low at 22.63",
+  "description": "Today’s retreat-pressure snapshot for 2025-08-05: the TACO Pressure Index closed at 22.63/100, signaling a low pressure regime as volatility and inflation expectations shaped the daily read. See the chart pack, score regime, and what drove the latest reading.",
+  "hero_summary": "This custom framework combines equities, front-end rates, inflation expectations, and volatility into one daily score. On 2025-08-05, the score printed 22.63/100 in the low regime, with volatility and inflation expectations doing most of the work."
 }

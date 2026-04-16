@@ -1,22 +1,22 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="960" height="430" viewBox="0 0 960 430" role="img" aria-label="Composite score history">
 <rect width="100%" height="100%" fill="#0b1020" rx="20"/>
 <text x="70" y="32" fill="#f5f7fb" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700">Composite score history</text>
-<text x="70" y="52" fill="#93a4c3" font-family="Inter, Arial, sans-serif" font-size="13">Trailing 36 sessions through 2025-09-17</text>
+<text x="70" y="52" fill="#93a4c3" font-family="Inter, Arial, sans-serif" font-size="13">Trailing 35 sessions through 2025-09-17</text>
 <line x1="70" x2="935" y1="375.00" y2="375.00" stroke="#27314e" stroke-width="1"/>
 <text x="58" y="379.00" text-anchor="end" fill="#93a4c3" font-family="Inter, Arial, sans-serif" font-size="12">8</text>
 <line x1="70" x2="935" y1="312.00" y2="312.00" stroke="#27314e" stroke-width="1"/>
 <text x="58" y="316.00" text-anchor="end" fill="#93a4c3" font-family="Inter, Arial, sans-serif" font-size="12">13</text>
 <line x1="70" x2="935" y1="249.00" y2="249.00" stroke="#27314e" stroke-width="1"/>
-<text x="58" y="253.00" text-anchor="end" fill="#93a4c3" font-family="Inter, Arial, sans-serif" font-size="12">18</text>
+<text x="58" y="253.00" text-anchor="end" fill="#93a4c3" font-family="Inter, Arial, sans-serif" font-size="12">17</text>
 <line x1="70" x2="935" y1="186.00" y2="186.00" stroke="#27314e" stroke-width="1"/>
 <text x="58" y="190.00" text-anchor="end" fill="#93a4c3" font-family="Inter, Arial, sans-serif" font-size="12">22</text>
 <line x1="70" x2="935" y1="123.00" y2="123.00" stroke="#27314e" stroke-width="1"/>
 <text x="58" y="127.00" text-anchor="end" fill="#93a4c3" font-family="Inter, Arial, sans-serif" font-size="12">27</text>
 <line x1="70" x2="935" y1="60.00" y2="60.00" stroke="#27314e" stroke-width="1"/>
 <text x="58" y="64.00" text-anchor="end" fill="#93a4c3" font-family="Inter, Arial, sans-serif" font-size="12">31</text>
-<text x="70.00" y="412" text-anchor="middle" fill="#93a4c3" font-family="Inter, Arial, sans-serif" font-size="12">2025-07-29</text>
-<text x="514.86" y="412" text-anchor="middle" fill="#93a4c3" font-family="Inter, Arial, sans-serif" font-size="12">2025-08-22</text>
+<text x="70.00" y="412" text-anchor="middle" fill="#93a4c3" font-family="Inter, Arial, sans-serif" font-size="12">2025-07-30</text>
+<text x="502.50" y="412" text-anchor="middle" fill="#93a4c3" font-family="Inter, Arial, sans-serif" font-size="12">2025-08-22</text>
 <text x="935.00" y="412" text-anchor="middle" fill="#93a4c3" font-family="Inter, Arial, sans-serif" font-size="12">2025-09-17</text>
-<path d="M 70.00 270.69 L 94.71 215.78 L 119.43 171.90 L 144.14 60.00 L 168.86 220.33 L 193.57 176.59 L 218.29 258.55 L 243.00 292.21 L 267.71 282.56 L 292.43 231.78 L 317.14 373.48 L 341.86 368.38 L 366.57 349.20 L 391.29 335.12 L 416.00 337.19 L 440.71 239.51 L 465.43 171.62 L 490.14 116.57 L 514.86 273.45 L 539.57 234.26 L 564.29 257.31 L 589.00 280.49 L 613.71 343.82 L 638.43 282.28 L 663.14 220.33 L 687.86 252.61 L 712.57 316.08 L 737.29 292.35 L 762.00 346.85 L 786.71 372.52 L 811.43 366.03 L 836.14 375.00 L 860.86 350.58 L 885.57 346.30 L 910.29 344.09 L 935.00 332.50" fill="none" stroke="#69a7ff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-<circle cx="935.00" cy="332.50" r="6" fill="#69a7ff"/>
+<path d="M 70.00 267.83 L 95.44 217.15 L 120.88 60.00 L 146.32 221.60 L 171.76 177.45 L 197.21 257.83 L 222.65 291.70 L 248.09 281.99 L 273.53 230.90 L 298.97 373.47 L 324.41 368.34 L 349.85 349.04 L 375.29 334.88 L 400.74 336.96 L 426.18 238.67 L 451.62 170.37 L 477.06 114.98 L 502.50 272.82 L 527.94 233.40 L 553.38 256.58 L 578.82 279.90 L 604.26 343.62 L 629.71 281.71 L 655.15 219.37 L 680.59 251.86 L 706.03 315.72 L 731.47 291.84 L 756.91 346.68 L 782.35 372.50 L 807.79 365.98 L 833.24 375.00 L 858.68 350.43 L 884.12 346.12 L 909.56 343.90 L 935.00 332.24" fill="none" stroke="#69a7ff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="935.00" cy="332.24" r="6" fill="#69a7ff"/>
 </svg>
