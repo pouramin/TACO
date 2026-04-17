@@ -20,14 +20,14 @@
 <text x="425.00" y="99.50" text-anchor="start" fill="#f5f7fb" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600">24.60</text>
 <text x="232" y="186.50" text-anchor="end" fill="#f5f7fb" font-family="Inter, Arial, sans-serif" font-size="14">VIX volatility pressure</text>
 <rect x="248" y="147.00" width="687.00" height="69.00" rx="10" fill="#121933" stroke="#223154"/>
-<rect x="248" y="147.00" width="167.97" height="69.00" rx="10" fill="#3ad29f"/>
-<text x="423.97" y="186.50" text-anchor="start" fill="#f5f7fb" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600">24.45</text>
+<rect x="248" y="147.00" width="136.03" height="69.00" rx="10" fill="#3ad29f"/>
+<text x="392.03" y="186.50" text-anchor="start" fill="#f5f7fb" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600">19.80</text>
 <text x="232" y="273.50" text-anchor="end" fill="#f5f7fb" font-family="Inter, Arial, sans-serif" font-size="14">2Y Treasury rate pressure</text>
 <rect x="248" y="234.00" width="687.00" height="69.00" rx="10" fill="#121933" stroke="#223154"/>
 <rect x="248" y="234.00" width="126.41" height="69.00" rx="10" fill="#3ad29f"/>
 <text x="382.41" y="273.50" text-anchor="start" fill="#f5f7fb" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600">18.40</text>
 <text x="232" y="360.50" text-anchor="end" fill="#f5f7fb" font-family="Inter, Arial, sans-serif" font-size="14">S&amp;P 500 equity signal</text>
 <rect x="248" y="321.00" width="687.00" height="69.00" rx="10" fill="#121933" stroke="#223154"/>
-<rect x="248" y="321.00" width="71.17" height="69.00" rx="10" fill="#3ad29f"/>
-<text x="327.17" y="360.50" text-anchor="start" fill="#f5f7fb" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600">10.36</text>
+<rect x="248" y="321.00" width="20.47" height="69.00" rx="10" fill="#3ad29f"/>
+<text x="276.47" y="360.50" text-anchor="start" fill="#f5f7fb" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600">2.98</text>
 </svg>

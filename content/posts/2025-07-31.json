@@ -1,14 +1,14 @@
 {
   "date": "2025-07-31",
-  "score": 19.77,
+  "score": 16.76,
   "regime": "LOW",
   "drivers": {
     "equity": {
       "label": "S&P 500 equity signal",
-      "raw": "-0.37% vs 5 sessions | pressure 7.39 | relief 0.00",
+      "raw": "+0.00% vs 5 sessions | pressure 0.00 | relief 0.00",
       "unit": "signed 5-session move",
-      "score": 7.39,
-      "pressure_score": 7.39,
+      "score": 0.0,
+      "pressure_score": 0.0,
       "relief_score": 0.0,
       "latest_value": 6339.39013671875,
       "latest_date": "2025-07-31",
@@ -25,7 +25,7 @@
     },
     "inflation": {
       "label": "Inflation expectations pressure",
-      "raw": "2.46% level, -2.00 bp vs 5 sessions",
+      "raw": "2.46% level, +0.00 bp vs 5 sessions",
       "unit": "60% level + 40% change",
       "score": 27.6,
       "latest_value": 2.46,
@@ -36,13 +36,13 @@
       "label": "VIX volatility pressure",
       "raw": 16.72,
       "unit": "index level",
-      "score": 19.02,
+      "score": 14.37,
       "latest_value": 16.72,
       "latest_date": "2025-07-31",
       "note": "Higher implied volatility usually means greater market stress."
     }
   },
-  "title": "2025-07-31 TACO Pressure Index Update: Low at 19.77",
-  "description": "Today’s retreat-pressure snapshot for 2025-07-31: the TACO Pressure Index closed at 19.77/100, signaling a low pressure regime as inflation expectations and front-end rate pressure shaped the daily read. Includes charts, a component breakdown, and a narrative summary.",
-  "hero_summary": "The index is designed to approximate how market stress can build pressure for a softer policy posture. On 2025-07-31, the score printed 19.77/100 in the low regime, with inflation expectations and front-end rate pressure doing most of the work."
+  "title": "2025-07-31 TACO Pressure Index Update: Low at 16.76",
+  "description": "Today’s retreat-pressure snapshot for 2025-07-31: the TACO Pressure Index closed at 16.76/100, signaling a low pressure regime as inflation expectations and front-end rate pressure shaped the daily read. Includes charts, a component breakdown, and a narrative summary.",
+  "hero_summary": "The index is designed to approximate how market stress can build pressure for a softer policy posture. On 2025-07-31, the score printed 16.76/100 in the low regime, with inflation expectations and front-end rate pressure doing most of the work."
 }
