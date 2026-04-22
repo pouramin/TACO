@@ -1,24 +1,24 @@
 {
   "date": "2025-08-07",
-  "score": 15.23,
+  "score": 12.81,
   "regime": "LOW",
   "drivers": {
     "equity": {
       "label": "S&P 500 equity signal",
-      "raw": "+0.16% vs 5 sessions | pressure 0.00 | relief 3.18",
+      "raw": "+0.65% vs 5 sessions | pressure 0.00 | relief 12.96",
       "unit": "signed 5-session move",
-      "score": -1.59,
+      "score": -6.48,
       "pressure_score": 0.0,
-      "relief_score": 3.18,
+      "relief_score": 12.96,
       "latest_value": 6340.0,
       "latest_date": "2025-08-07",
       "note": "A 5-session drawdown adds pressure. A 5-session rally adds relief and can partially offset the composite score."
     },
     "rates": {
       "label": "2Y Treasury rate pressure",
-      "raw": "3.72% level, +3.00 bp vs 5 sessions",
+      "raw": "3.72% level, +0.00 bp vs 5 sessions",
       "unit": "60% level + 40% change",
-      "score": 24.0,
+      "score": 19.2,
       "latest_value": 3.72,
       "latest_date": "2025-08-07",
       "note": "Rates pressure reflects both the current 2Y level and any fresh 5-session rise."
@@ -42,7 +42,7 @@
       "note": "Higher implied volatility usually means greater market stress."
     }
   },
-  "title": "2025-08-07 TACO Pressure Index Update: Low at 15.23",
-  "description": "Daily pressure check for 2025-08-07: the TACO Pressure Index closed at 15.23/100, signaling a low pressure regime as inflation expectations and front-end rate pressure shaped the daily read. Explore the score history, daily post, and the four-factor dashboard.",
-  "hero_summary": "The daily signal helps separate noise from persistent multi-factor stress. On 2025-08-07, the score printed 15.23/100 in the low regime, with inflation expectations and front-end rate pressure doing most of the work."
+  "title": "2025-08-07 TACO Pressure Index Update: Low at 12.81",
+  "description": "Daily pressure check for 2025-08-07: the TACO Pressure Index closed at 12.81/100, signaling a low pressure regime as inflation expectations and front-end rate pressure shaped the daily read. A positive 5-session S&P move also added equity relief. Explore the score history, daily post, and the four-factor dashboard.",
+  "hero_summary": "The daily signal helps separate noise from persistent multi-factor stress. On 2025-08-07, the score printed 12.81/100 in the low regime, with inflation expectations and front-end rate pressure doing most of the work. Equities also provided visible relief through a positive 5-session move."
 }

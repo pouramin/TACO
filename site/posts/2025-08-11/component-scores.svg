@@ -19,14 +19,14 @@
 <text x="728.66" y="99.50" text-anchor="start" fill="#f5f7fb" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600">37.60</text>
 <text x="232" y="186.50" text-anchor="end" fill="#f5f7fb" font-family="Inter, Arial, sans-serif" font-size="14">2Y Treasury rate pressure</text>
 <rect x="248" y="147.00" width="687.00" height="69.00" rx="10" fill="#121933" stroke="#223154"/>
-<rect x="591.50" y="147.00" width="108.10" height="69.00" rx="10" fill="#ff6a6a" opacity="0.95"/>
-<text x="707.60" y="186.50" text-anchor="start" fill="#f5f7fb" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600">31.47</text>
+<rect x="591.50" y="147.00" width="91.61" height="69.00" rx="10" fill="#ff6a6a" opacity="0.95"/>
+<text x="691.11" y="186.50" text-anchor="start" fill="#f5f7fb" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600">26.67</text>
 <text x="232" y="273.50" text-anchor="end" fill="#f5f7fb" font-family="Inter, Arial, sans-serif" font-size="14">VIX volatility pressure</text>
 <rect x="248" y="234.00" width="687.00" height="69.00" rx="10" fill="#121933" stroke="#223154"/>
 <rect x="591.50" y="234.00" width="44.41" height="69.00" rx="10" fill="#ff6a6a" opacity="0.95"/>
 <text x="643.91" y="273.50" text-anchor="start" fill="#f5f7fb" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600">12.93</text>
 <text x="232" y="360.50" text-anchor="end" fill="#f5f7fb" font-family="Inter, Arial, sans-serif" font-size="14">S&amp;P 500 equity signal</text>
 <rect x="248" y="321.00" width="687.00" height="69.00" rx="10" fill="#121933" stroke="#223154"/>
-<rect x="567.90" y="321.00" width="23.60" height="69.00" rx="10" fill="#3ad29f" opacity="0.95"/>
-<text x="559.90" y="360.50" text-anchor="end" fill="#f5f7fb" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600">-6.87</text>
+<rect x="551.00" y="321.00" width="40.50" height="69.00" rx="10" fill="#3ad29f" opacity="0.95"/>
+<text x="543.00" y="360.50" text-anchor="end" fill="#f5f7fb" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600">-11.79</text>
 </svg>
