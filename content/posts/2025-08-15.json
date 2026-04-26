@@ -1,15 +1,15 @@
 {
   "date": "2025-08-15",
-  "score": 11.29,
+  "score": 10.65,
   "regime": "LOW",
   "drivers": {
     "equity": {
       "label": "S&P 500 equity signal",
-      "raw": "+0.94% vs 5 sessions | pressure 0.00 | relief 18.89",
+      "raw": "+1.20% vs 5 sessions | pressure 0.00 | relief 23.96",
       "unit": "signed 5-session move",
-      "score": -9.45,
+      "score": -11.98,
       "pressure_score": 0.0,
-      "relief_score": 18.89,
+      "relief_score": 23.96,
       "latest_value": 6449.7998046875,
       "latest_date": "2025-08-15",
       "note": "A 5-session drawdown adds pressure. A 5-session rally adds relief and can partially offset the composite score."
@@ -42,7 +42,7 @@
       "note": "Higher implied volatility usually means greater market stress."
     }
   },
-  "title": "2025-08-15 TACO Pressure Index Update: Low at 11.29",
-  "description": "Policy pressure tracker for 2025-08-15: the TACO Pressure Index closed at 11.29/100, signaling a low pressure regime as inflation expectations and front-end rate pressure shaped the daily read. A positive 5-session S&P move also added equity relief. Explore the score history, daily post, and the four-factor dashboard.",
-  "hero_summary": "The daily signal helps separate noise from persistent multi-factor stress. On 2025-08-15, the score printed 11.29/100 in the low regime, with inflation expectations and front-end rate pressure doing most of the work. Equities also provided visible relief through a positive 5-session move."
+  "title": "2025-08-15 TACO Pressure Index Update: Low at 10.65",
+  "description": "Policy pressure tracker for 2025-08-15: the TACO Pressure Index closed at 10.65/100, signaling a low pressure regime as inflation expectations and front-end rate pressure shaped the daily read. A positive 5-session S&P move also added equity relief. Explore the score history, daily post, and the four-factor dashboard.",
+  "hero_summary": "The daily signal helps separate noise from persistent multi-factor stress. On 2025-08-15, the score printed 10.65/100 in the low regime, with inflation expectations and front-end rate pressure doing most of the work. Equities also provided visible relief through a positive 5-session move."
 }
