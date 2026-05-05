@@ -8974,5 +8974,56 @@
       "t5yie": 2.6899999999999995,
       "vix": 16.99
     }
+  },
+  {
+    "date": "2026-05-04",
+    "score": 33.04,
+    "regime": "ELEVATED",
+    "drivers": {
+      "equity": {
+        "label": "S&P 500 equity signal",
+        "raw": "+0.37% vs 5 sessions | pressure 0.00 | relief 7.48",
+        "unit": "signed 5-session move",
+        "score": -3.74,
+        "pressure_score": 0.0,
+        "relief_score": 7.48,
+        "latest_value": 7200.75,
+        "latest_date": "2026-05-04",
+        "note": "A 5-session drawdown adds pressure. A 5-session rally adds relief and can partially offset the composite score."
+      },
+      "rates": {
+        "label": "2Y Treasury rate pressure",
+        "raw": "3.95% level, +17.00 bp vs 5 sessions",
+        "unit": "60% level + 40% change",
+        "score": 52.53,
+        "latest_value": 3.95,
+        "latest_date": "2026-05-04",
+        "note": "Rates pressure reflects both the current 2Y level and any fresh 5-session rise."
+      },
+      "inflation": {
+        "label": "Inflation expectations pressure",
+        "raw": "2.72% level, +10.00 bp vs 5 sessions",
+        "unit": "60% level + 40% change",
+        "score": 63.2,
+        "latest_value": 2.7199999999999998,
+        "latest_date": "2026-05-04",
+        "note": "Inflation pressure reflects both the breakeven level and any fresh 5-session rise."
+      },
+      "volatility": {
+        "label": "VIX volatility pressure",
+        "raw": 18.29,
+        "unit": "index level",
+        "score": 20.16,
+        "latest_value": 18.29,
+        "latest_date": "2026-05-04",
+        "note": "Higher implied volatility usually means greater market stress."
+      }
+    },
+    "inputs": {
+      "sp500": 7200.75,
+      "dgs2": 3.95,
+      "t5yie": 2.7199999999999998,
+      "vix": 18.29
+    }
   }
 ]
