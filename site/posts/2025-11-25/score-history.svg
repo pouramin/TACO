@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="960" height="430" viewBox="0 0 960 430" role="img" aria-label="Composite score history">
 <rect width="100%" height="100%" fill="#0b1020" rx="20"/>
 <text x="70" y="32" fill="#f5f7fb" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700">Composite score history</text>
-<text x="70" y="52" fill="#93a4c3" font-family="Inter, Arial, sans-serif" font-size="13">Trailing 66 sessions through 2025-11-25</text>
+<text x="70" y="52" fill="#93a4c3" font-family="Inter, Arial, sans-serif" font-size="13">Trailing 65 sessions through 2025-11-25</text>
 <line x1="70" x2="935" y1="375.00" y2="375.00" stroke="#27314e" stroke-width="1"/>
 <text x="58" y="379.00" text-anchor="end" fill="#93a4c3" font-family="Inter, Arial, sans-serif" font-size="12">5</text>
 <line x1="70" x2="935" y1="312.00" y2="312.00" stroke="#27314e" stroke-width="1"/>
@@ -14,9 +14,9 @@
 <text x="58" y="127.00" text-anchor="end" fill="#93a4c3" font-family="Inter, Arial, sans-serif" font-size="12">34</text>
 <line x1="70" x2="935" y1="60.00" y2="60.00" stroke="#27314e" stroke-width="1"/>
 <text x="58" y="64.00" text-anchor="end" fill="#93a4c3" font-family="Inter, Arial, sans-serif" font-size="12">41</text>
-<text x="70.00" y="412" text-anchor="middle" fill="#93a4c3" font-family="Inter, Arial, sans-serif" font-size="12">2025-08-21</text>
-<text x="509.15" y="412" text-anchor="middle" fill="#93a4c3" font-family="Inter, Arial, sans-serif" font-size="12">2025-10-08</text>
+<text x="70.00" y="412" text-anchor="middle" fill="#93a4c3" font-family="Inter, Arial, sans-serif" font-size="12">2025-08-22</text>
+<text x="502.50" y="412" text-anchor="middle" fill="#93a4c3" font-family="Inter, Arial, sans-serif" font-size="12">2025-10-08</text>
 <text x="935.00" y="412" text-anchor="middle" fill="#93a4c3" font-family="Inter, Arial, sans-serif" font-size="12">2025-11-25</text>
-<path d="M 70.00 285.29 L 83.31 317.77 L 96.62 296.05 L 109.92 307.61 L 123.23 312.56 L 136.54 326.19 L 149.85 287.46 L 163.15 248.46 L 176.46 268.78 L 189.77 308.73 L 203.08 293.80 L 216.38 328.10 L 229.69 344.26 L 243.00 340.17 L 256.31 345.82 L 269.62 330.45 L 282.92 327.75 L 296.23 326.36 L 309.54 319.07 L 322.85 280.25 L 336.15 319.94 L 349.46 295.36 L 362.77 309.95 L 376.08 294.67 L 389.38 245.07 L 402.69 271.56 L 416.00 273.47 L 429.31 287.02 L 442.62 330.79 L 455.92 344.52 L 469.23 317.42 L 482.54 329.40 L 495.85 301.00 L 509.15 309.26 L 522.46 284.33 L 535.77 132.87 L 549.08 191.84 L 562.38 233.87 L 575.69 115.84 L 589.00 215.11 L 602.31 375.00 L 615.62 344.60 L 628.92 316.64 L 642.23 256.28 L 655.54 296.84 L 668.85 316.81 L 682.15 332.62 L 695.46 295.53 L 708.77 283.37 L 722.08 261.05 L 735.38 211.46 L 748.69 146.33 L 762.00 200.87 L 775.31 202.00 L 788.62 209.12 L 801.92 282.77 L 815.23 327.23 L 828.54 230.31 L 841.85 261.66 L 855.15 182.28 L 868.46 60.00 L 881.77 71.90 L 895.08 67.03 L 908.38 158.14 L 921.69 307.43 L 935.00 364.06" fill="none" stroke="#69a7ff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 70.00 302.22 L 83.52 249.33 L 97.03 288.41 L 110.55 291.71 L 124.06 308.65 L 137.58 287.46 L 151.09 248.46 L 164.61 268.78 L 178.12 308.73 L 191.64 293.80 L 205.16 328.10 L 218.67 344.26 L 232.19 340.17 L 245.70 345.82 L 259.22 330.45 L 272.73 327.75 L 286.25 326.36 L 299.77 319.07 L 313.28 280.25 L 326.80 319.94 L 340.31 295.36 L 353.83 309.95 L 367.34 294.67 L 380.86 245.07 L 394.38 271.56 L 407.89 273.47 L 421.41 287.02 L 434.92 330.79 L 448.44 344.52 L 461.95 317.42 L 475.47 329.40 L 488.98 301.00 L 502.50 309.26 L 516.02 284.33 L 529.53 132.87 L 543.05 191.84 L 556.56 233.87 L 570.08 115.84 L 583.59 215.11 L 597.11 375.00 L 610.62 344.60 L 624.14 316.64 L 637.66 256.28 L 651.17 296.84 L 664.69 316.81 L 678.20 332.62 L 691.72 295.53 L 705.23 283.37 L 718.75 261.05 L 732.27 211.46 L 745.78 146.33 L 759.30 200.87 L 772.81 202.00 L 786.33 209.12 L 799.84 282.77 L 813.36 327.23 L 826.88 230.31 L 840.39 261.66 L 853.91 182.28 L 867.42 60.00 L 880.94 71.90 L 894.45 67.03 L 907.97 158.14 L 921.48 307.43 L 935.00 364.06" fill="none" stroke="#69a7ff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
 <circle cx="935.00" cy="364.06" r="6" fill="#69a7ff"/>
 </svg>
