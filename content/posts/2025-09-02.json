@@ -1,14 +1,14 @@
 {
   "date": "2025-09-02",
-  "score": 25.59,
+  "score": 26.34,
   "regime": "ELEVATED",
   "drivers": {
     "equity": {
       "label": "S&P 500 equity signal",
-      "raw": "-1.02% vs 5 sessions | pressure 20.32 | relief 0.00",
+      "raw": "-1.33% vs 5 sessions | pressure 26.55 | relief 0.00",
       "unit": "signed 5-session move",
-      "score": 20.32,
-      "pressure_score": 20.32,
+      "score": 26.55,
+      "pressure_score": 26.55,
       "relief_score": 0.0,
       "latest_value": 6415.5400390625,
       "latest_date": "2025-09-02",
@@ -16,16 +16,16 @@
     },
     "rates": {
       "label": "2Y Treasury rate pressure",
-      "raw": "3.66% level, +7.00 bp vs 5 sessions",
+      "raw": "3.66% level, +4.00 bp vs 5 sessions",
       "unit": "60% level + 40% change",
-      "score": 28.8,
+      "score": 24.0,
       "latest_value": 3.66,
       "latest_date": "2025-09-02",
       "note": "Rates pressure reflects both the current 2Y level and any fresh 5-session rise."
     },
     "inflation": {
       "label": "Inflation expectations pressure",
-      "raw": "2.48% level, -2.00 bp vs 5 sessions",
+      "raw": "2.48% level, -1.00 bp vs 5 sessions",
       "unit": "60% level + 40% change",
       "score": 28.8,
       "latest_value": 2.4800000000000004,
@@ -36,13 +36,13 @@
       "label": "VIX volatility pressure",
       "raw": 17.17,
       "unit": "index level",
-      "score": 24.43,
+      "score": 26.01,
       "latest_value": 17.17,
       "latest_date": "2025-09-02",
       "note": "Higher implied volatility usually means greater market stress."
     }
   },
-  "title": "2025-09-02 TACO Pressure Index Update: Elevated at 25.59",
-  "description": "Policy pressure tracker for 2025-09-02: the TACO Pressure Index closed at 25.59/100, signaling a elevated pressure regime as front-end rate pressure and inflation expectations shaped the daily read. Explore the score history, daily post, and the four-factor dashboard.",
-  "hero_summary": "The index is designed to approximate how market stress can build pressure for a softer policy posture. On 2025-09-02, the score printed 25.59/100 in the elevated regime, with front-end rate pressure and inflation expectations doing most of the work."
+  "title": "2025-09-02 TACO Pressure Index Update: Elevated at 26.34",
+  "description": "Policy pressure tracker for 2025-09-02: the TACO Pressure Index closed at 26.34/100, signaling a elevated pressure regime as inflation expectations and equity signal shaped the daily read. Explore the score history, daily post, and the four-factor dashboard.",
+  "hero_summary": "The index is designed to approximate how market stress can build pressure for a softer policy posture. On 2025-09-02, the score printed 26.34/100 in the elevated regime, with inflation expectations and equity signal doing most of the work."
 }
