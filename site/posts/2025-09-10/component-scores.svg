@@ -19,14 +19,14 @@
 <text x="684.00" y="99.50" text-anchor="start" fill="#f5f7fb" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600">24.60</text>
 <text x="232" y="186.50" text-anchor="end" fill="#f5f7fb" font-family="Inter, Arial, sans-serif" font-size="14">2Y Treasury rate pressure</text>
 <rect x="248" y="147.00" width="687.00" height="69.00" rx="10" fill="#121933" stroke="#223154"/>
-<rect x="591.50" y="147.00" width="65.95" height="69.00" rx="10" fill="#ff6a6a" opacity="0.95"/>
-<text x="665.45" y="186.50" text-anchor="start" fill="#f5f7fb" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600">19.20</text>
+<rect x="591.50" y="147.00" width="76.94" height="69.00" rx="10" fill="#ff6a6a" opacity="0.95"/>
+<text x="676.44" y="186.50" text-anchor="start" fill="#f5f7fb" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600">22.40</text>
 <text x="232" y="273.50" text-anchor="end" fill="#f5f7fb" font-family="Inter, Arial, sans-serif" font-size="14">VIX volatility pressure</text>
 <rect x="248" y="234.00" width="687.00" height="69.00" rx="10" fill="#121933" stroke="#223154"/>
-<rect x="591.50" y="234.00" width="37.20" height="69.00" rx="10" fill="#ff6a6a" opacity="0.95"/>
-<text x="636.70" y="273.50" text-anchor="start" fill="#f5f7fb" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600">10.83</text>
+<rect x="591.50" y="234.00" width="38.13" height="69.00" rx="10" fill="#ff6a6a" opacity="0.95"/>
+<text x="637.63" y="273.50" text-anchor="start" fill="#f5f7fb" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600">11.10</text>
 <text x="232" y="360.50" text-anchor="end" fill="#f5f7fb" font-family="Inter, Arial, sans-serif" font-size="14">S&amp;P 500 equity signal</text>
 <rect x="248" y="321.00" width="687.00" height="69.00" rx="10" fill="#121933" stroke="#223154"/>
-<rect x="564.71" y="321.00" width="26.79" height="69.00" rx="10" fill="#3ad29f" opacity="0.95"/>
-<text x="556.71" y="360.50" text-anchor="end" fill="#f5f7fb" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600">-7.80</text>
+<rect x="571.99" y="321.00" width="19.51" height="69.00" rx="10" fill="#3ad29f" opacity="0.95"/>
+<text x="563.99" y="360.50" text-anchor="end" fill="#f5f7fb" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600">-5.68</text>
 </svg>
