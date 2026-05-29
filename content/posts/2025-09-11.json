@@ -1,22 +1,22 @@
 {
   "date": "2025-09-11",
-  "score": 9.56,
+  "score": 11.68,
   "regime": "LOW",
   "drivers": {
     "equity": {
       "label": "S&P 500 equity signal",
-      "raw": "+0.85% vs 5 sessions | pressure 0.00 | relief 16.97",
+      "raw": "+0.00% vs 5 sessions | pressure 0.00 | relief 0.00",
       "unit": "signed 5-session move",
-      "score": -8.49,
+      "score": 0.0,
       "pressure_score": 0.0,
-      "relief_score": 16.97,
+      "relief_score": 0.0,
       "latest_value": 6587.47021484375,
       "latest_date": "2025-09-11",
       "note": "A 5-session drawdown adds pressure. A 5-session rally adds relief and can partially offset the composite score."
     },
     "rates": {
       "label": "2Y Treasury rate pressure",
-      "raw": "3.52% level, -2.00 bp vs 5 sessions",
+      "raw": "3.52% level, +0.00 bp vs 5 sessions",
       "unit": "60% level + 40% change",
       "score": 13.87,
       "latest_value": 3.52,
@@ -42,7 +42,7 @@
       "note": "Higher implied volatility usually means greater market stress."
     }
   },
-  "title": "2025-09-11 TACO Pressure Index Update: Low at 9.56",
-  "description": "Daily pressure check for 2025-09-11: the TACO Pressure Index closed at 9.56/100, signaling a low pressure regime as inflation expectations and front-end rate pressure shaped the daily read. A positive 5-session S&P move also added equity relief. Explore the score history, daily post, and the four-factor dashboard.",
-  "hero_summary": "It is not a forecast of policy decisions; it is a structured way to monitor pressure building across markets. On 2025-09-11, the score printed 9.56/100 in the low regime, with inflation expectations and front-end rate pressure doing most of the work. Equities also provided visible relief through a positive 5-session move."
+  "title": "2025-09-11 TACO Pressure Index Update: Low at 11.68",
+  "description": "Daily pressure check for 2025-09-11: the TACO Pressure Index closed at 11.68/100, signaling a low pressure regime as inflation expectations and front-end rate pressure shaped the daily read. Explore the score history, daily post, and the four-factor dashboard.",
+  "hero_summary": "It is not a forecast of policy decisions; it is a structured way to monitor pressure building across markets. On 2025-09-11, the score printed 11.68/100 in the low regime, with inflation expectations and front-end rate pressure doing most of the work."
 }

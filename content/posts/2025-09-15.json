@@ -1,24 +1,24 @@
 {
   "date": "2025-09-15",
-  "score": 9.69,
+  "score": 13.22,
   "regime": "LOW",
   "drivers": {
     "equity": {
       "label": "S&P 500 equity signal",
-      "raw": "+1.27% vs 5 sessions | pressure 0.00 | relief 25.49",
+      "raw": "+0.42% vs 5 sessions | pressure 0.00 | relief 8.44",
       "unit": "signed 5-session move",
-      "score": -12.74,
+      "score": -4.22,
       "pressure_score": 0.0,
-      "relief_score": 25.49,
+      "relief_score": 8.44,
       "latest_value": 6615.27978515625,
       "latest_date": "2025-09-15",
       "note": "A 5-session drawdown adds pressure. A 5-session rally adds relief and can partially offset the composite score."
     },
     "rates": {
       "label": "2Y Treasury rate pressure",
-      "raw": "3.54% level, +0.00 bp vs 5 sessions",
+      "raw": "3.54% level, +2.00 bp vs 5 sessions",
       "unit": "60% level + 40% change",
-      "score": 14.4,
+      "score": 17.6,
       "latest_value": 3.54,
       "latest_date": "2025-09-15",
       "note": "Rates pressure reflects both the current 2Y level and any fresh 5-session rise."
@@ -36,13 +36,13 @@
       "label": "VIX volatility pressure",
       "raw": 15.69,
       "unit": "index level",
-      "score": 12.51,
+      "score": 14.91,
       "latest_value": 15.69,
       "latest_date": "2025-09-15",
       "note": "Higher implied volatility usually means greater market stress."
     }
   },
-  "title": "2025-09-15 TACO Pressure Index Update: Low at 9.69",
-  "description": "Policy pressure tracker for 2025-09-15: the TACO Pressure Index closed at 9.69/100, signaling a low pressure regime as inflation expectations and front-end rate pressure shaped the daily read. A positive 5-session S&P move also added equity relief. Read the charts, latest moves, and a concise market interpretation.",
-  "hero_summary": "It is not a forecast of policy decisions; it is a structured way to monitor pressure building across markets. On 2025-09-15, the score printed 9.69/100 in the low regime, with inflation expectations and front-end rate pressure doing most of the work. Equities also provided visible relief through a positive 5-session move."
+  "title": "2025-09-15 TACO Pressure Index Update: Low at 13.22",
+  "description": "Policy pressure tracker for 2025-09-15: the TACO Pressure Index closed at 13.22/100, signaling a low pressure regime as inflation expectations and front-end rate pressure shaped the daily read. A positive 5-session S&P move also added equity relief. Read the charts, latest moves, and a concise market interpretation.",
+  "hero_summary": "It is not a forecast of policy decisions; it is a structured way to monitor pressure building across markets. On 2025-09-15, the score printed 13.22/100 in the low regime, with inflation expectations and front-end rate pressure doing most of the work. Equities also provided visible relief through a positive 5-session move."
 }
