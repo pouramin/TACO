@@ -1,14 +1,14 @@
 {
   "date": "2025-09-17",
-  "score": 14.9,
+  "score": 14.13,
   "regime": "LOW",
   "drivers": {
     "equity": {
       "label": "S&P 500 equity signal",
-      "raw": "-0.23% vs 5 sessions | pressure 4.51 | relief 0.00",
+      "raw": "-0.10% vs 5 sessions | pressure 1.94 | relief 0.00",
       "unit": "signed 5-session move",
-      "score": 4.51,
-      "pressure_score": 4.51,
+      "score": 1.94,
+      "pressure_score": 1.94,
       "relief_score": 0.0,
       "latest_value": 6600.35009765625,
       "latest_date": "2025-09-17",
@@ -16,18 +16,18 @@
     },
     "rates": {
       "label": "2Y Treasury rate pressure",
-      "raw": "3.52% level, -2.00 bp vs 5 sessions",
+      "raw": "3.52% level, +1.00 bp vs 5 sessions",
       "unit": "60% level + 40% change",
-      "score": 13.87,
+      "score": 15.47,
       "latest_value": 3.52,
       "latest_date": "2025-09-17",
       "note": "Rates pressure reflects both the current 2Y level and any fresh 5-session rise."
     },
     "inflation": {
       "label": "Inflation expectations pressure",
-      "raw": "2.43% level, +2.00 bp vs 5 sessions",
+      "raw": "2.43% level, +1.00 bp vs 5 sessions",
       "unit": "60% level + 40% change",
-      "score": 29.8,
+      "score": 27.8,
       "latest_value": 2.43,
       "latest_date": "2025-09-17",
       "note": "Inflation pressure reflects both the breakeven level and any fresh 5-session rise."
@@ -36,13 +36,13 @@
       "label": "VIX volatility pressure",
       "raw": 15.72,
       "unit": "index level",
-      "score": 11.43,
+      "score": 11.32,
       "latest_value": 15.72,
       "latest_date": "2025-09-17",
       "note": "Higher implied volatility usually means greater market stress."
     }
   },
-  "title": "2025-09-17 TACO Pressure Index Update: Low at 14.90",
-  "description": "Fresh macro pressure read for 2025-09-17: the TACO Pressure Index closed at 14.90/100, signaling a low pressure regime as inflation expectations and front-end rate pressure shaped the daily read. Explore the score history, daily post, and the four-factor dashboard.",
-  "hero_summary": "The daily signal helps separate noise from persistent multi-factor stress. On 2025-09-17, the score printed 14.90/100 in the low regime, with inflation expectations and front-end rate pressure doing most of the work."
+  "title": "2025-09-17 TACO Pressure Index Update: Low at 14.13",
+  "description": "Fresh macro pressure read for 2025-09-17: the TACO Pressure Index closed at 14.13/100, signaling a low pressure regime as inflation expectations and front-end rate pressure shaped the daily read. Explore the score history, daily post, and the four-factor dashboard.",
+  "hero_summary": "The daily signal helps separate noise from persistent multi-factor stress. On 2025-09-17, the score printed 14.13/100 in the low regime, with inflation expectations and front-end rate pressure doing most of the work."
 }
