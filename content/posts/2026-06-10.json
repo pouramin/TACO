@@ -1,0 +1,48 @@
+{
+  "date": "2026-06-10",
+  "score": 48.66,
+  "regime": "ELEVATED",
+  "drivers": {
+    "equity": {
+      "label": "S&P 500 equity signal",
+      "raw": "-3.80% vs 5 sessions | pressure 75.91 | relief 0.00",
+      "unit": "signed 5-session move",
+      "score": 75.91,
+      "pressure_score": 75.91,
+      "relief_score": 0.0,
+      "latest_value": 7266.990234375,
+      "latest_date": "2026-06-10",
+      "note": "A 5-session drawdown adds pressure. A 5-session rally adds relief and can partially offset the composite score."
+    },
+    "rates": {
+      "label": "2Y Treasury rate pressure",
+      "raw": "4.13% level, +5.00 bp vs 5 sessions",
+      "unit": "60% level + 40% change",
+      "score": 38.13,
+      "latest_value": 4.13,
+      "latest_date": "2026-06-10",
+      "note": "Rates pressure reflects both the current 2Y level and any fresh 5-session rise."
+    },
+    "inflation": {
+      "label": "Inflation expectations pressure",
+      "raw": "2.44% level, -9.00 bp vs 5 sessions",
+      "unit": "60% level + 40% change",
+      "score": 26.4,
+      "latest_value": 2.4399999999999995,
+      "latest_date": "2026-06-10",
+      "note": "Inflation pressure reflects both the breakeven level and any fresh 5-session rise."
+    },
+    "volatility": {
+      "label": "VIX volatility pressure",
+      "raw": 22.22,
+      "unit": "index level",
+      "score": 54.2,
+      "latest_value": 22.22,
+      "latest_date": "2026-06-10",
+      "note": "Higher implied volatility usually means greater market stress."
+    }
+  },
+  "title": "2026-06-10 TACO Pressure Index Update: Elevated at 48.66",
+  "description": "Automated market-pressure update for 2026-06-10: the TACO Pressure Index closed at 48.66/100, signaling a elevated pressure regime as equity signal and volatility shaped the daily read. Read the charts, latest moves, and a concise market interpretation.",
+  "hero_summary": "It is not a forecast of policy decisions; it is a structured way to monitor pressure building across markets. On 2026-06-10, the score printed 48.66/100 in the elevated regime, with equity signal and volatility doing most of the work."
+}

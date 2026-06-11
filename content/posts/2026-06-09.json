@@ -1,0 +1,48 @@
+{
+  "date": "2026-06-09",
+  "score": 41.83,
+  "regime": "ELEVATED",
+  "drivers": {
+    "equity": {
+      "label": "S&P 500 equity signal",
+      "raw": "-2.93% vs 5 sessions | pressure 58.64 | relief 0.00",
+      "unit": "signed 5-session move",
+      "score": 58.64,
+      "pressure_score": 58.64,
+      "relief_score": 0.0,
+      "latest_value": 7386.64990234375,
+      "latest_date": "2026-06-09",
+      "note": "A 5-session drawdown adds pressure. A 5-session rally adds relief and can partially offset the composite score."
+    },
+    "rates": {
+      "label": "2Y Treasury rate pressure",
+      "raw": "4.13% level, +8.00 bp vs 5 sessions",
+      "unit": "60% level + 40% change",
+      "score": 42.93,
+      "latest_value": 4.13,
+      "latest_date": "2026-06-09",
+      "note": "Rates pressure reflects both the current 2Y level and any fresh 5-session rise."
+    },
+    "inflation": {
+      "label": "Inflation expectations pressure",
+      "raw": "2.44% level, -8.00 bp vs 5 sessions",
+      "unit": "60% level + 40% change",
+      "score": 26.4,
+      "latest_value": 2.4399999999999995,
+      "latest_date": "2026-06-09",
+      "note": "Inflation pressure reflects both the breakeven level and any fresh 5-session rise."
+    },
+    "volatility": {
+      "label": "VIX volatility pressure",
+      "raw": 19.87,
+      "unit": "index level",
+      "score": 39.33,
+      "latest_value": 19.87,
+      "latest_date": "2026-06-09",
+      "note": "Higher implied volatility usually means greater market stress."
+    }
+  },
+  "title": "2026-06-09 TACO Pressure Index Update: Elevated at 41.83",
+  "description": "Daily pressure check for 2026-06-09: the TACO Pressure Index closed at 41.83/100, signaling a elevated pressure regime as equity signal and front-end rate pressure shaped the daily read. Includes charts, a component breakdown, and a narrative summary.",
+  "hero_summary": "It is not a forecast of policy decisions; it is a structured way to monitor pressure building across markets. On 2026-06-09, the score printed 41.83/100 in the elevated regime, with equity signal and front-end rate pressure doing most of the work."
+}
