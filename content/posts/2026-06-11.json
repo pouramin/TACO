@@ -1,0 +1,48 @@
+{
+  "date": "2026-06-11",
+  "score": 34.98,
+  "regime": "ELEVATED",
+  "drivers": {
+    "equity": {
+      "label": "S&P 500 equity signal",
+      "raw": "-2.51% vs 5 sessions | pressure 50.11 | relief 0.00",
+      "unit": "signed 5-session move",
+      "score": 50.11,
+      "pressure_score": 50.11,
+      "relief_score": 0.0,
+      "latest_value": 7394.2998046875,
+      "latest_date": "2026-06-11",
+      "note": "A 5-session drawdown adds pressure. A 5-session rally adds relief and can partially offset the composite score."
+    },
+    "rates": {
+      "label": "2Y Treasury rate pressure",
+      "raw": "4.05% level, +0.00 bp vs 5 sessions",
+      "unit": "60% level + 40% change",
+      "score": 28.0,
+      "latest_value": 4.05,
+      "latest_date": "2026-06-11",
+      "note": "Rates pressure reflects both the current 2Y level and any fresh 5-session rise."
+    },
+    "inflation": {
+      "label": "Inflation expectations pressure",
+      "raw": "2.40% level, -8.00 bp vs 5 sessions",
+      "unit": "60% level + 40% change",
+      "score": 24.0,
+      "latest_value": 2.3999999999999995,
+      "latest_date": "2026-06-11",
+      "note": "Inflation pressure reflects both the breakeven level and any fresh 5-session rise."
+    },
+    "volatility": {
+      "label": "VIX volatility pressure",
+      "raw": 19.44,
+      "unit": "index level",
+      "score": 37.79,
+      "latest_value": 19.44,
+      "latest_date": "2026-06-11",
+      "note": "Higher implied volatility usually means greater market stress."
+    }
+  },
+  "title": "2026-06-11 TACO Pressure Index Update: Elevated at 34.98",
+  "description": "New daily signal for 2026-06-11: the TACO Pressure Index closed at 34.98/100, signaling a elevated pressure regime as equity signal and volatility shaped the daily read. Explore the score history, daily post, and the four-factor dashboard.",
+  "hero_summary": "It is not a forecast of policy decisions; it is a structured way to monitor pressure building across markets. On 2026-06-11, the score printed 34.98/100 in the elevated regime, with equity signal and volatility doing most of the work."
+}

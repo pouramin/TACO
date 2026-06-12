@@ -1,24 +1,24 @@
 {
   "date": "2025-09-29",
-  "score": 15.01,
+  "score": 11.35,
   "regime": "LOW",
   "drivers": {
     "equity": {
       "label": "S&P 500 equity signal",
-      "raw": "+0.35% vs 5 sessions | pressure 0.00 | relief 7.00",
+      "raw": "+0.86% vs 5 sessions | pressure 0.00 | relief 17.11",
       "unit": "signed 5-session move",
-      "score": -3.5,
+      "score": -8.55,
       "pressure_score": 0.0,
-      "relief_score": 7.0,
+      "relief_score": 17.11,
       "latest_value": 6661.2099609375,
       "latest_date": "2025-09-29",
       "note": "A 5-session drawdown adds pressure. A 5-session rally adds relief and can partially offset the composite score."
     },
     "rates": {
       "label": "2Y Treasury rate pressure",
-      "raw": "3.63% level, +6.00 bp vs 5 sessions",
+      "raw": "3.63% level, -1.00 bp vs 5 sessions",
       "unit": "60% level + 40% change",
-      "score": 26.4,
+      "score": 16.8,
       "latest_value": 3.63,
       "latest_date": "2025-09-29",
       "note": "Rates pressure reflects both the current 2Y level and any fresh 5-session rise."
@@ -42,7 +42,7 @@
       "note": "Higher implied volatility usually means greater market stress."
     }
   },
-  "title": "2025-09-29 TACO Pressure Index Update: Low at 15.01",
-  "description": "Today’s retreat-pressure snapshot for 2025-09-29: the TACO Pressure Index closed at 15.01/100, signaling a low pressure regime as front-end rate pressure and inflation expectations shaped the daily read. See the chart pack, score regime, and what drove the latest reading.",
-  "hero_summary": "The index is designed to approximate how market stress can build pressure for a softer policy posture. On 2025-09-29, the score printed 15.01/100 in the low regime, with front-end rate pressure and inflation expectations doing most of the work."
+  "title": "2025-09-29 TACO Pressure Index Update: Low at 11.35",
+  "description": "Today’s retreat-pressure snapshot for 2025-09-29: the TACO Pressure Index closed at 11.35/100, signaling a low pressure regime as inflation expectations and front-end rate pressure shaped the daily read. A positive 5-session S&P move also added equity relief. See the chart pack, score regime, and what drove the latest reading.",
+  "hero_summary": "The index is designed to approximate how market stress can build pressure for a softer policy posture. On 2025-09-29, the score printed 11.35/100 in the low regime, with inflation expectations and front-end rate pressure doing most of the work. Equities also provided visible relief through a positive 5-session move."
 }
