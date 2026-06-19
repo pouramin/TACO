@@ -1,15 +1,15 @@
 {
   "date": "2025-10-02",
-  "score": 12.9,
+  "score": 12.74,
   "regime": "LOW",
   "drivers": {
     "equity": {
       "label": "S&P 500 equity signal",
-      "raw": "+0.06% vs 5 sessions | pressure 0.00 | relief 1.24",
+      "raw": "+0.00% vs 5 sessions | pressure 0.00 | relief 0.00",
       "unit": "signed 5-session move",
-      "score": -0.62,
+      "score": 0.0,
       "pressure_score": 0.0,
-      "relief_score": 1.24,
+      "relief_score": 0.0,
       "latest_value": 6715.35009765625,
       "latest_date": "2025-10-02",
       "note": "A 5-session drawdown adds pressure. A 5-session rally adds relief and can partially offset the composite score."
@@ -25,7 +25,7 @@
     },
     "inflation": {
       "label": "Inflation expectations pressure",
-      "raw": "2.37% level, -2.00 bp vs 5 sessions",
+      "raw": "2.37% level, +0.00 bp vs 5 sessions",
       "unit": "60% level + 40% change",
       "score": 22.2,
       "latest_value": 2.37,
@@ -36,13 +36,13 @@
       "label": "VIX volatility pressure",
       "raw": 16.63,
       "unit": "index level",
-      "score": 15.37,
+      "score": 14.09,
       "latest_value": 16.63,
       "latest_date": "2025-10-02",
       "note": "Higher implied volatility usually means greater market stress."
     }
   },
-  "title": "2025-10-02 TACO Pressure Index Update: Low at 12.90",
-  "description": "Daily pressure check for 2025-10-02: the TACO Pressure Index closed at 12.90/100, signaling a low pressure regime as inflation expectations and volatility shaped the daily read. See the chart pack, score regime, and what drove the latest reading.",
-  "hero_summary": "It is not a forecast of policy decisions; it is a structured way to monitor pressure building across markets. On 2025-10-02, the score printed 12.90/100 in the low regime, with inflation expectations and volatility doing most of the work."
+  "title": "2025-10-02 TACO Pressure Index Update: Low at 12.74",
+  "description": "Daily pressure check for 2025-10-02: the TACO Pressure Index closed at 12.74/100, signaling a low pressure regime as inflation expectations and front-end rate pressure shaped the daily read. See the chart pack, score regime, and what drove the latest reading.",
+  "hero_summary": "It is not a forecast of policy decisions; it is a structured way to monitor pressure building across markets. On 2025-10-02, the score printed 12.74/100 in the low regime, with inflation expectations and front-end rate pressure doing most of the work."
 }
