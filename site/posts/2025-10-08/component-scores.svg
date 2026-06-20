@@ -15,18 +15,18 @@
 <line x1="591.50" x2="591.50" y1="60" y2="390" stroke="#f5f7fb" stroke-width="1.5" opacity="0.7"/>
 <text x="232" y="99.50" text-anchor="end" fill="#f5f7fb" font-family="Inter, Arial, sans-serif" font-size="14">Inflation expectations pressure</text>
 <rect x="248" y="60.00" width="687.00" height="69.00" rx="10" fill="#121933" stroke="#223154"/>
-<rect x="591.50" y="60.00" width="94.12" height="69.00" rx="10" fill="#ff6a6a" opacity="0.95"/>
-<text x="693.62" y="99.50" text-anchor="start" fill="#f5f7fb" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600">27.40</text>
+<rect x="591.50" y="60.00" width="87.25" height="69.00" rx="10" fill="#ff6a6a" opacity="0.95"/>
+<text x="686.75" y="99.50" text-anchor="start" fill="#f5f7fb" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600">25.40</text>
 <text x="232" y="186.50" text-anchor="end" fill="#f5f7fb" font-family="Inter, Arial, sans-serif" font-size="14">2Y Treasury rate pressure</text>
 <rect x="248" y="147.00" width="687.00" height="69.00" rx="10" fill="#121933" stroke="#223154"/>
-<rect x="591.50" y="147.00" width="69.63" height="69.00" rx="10" fill="#ff6a6a" opacity="0.95"/>
-<text x="669.13" y="186.50" text-anchor="start" fill="#f5f7fb" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600">20.27</text>
+<rect x="591.50" y="147.00" width="53.14" height="69.00" rx="10" fill="#ff6a6a" opacity="0.95"/>
+<text x="652.64" y="186.50" text-anchor="start" fill="#f5f7fb" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600">15.47</text>
 <text x="232" y="273.50" text-anchor="end" fill="#f5f7fb" font-family="Inter, Arial, sans-serif" font-size="14">VIX volatility pressure</text>
 <rect x="248" y="234.00" width="687.00" height="69.00" rx="10" fill="#121933" stroke="#223154"/>
 <rect x="591.50" y="234.00" width="44.96" height="69.00" rx="10" fill="#ff6a6a" opacity="0.95"/>
 <text x="644.46" y="273.50" text-anchor="start" fill="#f5f7fb" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600">13.09</text>
 <text x="232" y="360.50" text-anchor="end" fill="#f5f7fb" font-family="Inter, Arial, sans-serif" font-size="14">S&amp;P 500 equity signal</text>
 <rect x="248" y="321.00" width="687.00" height="69.00" rx="10" fill="#121933" stroke="#223154"/>
-<rect x="571.89" y="321.00" width="19.61" height="69.00" rx="10" fill="#3ad29f" opacity="0.95"/>
-<text x="563.89" y="360.50" text-anchor="end" fill="#f5f7fb" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600">-5.71</text>
+<rect x="572.09" y="321.00" width="19.41" height="69.00" rx="10" fill="#3ad29f" opacity="0.95"/>
+<text x="564.09" y="360.50" text-anchor="end" fill="#f5f7fb" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600">-5.65</text>
 </svg>
