@@ -1,0 +1,48 @@
+{
+  "date": "2026-06-23",
+  "score": 36.21,
+  "regime": "ELEVATED",
+  "drivers": {
+    "equity": {
+      "label": "S&P 500 equity signal",
+      "raw": "-2.50% vs 5 sessions | pressure 49.99 | relief 0.00",
+      "unit": "signed 5-session move",
+      "score": 49.99,
+      "pressure_score": 49.99,
+      "relief_score": 0.0,
+      "latest_value": 7365.4599609375,
+      "latest_date": "2026-06-23",
+      "note": "A 5-session drawdown adds pressure. A 5-session rally adds relief and can partially offset the composite score."
+    },
+    "rates": {
+      "label": "2Y Treasury rate pressure",
+      "raw": "4.16% level, +9.00 bp vs 5 sessions",
+      "unit": "60% level + 40% change",
+      "score": 45.33,
+      "latest_value": 4.16,
+      "latest_date": "2026-06-23",
+      "note": "Rates pressure reflects both the current 2Y level and any fresh 5-session rise."
+    },
+    "inflation": {
+      "label": "Inflation expectations pressure",
+      "raw": "2.24% level, -16.00 bp vs 5 sessions",
+      "unit": "60% level + 40% change",
+      "score": 14.4,
+      "latest_value": 2.2399999999999998,
+      "latest_date": "2026-06-23",
+      "note": "Inflation pressure reflects both the breakeven level and any fresh 5-session rise."
+    },
+    "volatility": {
+      "label": "VIX volatility pressure",
+      "raw": 19.49,
+      "unit": "index level",
+      "score": 35.13,
+      "latest_value": 19.49,
+      "latest_date": "2026-06-23",
+      "note": "Higher implied volatility usually means greater market stress."
+    }
+  },
+  "title": "2026-06-23 TACO Pressure Index Update: Elevated at 36.21",
+  "description": "New daily signal for 2026-06-23: the TACO Pressure Index closed at 36.21/100, signaling a elevated pressure regime as equity signal and front-end rate pressure shaped the daily read. See the chart pack, score regime, and what drove the latest reading.",
+  "hero_summary": "The daily signal helps separate noise from persistent multi-factor stress. On 2026-06-23, the score printed 36.21/100 in the elevated regime, with equity signal and front-end rate pressure doing most of the work."
+}
