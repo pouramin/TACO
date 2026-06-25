@@ -1,14 +1,14 @@
 {
   "date": "2025-10-10",
-  "score": 32.28,
+  "score": 35.99,
   "regime": "ELEVATED",
   "drivers": {
     "equity": {
       "label": "S&P 500 equity signal",
-      "raw": "-2.41% vs 5 sessions | pressure 48.28 | relief 0.00",
+      "raw": "-2.98% vs 5 sessions | pressure 59.59 | relief 0.00",
       "unit": "signed 5-session move",
-      "score": 48.28,
-      "pressure_score": 48.28,
+      "score": 59.59,
+      "pressure_score": 59.59,
       "relief_score": 0.0,
       "latest_value": 6552.509765625,
       "latest_date": "2025-10-10",
@@ -16,7 +16,7 @@
     },
     "rates": {
       "label": "2Y Treasury rate pressure",
-      "raw": "3.52% level, -5.00 bp vs 5 sessions",
+      "raw": "3.52% level, -6.00 bp vs 5 sessions",
       "unit": "60% level + 40% change",
       "score": 13.87,
       "latest_value": 3.52,
@@ -36,13 +36,13 @@
       "label": "VIX volatility pressure",
       "raw": 21.66,
       "unit": "index level",
-      "score": 45.98,
+      "score": 49.5,
       "latest_value": 21.66,
       "latest_date": "2025-10-10",
       "note": "Higher implied volatility usually means greater market stress."
     }
   },
-  "title": "2025-10-10 TACO Pressure Index Update: Elevated at 32.28",
-  "description": "Fresh macro pressure read for 2025-10-10: the TACO Pressure Index closed at 32.28/100, signaling a elevated pressure regime as equity signal and volatility shaped the daily read. See the chart pack, score regime, and what drove the latest reading.",
-  "hero_summary": "This custom framework combines equities, front-end rates, inflation expectations, and volatility into one daily score. On 2025-10-10, the score printed 32.28/100 in the elevated regime, with equity signal and volatility doing most of the work."
+  "title": "2025-10-10 TACO Pressure Index Update: Elevated at 35.99",
+  "description": "Fresh macro pressure read for 2025-10-10: the TACO Pressure Index closed at 35.99/100, signaling a elevated pressure regime as equity signal and volatility shaped the daily read. See the chart pack, score regime, and what drove the latest reading.",
+  "hero_summary": "This custom framework combines equities, front-end rates, inflation expectations, and volatility into one daily score. On 2025-10-10, the score printed 35.99/100 in the elevated regime, with equity signal and volatility doing most of the work."
 }
