@@ -1,102 +1,51 @@
 {
-  "date": "2026-06-24",
-  "score": 29.97,
-  "regime": "ELEVATED",
+  "date": "2026-06-25",
+  "score": 20.6,
+  "regime": "LOW",
   "drivers": {
     "equity": {
       "label": "S&P 500 equity signal",
-      "raw": "-2.04% vs 5 sessions | pressure 40.77 | relief 0.00",
+      "raw": "-0.84% vs 5 sessions | pressure 16.88 | relief 0.00",
       "unit": "signed 5-session move",
-      "score": 40.77,
-      "pressure_score": 40.77,
+      "score": 16.88,
+      "pressure_score": 16.88,
       "relief_score": 0.0,
-      "latest_value": 7358.22021484375,
-      "latest_date": "2026-06-24",
+      "latest_value": 7357.490234375,
+      "latest_date": "2026-06-25",
       "note": "A 5-session drawdown adds pressure. A 5-session rally adds relief and can partially offset the composite score."
     },
     "rates": {
       "label": "2Y Treasury rate pressure",
-      "raw": "4.11% level, +6.00 bp vs 5 sessions",
+      "raw": "4.09% level, -11.00 bp vs 5 sessions",
       "unit": "60% level + 40% change",
-      "score": 39.2,
-      "latest_value": 4.11,
-      "latest_date": "2026-06-24",
+      "score": 29.07,
+      "latest_value": 4.09,
+      "latest_date": "2026-06-25",
       "note": "Rates pressure reflects both the current 2Y level and any fresh 5-session rise."
     },
     "inflation": {
       "label": "Inflation expectations pressure",
-      "raw": "2.19% level, -17.00 bp vs 5 sessions",
+      "raw": "2.23% level, -8.00 bp vs 5 sessions",
       "unit": "60% level + 40% change",
-      "score": 11.4,
-      "latest_value": 2.19,
-      "latest_date": "2026-06-24",
+      "score": 13.8,
+      "latest_value": 2.2300000000000004,
+      "latest_date": "2026-06-25",
       "note": "Inflation pressure reflects both the breakeven level and any fresh 5-session rise."
     },
     "volatility": {
       "label": "VIX volatility pressure",
-      "raw": 18.63,
+      "raw": 18.89,
       "unit": "index level",
-      "score": 28.5,
-      "latest_value": 18.63,
-      "latest_date": "2026-06-24",
+      "score": 22.66,
+      "latest_value": 18.89,
+      "latest_date": "2026-06-25",
       "note": "Higher implied volatility usually means greater market stress."
     }
   },
-  "title": "2026-06-24 TACO Pressure Index Update: Elevated at 29.97",
-  "description": "New daily signal for 2026-06-24: the TACO Pressure Index closed at 29.97/100, signaling a elevated pressure regime as equity signal and front-end rate pressure shaped the daily read. See the chart pack, score regime, and what drove the latest reading.",
-  "hero_summary": "It is not a forecast of policy decisions; it is a structured way to monitor pressure building across markets. On 2026-06-24, the score printed 29.97/100 in the elevated regime, with equity signal and front-end rate pressure doing most of the work.",
+  "title": "2026-06-25 TACO Pressure Index Update: Low at 20.60",
+  "description": "Daily pressure check for 2026-06-25: the TACO Pressure Index closed at 20.60/100, signaling a low pressure regime as front-end rate pressure and volatility shaped the daily read. See the chart pack, score regime, and what drove the latest reading.",
+  "hero_summary": "It is not a forecast of policy decisions; it is a structured way to monitor pressure building across markets. On 2026-06-25, the score printed 20.60/100 in the low regime, with front-end rate pressure and volatility doing most of the work.",
   "recent_history": [
-    {
-      "date": "2026-02-13",
-      "score": 25.1,
-      "regime": "ELEVATED",
-      "drivers": {
-        "equity": {
-          "label": "S&P 500 equity signal",
-          "raw": "-1.39% vs 5 sessions | pressure 27.73 | relief 0.00",
-          "unit": "signed 5-session move",
-          "score": 27.73,
-          "pressure_score": 27.73,
-          "relief_score": 0.0,
-          "latest_value": 6836.169921875,
-          "latest_date": "2026-02-13",
-          "note": "A 5-session drawdown adds pressure. A 5-session rally adds relief and can partially offset the composite score."
-        },
-        "rates": {
-          "label": "2Y Treasury rate pressure",
-          "raw": "3.40% level, -10.00 bp vs 5 sessions",
-          "unit": "60% level + 40% change",
-          "score": 10.67,
-          "latest_value": 3.4,
-          "latest_date": "2026-02-13",
-          "note": "Rates pressure reflects both the current 2Y level and any fresh 5-session rise."
-        },
-        "inflation": {
-          "label": "Inflation expectations pressure",
-          "raw": "2.42% level, -8.00 bp vs 5 sessions",
-          "unit": "60% level + 40% change",
-          "score": 25.2,
-          "latest_value": 2.42,
-          "latest_date": "2026-02-13",
-          "note": "Inflation pressure reflects both the breakeven level and any fresh 5-session rise."
-        },
-        "volatility": {
-          "label": "VIX volatility pressure",
-          "raw": 20.6,
-          "unit": "index level",
-          "score": 36.82,
-          "latest_value": 20.6,
-          "latest_date": "2026-02-13",
-          "note": "Higher implied volatility usually means greater market stress."
-        }
-      },
-      "inputs": {
-        "sp500": 6836.169921875,
-        "dgs2": 3.4,
-        "t5yie": 2.42,
-        "vix": 20.6
-      }
-    },
     {
       "date": "2026-02-17",
       "score": 26.5,
@@ -4635,7 +4584,58 @@
         "t5yie": 2.19,
         "vix": 18.63
       }
+    },
+    {
+      "date": "2026-06-25",
+      "score": 20.6,
+      "regime": "LOW",
+      "drivers": {
+        "equity": {
+          "label": "S&P 500 equity signal",
+          "raw": "-0.84% vs 5 sessions | pressure 16.88 | relief 0.00",
+          "unit": "signed 5-session move",
+          "score": 16.88,
+          "pressure_score": 16.88,
+          "relief_score": 0.0,
+          "latest_value": 7357.490234375,
+          "latest_date": "2026-06-25",
+          "note": "A 5-session drawdown adds pressure. A 5-session rally adds relief and can partially offset the composite score."
+        },
+        "rates": {
+          "label": "2Y Treasury rate pressure",
+          "raw": "4.09% level, -11.00 bp vs 5 sessions",
+          "unit": "60% level + 40% change",
+          "score": 29.07,
+          "latest_value": 4.09,
+          "latest_date": "2026-06-25",
+          "note": "Rates pressure reflects both the current 2Y level and any fresh 5-session rise."
+        },
+        "inflation": {
+          "label": "Inflation expectations pressure",
+          "raw": "2.23% level, -8.00 bp vs 5 sessions",
+          "unit": "60% level + 40% change",
+          "score": 13.8,
+          "latest_value": 2.2300000000000004,
+          "latest_date": "2026-06-25",
+          "note": "Inflation pressure reflects both the breakeven level and any fresh 5-session rise."
+        },
+        "volatility": {
+          "label": "VIX volatility pressure",
+          "raw": 18.89,
+          "unit": "index level",
+          "score": 22.66,
+          "latest_value": 18.89,
+          "latest_date": "2026-06-25",
+          "note": "Higher implied volatility usually means greater market stress."
+        }
+      },
+      "inputs": {
+        "sp500": 7357.490234375,
+        "dgs2": 4.09,
+        "t5yie": 2.2300000000000004,
+        "vix": 18.89
+      }
     }
   ],
-  "latest_score_history_token": "6727eb9c90"
+  "latest_score_history_token": "6f0d49d7da"
 }
