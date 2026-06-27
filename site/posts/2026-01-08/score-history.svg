@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="960" height="430" viewBox="0 0 960 430" role="img" aria-label="Composite score history">
 <rect width="100%" height="100%" fill="#0b1020" rx="20"/>
 <text x="70" y="32" fill="#f5f7fb" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700">Composite score history</text>
-<text x="70" y="52" fill="#93a4c3" font-family="Inter, Arial, sans-serif" font-size="13">Trailing 61 sessions through 2026-01-08</text>
+<text x="70" y="52" fill="#93a4c3" font-family="Inter, Arial, sans-serif" font-size="13">Trailing 60 sessions through 2026-01-08</text>
 <line x1="70" x2="935" y1="375.00" y2="375.00" stroke="#27314e" stroke-width="1"/>
 <text x="58" y="379.00" text-anchor="end" fill="#93a4c3" font-family="Inter, Arial, sans-serif" font-size="12">0</text>
 <line x1="70" x2="935" y1="312.00" y2="312.00" stroke="#27314e" stroke-width="1"/>
@@ -14,9 +14,9 @@
 <text x="58" y="127.00" text-anchor="end" fill="#93a4c3" font-family="Inter, Arial, sans-serif" font-size="12">33</text>
 <line x1="70" x2="935" y1="60.00" y2="60.00" stroke="#27314e" stroke-width="1"/>
 <text x="58" y="64.00" text-anchor="end" fill="#93a4c3" font-family="Inter, Arial, sans-serif" font-size="12">41</text>
-<text x="70.00" y="412" text-anchor="middle" fill="#93a4c3" font-family="Inter, Arial, sans-serif" font-size="12">2025-10-09</text>
-<text x="502.50" y="412" text-anchor="middle" fill="#93a4c3" font-family="Inter, Arial, sans-serif" font-size="12">2025-11-24</text>
+<text x="70.00" y="412" text-anchor="middle" fill="#93a4c3" font-family="Inter, Arial, sans-serif" font-size="12">2025-10-10</text>
+<text x="509.83" y="412" text-anchor="middle" fill="#93a4c3" font-family="Inter, Arial, sans-serif" font-size="12">2025-11-25</text>
 <text x="935.00" y="412" text-anchor="middle" fill="#93a4c3" font-family="Inter, Arial, sans-serif" font-size="12">2026-01-08</text>
-<path d="M 70.00 274.19 L 84.42 111.78 L 98.83 179.03 L 113.25 195.35 L 127.67 120.24 L 142.08 196.19 L 156.50 336.57 L 170.92 309.88 L 185.33 285.33 L 199.75 232.33 L 214.17 267.94 L 228.58 285.48 L 243.00 299.36 L 257.42 266.80 L 271.83 256.12 L 286.25 236.53 L 300.67 192.98 L 315.08 135.80 L 329.50 183.68 L 343.92 184.67 L 358.33 190.93 L 372.75 255.59 L 387.17 294.63 L 401.58 209.53 L 416.00 237.06 L 430.42 167.36 L 444.83 60.00 L 459.25 70.45 L 473.67 66.18 L 488.08 146.17 L 502.50 277.24 L 516.92 326.96 L 531.33 337.79 L 545.75 375.00 L 560.17 333.06 L 574.58 308.20 L 589.00 290.89 L 603.42 264.74 L 617.83 247.28 L 632.25 278.92 L 646.67 241.33 L 661.08 272.67 L 675.50 307.67 L 689.92 264.05 L 704.33 273.13 L 718.75 273.58 L 733.17 183.07 L 747.58 209.46 L 762.00 304.77 L 776.42 329.32 L 790.83 342.21 L 805.25 374.85 L 819.67 360.82 L 834.08 332.91 L 848.50 310.11 L 862.92 254.37 L 877.33 241.41 L 891.75 250.25 L 906.17 274.96 L 920.58 271.37 L 935.00 287.00" fill="none" stroke="#69a7ff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 70.00 252.46 L 84.66 288.45 L 99.32 296.15 L 113.98 239.96 L 128.64 299.97 L 143.31 336.57 L 157.97 309.88 L 172.63 285.33 L 187.29 232.33 L 201.95 267.94 L 216.61 285.48 L 231.27 299.36 L 245.93 266.80 L 260.59 256.12 L 275.25 236.53 L 289.92 192.98 L 304.58 135.80 L 319.24 183.68 L 333.90 184.67 L 348.56 190.93 L 363.22 255.59 L 377.88 294.63 L 392.54 209.53 L 407.20 237.06 L 421.86 167.36 L 436.53 60.00 L 451.19 70.45 L 465.85 66.18 L 480.51 146.17 L 495.17 277.24 L 509.83 326.96 L 524.49 337.79 L 539.15 375.00 L 553.81 333.06 L 568.47 308.20 L 583.14 290.89 L 597.80 264.74 L 612.46 247.28 L 627.12 278.92 L 641.78 241.33 L 656.44 272.67 L 671.10 307.67 L 685.76 264.05 L 700.42 273.13 L 715.08 273.58 L 729.75 183.07 L 744.41 209.46 L 759.07 304.77 L 773.73 329.32 L 788.39 342.21 L 803.05 374.85 L 817.71 360.82 L 832.37 332.91 L 847.03 310.11 L 861.69 254.37 L 876.36 241.41 L 891.02 250.25 L 905.68 274.96 L 920.34 271.37 L 935.00 287.00" fill="none" stroke="#69a7ff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
 <circle cx="935.00" cy="287.00" r="6" fill="#69a7ff"/>
 </svg>
