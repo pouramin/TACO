@@ -23,10 +23,10 @@
 <text x="667.51" y="186.50" text-anchor="start" fill="#f5f7fb" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600">19.80</text>
 <text x="232" y="273.50" text-anchor="end" fill="#f5f7fb" font-family="Inter, Arial, sans-serif" font-size="14">2Y Treasury rate pressure</text>
 <rect x="248" y="234.00" width="687.00" height="69.00" rx="10" fill="#121933" stroke="#223154"/>
-<rect x="591.50" y="234.00" width="45.79" height="69.00" rx="10" fill="#ff6a6a" opacity="0.95"/>
-<text x="645.29" y="273.50" text-anchor="start" fill="#f5f7fb" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600">13.33</text>
+<rect x="591.50" y="234.00" width="56.78" height="69.00" rx="10" fill="#ff6a6a" opacity="0.95"/>
+<text x="656.28" y="273.50" text-anchor="start" fill="#f5f7fb" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600">16.53</text>
 <text x="232" y="360.50" text-anchor="end" fill="#f5f7fb" font-family="Inter, Arial, sans-serif" font-size="14">S&amp;P 500 equity signal</text>
 <rect x="248" y="321.00" width="687.00" height="69.00" rx="10" fill="#121933" stroke="#223154"/>
-<rect x="529.36" y="321.00" width="62.14" height="69.00" rx="10" fill="#3ad29f" opacity="0.95"/>
-<text x="521.36" y="360.50" text-anchor="end" fill="#f5f7fb" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600">-18.09</text>
+<rect x="577.66" y="321.00" width="13.84" height="69.00" rx="10" fill="#3ad29f" opacity="0.95"/>
+<text x="569.66" y="360.50" text-anchor="end" fill="#f5f7fb" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600">-4.03</text>
 </svg>
