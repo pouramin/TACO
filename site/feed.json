@@ -6,6 +6,13 @@
   "description": "A live-data daily tracker of market pressure, financial stress, and TACO-style retreat conditions.",
   "items": [
     {
+      "id": "https://freeiran.it/posts/2026-06-30/",
+      "url": "https://freeiran.it/posts/2026-06-30/",
+      "title": "2026-06-30 TACO Pressure Index Update: Low at 11.34",
+      "summary": "Policy pressure tracker for 2026-06-30: the TACO Pressure Index closed at 11.34/100, signaling a low pressure regime as front-end rate pressure and inflation expectations shaped the daily read. A positive 5-session S&P move also added equity relief. See the chart pack, score regime, and what drove the latest reading.",
+      "date_published": "2026-06-30T00:00:00Z"
+    },
+    {
       "id": "https://freeiran.it/posts/2026-06-29/",
       "url": "https://freeiran.it/posts/2026-06-29/",
       "title": "2026-06-29 TACO Pressure Index Update: Low at 17.74",
@@ -207,13 +214,6 @@
       "title": "2026-05-18 TACO Pressure Index Update: Elevated at 28.37",
       "summary": "New daily signal for 2026-05-18: the TACO Pressure Index closed at 28.37/100, signaling a elevated pressure regime as front-end rate pressure and inflation expectations shaped the daily read. See the chart pack, score regime, and what drove the latest reading.",
       "date_published": "2026-05-18T00:00:00Z"
-    },
-    {
-      "id": "https://freeiran.it/posts/2026-05-15/",
-      "url": "https://freeiran.it/posts/2026-05-15/",
-      "title": "2026-05-15 TACO Pressure Index Update: Elevated at 35.10",
-      "summary": "Automated market-pressure update for 2026-05-15: the TACO Pressure Index closed at 35.10/100, signaling a elevated pressure regime as front-end rate pressure and inflation expectations shaped the daily read. Read the charts, latest moves, and a concise market interpretation.",
-      "date_published": "2026-05-15T00:00:00Z"
     }
   ]
 }

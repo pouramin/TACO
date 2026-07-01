@@ -1,0 +1,48 @@
+{
+  "date": "2026-06-30",
+  "score": 11.34,
+  "regime": "LOW",
+  "drivers": {
+    "equity": {
+      "label": "S&P 500 equity signal",
+      "raw": "+1.82% vs 5 sessions | pressure 0.00 | relief 36.36",
+      "unit": "signed 5-session move",
+      "score": -18.18,
+      "pressure_score": 0.0,
+      "relief_score": 36.36,
+      "latest_value": 7499.35986328125,
+      "latest_date": "2026-06-30",
+      "note": "A 5-session drawdown adds pressure. A 5-session rally adds relief and can partially offset the composite score."
+    },
+    "rates": {
+      "label": "2Y Treasury rate pressure",
+      "raw": "4.14% level, -2.00 bp vs 5 sessions",
+      "unit": "60% level + 40% change",
+      "score": 30.4,
+      "latest_value": 4.14,
+      "latest_date": "2026-06-30",
+      "note": "Rates pressure reflects both the current 2Y level and any fresh 5-session rise."
+    },
+    "inflation": {
+      "label": "Inflation expectations pressure",
+      "raw": "2.26% level, +2.00 bp vs 5 sessions",
+      "unit": "60% level + 40% change",
+      "score": 19.6,
+      "latest_value": 2.2600000000000007,
+      "latest_date": "2026-06-30",
+      "note": "Inflation pressure reflects both the breakeven level and any fresh 5-session rise."
+    },
+    "volatility": {
+      "label": "VIX volatility pressure",
+      "raw": 16.45,
+      "unit": "index level",
+      "score": 13.54,
+      "latest_value": 16.45,
+      "latest_date": "2026-06-30",
+      "note": "Higher implied volatility usually means greater market stress."
+    }
+  },
+  "title": "2026-06-30 TACO Pressure Index Update: Low at 11.34",
+  "description": "Policy pressure tracker for 2026-06-30: the TACO Pressure Index closed at 11.34/100, signaling a low pressure regime as front-end rate pressure and inflation expectations shaped the daily read. A positive 5-session S&P move also added equity relief. See the chart pack, score regime, and what drove the latest reading.",
+  "hero_summary": "The daily signal helps separate noise from persistent multi-factor stress. On 2026-06-30, the score printed 11.34/100 in the low regime, with front-end rate pressure and inflation expectations doing most of the work. Equities also provided visible relief through a positive 5-session move."
+}
