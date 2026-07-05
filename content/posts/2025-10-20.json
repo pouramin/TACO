@@ -1,15 +1,15 @@
 {
   "date": "2025-10-20",
-  "score": 9.34,
+  "score": 12.01,
   "regime": "LOW",
   "drivers": {
     "equity": {
       "label": "S&P 500 equity signal",
-      "raw": "+1.07% vs 5 sessions | pressure 0.00 | relief 21.34",
+      "raw": "+0.00% vs 5 sessions | pressure 0.00 | relief 0.00",
       "unit": "signed 5-session move",
-      "score": -10.67,
+      "score": 0.0,
       "pressure_score": 0.0,
-      "relief_score": 21.34,
+      "relief_score": 0.0,
       "latest_value": 6735.1298828125,
       "latest_date": "2025-10-20",
       "note": "A 5-session drawdown adds pressure. A 5-session rally adds relief and can partially offset the composite score."
@@ -25,7 +25,7 @@
     },
     "inflation": {
       "label": "Inflation expectations pressure",
-      "raw": "2.28% level, -1.00 bp vs 5 sessions",
+      "raw": "2.28% level, +0.00 bp vs 5 sessions",
       "unit": "60% level + 40% change",
       "score": 16.8,
       "latest_value": 2.2800000000000002,
@@ -42,7 +42,7 @@
       "note": "Higher implied volatility usually means greater market stress."
     }
   },
-  "title": "2025-10-20 TACO Pressure Index Update: Low at 9.34",
-  "description": "New daily signal for 2025-10-20: the TACO Pressure Index closed at 9.34/100, signaling a low pressure regime as volatility and inflation expectations shaped the daily read. A positive 5-session S&P move also added equity relief. Includes charts, a component breakdown, and a narrative summary.",
-  "hero_summary": "The daily signal helps separate noise from persistent multi-factor stress. On 2025-10-20, the score printed 9.34/100 in the low regime, with volatility and inflation expectations doing most of the work. Equities also provided visible relief through a positive 5-session move."
+  "title": "2025-10-20 TACO Pressure Index Update: Low at 12.01",
+  "description": "New daily signal for 2025-10-20: the TACO Pressure Index closed at 12.01/100, signaling a low pressure regime as volatility and inflation expectations shaped the daily read. Includes charts, a component breakdown, and a narrative summary.",
+  "hero_summary": "The daily signal helps separate noise from persistent multi-factor stress. On 2025-10-20, the score printed 12.01/100 in the low regime, with volatility and inflation expectations doing most of the work."
 }
