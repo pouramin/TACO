@@ -15,8 +15,8 @@
 <line x1="591.50" x2="591.50" y1="60" y2="390" stroke="#f5f7fb" stroke-width="1.5" opacity="0.7"/>
 <text x="232" y="99.50" text-anchor="end" fill="#f5f7fb" font-family="Inter, Arial, sans-serif" font-size="14">Inflation expectations pressure</text>
 <rect x="248" y="60.00" width="687.00" height="69.00" rx="10" fill="#121933" stroke="#223154"/>
-<rect x="591.50" y="60.00" width="124.35" height="69.00" rx="10" fill="#ff6a6a" opacity="0.95"/>
-<text x="723.85" y="99.50" text-anchor="start" fill="#f5f7fb" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600">36.20</text>
+<rect x="591.50" y="60.00" width="110.61" height="69.00" rx="10" fill="#ff6a6a" opacity="0.95"/>
+<text x="710.11" y="99.50" text-anchor="start" fill="#f5f7fb" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600">32.20</text>
 <text x="232" y="186.50" text-anchor="end" fill="#f5f7fb" font-family="Inter, Arial, sans-serif" font-size="14">2Y Treasury rate pressure</text>
 <rect x="248" y="147.00" width="687.00" height="69.00" rx="10" fill="#121933" stroke="#223154"/>
 <rect x="591.50" y="147.00" width="60.46" height="69.00" rx="10" fill="#ff6a6a" opacity="0.95"/>
@@ -27,6 +27,6 @@
 <text x="639.11" y="273.50" text-anchor="start" fill="#f5f7fb" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600">11.53</text>
 <text x="232" y="360.50" text-anchor="end" fill="#f5f7fb" font-family="Inter, Arial, sans-serif" font-size="14">S&amp;P 500 equity signal</text>
 <rect x="248" y="321.00" width="687.00" height="69.00" rx="10" fill="#121933" stroke="#223154"/>
-<rect x="520.19" y="321.00" width="71.31" height="69.00" rx="10" fill="#3ad29f" opacity="0.95"/>
-<text x="512.19" y="360.50" text-anchor="end" fill="#f5f7fb" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600">-20.76</text>
+<rect x="501.37" y="321.00" width="90.13" height="69.00" rx="10" fill="#3ad29f" opacity="0.95"/>
+<text x="493.37" y="360.50" text-anchor="end" fill="#f5f7fb" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600">-26.24</text>
 </svg>
