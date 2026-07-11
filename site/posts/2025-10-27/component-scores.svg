@@ -27,6 +27,6 @@
 <text x="639.11" y="273.50" text-anchor="start" fill="#f5f7fb" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600">11.53</text>
 <text x="232" y="360.50" text-anchor="end" fill="#f5f7fb" font-family="Inter, Arial, sans-serif" font-size="14">S&amp;P 500 equity signal</text>
 <rect x="248" y="321.00" width="687.00" height="69.00" rx="10" fill="#121933" stroke="#223154"/>
-<rect x="521.80" y="321.00" width="69.70" height="69.00" rx="10" fill="#3ad29f" opacity="0.95"/>
-<text x="513.80" y="360.50" text-anchor="end" fill="#f5f7fb" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600">-20.29</text>
+<rect x="549.28" y="321.00" width="42.22" height="69.00" rx="10" fill="#3ad29f" opacity="0.95"/>
+<text x="541.28" y="360.50" text-anchor="end" fill="#f5f7fb" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600">-12.29</text>
 </svg>

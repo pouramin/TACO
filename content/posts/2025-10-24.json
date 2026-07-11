@@ -1,15 +1,15 @@
 {
   "date": "2025-10-24",
-  "score": 10.55,
+  "score": 12.52,
   "regime": "LOW",
   "drivers": {
     "equity": {
       "label": "S&P 500 equity signal",
-      "raw": "+0.79% vs 5 sessions | pressure 0.00 | relief 15.80",
+      "raw": "+0.00% vs 5 sessions | pressure 0.00 | relief 0.00",
       "unit": "signed 5-session move",
-      "score": -7.9,
+      "score": 0.0,
       "pressure_score": 0.0,
-      "relief_score": 15.8,
+      "relief_score": 0.0,
       "latest_value": 6791.68994140625,
       "latest_date": "2025-10-24",
       "note": "A 5-session drawdown adds pressure. A 5-session rally adds relief and can partially offset the composite score."
@@ -25,7 +25,7 @@
     },
     "inflation": {
       "label": "Inflation expectations pressure",
-      "raw": "2.40% level, -2.00 bp vs 5 sessions",
+      "raw": "2.40% level, +0.00 bp vs 5 sessions",
       "unit": "60% level + 40% change",
       "score": 24.0,
       "latest_value": 2.4,
@@ -42,7 +42,7 @@
       "note": "Higher implied volatility usually means greater market stress."
     }
   },
-  "title": "2025-10-24 TACO Pressure Index Update: Low at 10.55",
-  "description": "Daily pressure check for 2025-10-24: the TACO Pressure Index closed at 10.55/100, signaling a low pressure regime as inflation expectations and volatility shaped the daily read. A positive 5-session S&P move also added equity relief. Read the charts, latest moves, and a concise market interpretation.",
-  "hero_summary": "The index is designed to approximate how market stress can build pressure for a softer policy posture. On 2025-10-24, the score printed 10.55/100 in the low regime, with inflation expectations and volatility doing most of the work. Equities also provided visible relief through a positive 5-session move."
+  "title": "2025-10-24 TACO Pressure Index Update: Low at 12.52",
+  "description": "Daily pressure check for 2025-10-24: the TACO Pressure Index closed at 12.52/100, signaling a low pressure regime as inflation expectations and volatility shaped the daily read. Read the charts, latest moves, and a concise market interpretation.",
+  "hero_summary": "The index is designed to approximate how market stress can build pressure for a softer policy posture. On 2025-10-24, the score printed 12.52/100 in the low regime, with inflation expectations and volatility doing most of the work."
 }
