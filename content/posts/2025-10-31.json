@@ -1,14 +1,14 @@
 {
   "date": "2025-10-31",
-  "score": 24.53,
-  "regime": "LOW",
+  "score": 25.97,
+  "regime": "ELEVATED",
   "drivers": {
     "equity": {
       "label": "S&P 500 equity signal",
-      "raw": "-0.51% vs 5 sessions | pressure 10.17 | relief 0.00",
+      "raw": "-0.74% vs 5 sessions | pressure 14.71 | relief 0.00",
       "unit": "signed 5-session move",
-      "score": 10.17,
-      "pressure_score": 10.17,
+      "score": 14.71,
+      "pressure_score": 14.71,
       "relief_score": 0.0,
       "latest_value": 6840.2001953125,
       "latest_date": "2025-10-31",
@@ -16,18 +16,18 @@
     },
     "rates": {
       "label": "2Y Treasury rate pressure",
-      "raw": "3.60% level, +12.00 bp vs 5 sessions",
+      "raw": "3.60% level, +13.00 bp vs 5 sessions",
       "unit": "60% level + 40% change",
-      "score": 35.2,
+      "score": 36.8,
       "latest_value": 3.6,
       "latest_date": "2025-10-31",
       "note": "Rates pressure reflects both the current 2Y level and any fresh 5-session rise."
     },
     "inflation": {
       "label": "Inflation expectations pressure",
-      "raw": "2.40% level, +3.00 bp vs 5 sessions",
+      "raw": "2.40% level, +4.00 bp vs 5 sessions",
       "unit": "60% level + 40% change",
-      "score": 30.0,
+      "score": 32.0,
       "latest_value": 2.4,
       "latest_date": "2025-10-31",
       "note": "Inflation pressure reflects both the breakeven level and any fresh 5-session rise."
@@ -36,13 +36,13 @@
       "label": "VIX volatility pressure",
       "raw": 17.44,
       "unit": "index level",
-      "score": 22.74,
+      "score": 20.38,
       "latest_value": 17.44,
       "latest_date": "2025-10-31",
       "note": "Higher implied volatility usually means greater market stress."
     }
   },
-  "title": "2025-10-31 TACO Pressure Index Update: Low at 24.53",
-  "description": "Daily pressure check for 2025-10-31: the TACO Pressure Index closed at 24.53/100, signaling a low pressure regime as front-end rate pressure and inflation expectations shaped the daily read. Read the charts, latest moves, and a concise market interpretation.",
-  "hero_summary": "This custom framework combines equities, front-end rates, inflation expectations, and volatility into one daily score. On 2025-10-31, the score printed 24.53/100 in the low regime, with front-end rate pressure and inflation expectations doing most of the work."
+  "title": "2025-10-31 TACO Pressure Index Update: Elevated at 25.97",
+  "description": "Daily pressure check for 2025-10-31: the TACO Pressure Index closed at 25.97/100, signaling a elevated pressure regime as front-end rate pressure and inflation expectations shaped the daily read. Read the charts, latest moves, and a concise market interpretation.",
+  "hero_summary": "This custom framework combines equities, front-end rates, inflation expectations, and volatility into one daily score. On 2025-10-31, the score printed 25.97/100 in the elevated regime, with front-end rate pressure and inflation expectations doing most of the work."
 }
