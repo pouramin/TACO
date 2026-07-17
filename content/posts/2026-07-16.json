@@ -1,0 +1,48 @@
+{
+  "date": "2026-07-16",
+  "score": 16.42,
+  "regime": "LOW",
+  "drivers": {
+    "equity": {
+      "label": "S&P 500 equity signal",
+      "raw": "-0.13% vs 5 sessions | pressure 2.62 | relief 0.00",
+      "unit": "signed 5-session move",
+      "score": 2.62,
+      "pressure_score": 2.62,
+      "relief_score": 0.0,
+      "latest_value": 7533.77001953125,
+      "latest_date": "2026-07-16",
+      "note": "A 5-session drawdown adds pressure. A 5-session rally adds relief and can partially offset the composite score."
+    },
+    "rates": {
+      "label": "2Y Treasury rate pressure",
+      "raw": "4.16% level, +0.00 bp vs 5 sessions",
+      "unit": "60% level + 40% change",
+      "score": 30.93,
+      "latest_value": 4.16,
+      "latest_date": "2026-07-16",
+      "note": "Rates pressure reflects both the current 2Y level and any fresh 5-session rise."
+    },
+    "inflation": {
+      "label": "Inflation expectations pressure",
+      "raw": "2.24% level, -4.00 bp vs 5 sessions",
+      "unit": "60% level + 40% change",
+      "score": 14.4,
+      "latest_value": 2.24,
+      "latest_date": "2026-07-16",
+      "note": "Inflation pressure reflects both the breakeven level and any fresh 5-session rise."
+    },
+    "volatility": {
+      "label": "VIX volatility pressure",
+      "raw": 16.73,
+      "unit": "index level",
+      "score": 17.73,
+      "latest_value": 16.73,
+      "latest_date": "2026-07-16",
+      "note": "Higher implied volatility usually means greater market stress."
+    }
+  },
+  "title": "2026-07-16 TACO Pressure Index Update: Low at 16.42",
+  "description": "Automated market-pressure update for 2026-07-16: the TACO Pressure Index closed at 16.42/100, signaling a low pressure regime as front-end rate pressure and volatility shaped the daily read. See the chart pack, score regime, and what drove the latest reading.",
+  "hero_summary": "It is not a forecast of policy decisions; it is a structured way to monitor pressure building across markets. On 2026-07-16, the score printed 16.42/100 in the low regime, with front-end rate pressure and volatility doing most of the work."
+}
