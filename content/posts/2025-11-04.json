@@ -1,14 +1,14 @@
 {
   "date": "2025-11-04",
-  "score": 21.37,
+  "score": 22.48,
   "regime": "LOW",
   "drivers": {
     "equity": {
       "label": "S&P 500 equity signal",
-      "raw": "-1.00% vs 5 sessions | pressure 20.07 | relief 0.00",
+      "raw": "-1.17% vs 5 sessions | pressure 23.47 | relief 0.00",
       "unit": "signed 5-session move",
-      "score": 20.07,
-      "pressure_score": 20.07,
+      "score": 23.47,
+      "pressure_score": 23.47,
       "relief_score": 0.0,
       "latest_value": 6771.5498046875,
       "latest_date": "2025-11-04",
@@ -25,7 +25,7 @@
     },
     "inflation": {
       "label": "Inflation expectations pressure",
-      "raw": "2.38% level, -2.00 bp vs 5 sessions",
+      "raw": "2.38% level, -3.00 bp vs 5 sessions",
       "unit": "60% level + 40% change",
       "score": 22.8,
       "latest_value": 2.38,
@@ -36,13 +36,13 @@
       "label": "VIX volatility pressure",
       "raw": 19.0,
       "unit": "index level",
-      "score": 27.15,
+      "score": 28.17,
       "latest_value": 19.0,
       "latest_date": "2025-11-04",
       "note": "Higher implied volatility usually means greater market stress."
     }
   },
-  "title": "2025-11-04 TACO Pressure Index Update: Low at 21.37",
-  "description": "Fresh macro pressure read for 2025-11-04: the TACO Pressure Index closed at 21.37/100, signaling a low pressure regime as volatility and inflation expectations shaped the daily read. Includes charts, a component breakdown, and a narrative summary.",
-  "hero_summary": "The index is designed to approximate how market stress can build pressure for a softer policy posture. On 2025-11-04, the score printed 21.37/100 in the low regime, with volatility and inflation expectations doing most of the work."
+  "title": "2025-11-04 TACO Pressure Index Update: Low at 22.48",
+  "description": "Fresh macro pressure read for 2025-11-04: the TACO Pressure Index closed at 22.48/100, signaling a low pressure regime as volatility and equity signal shaped the daily read. Includes charts, a component breakdown, and a narrative summary.",
+  "hero_summary": "The index is designed to approximate how market stress can build pressure for a softer policy posture. On 2025-11-04, the score printed 22.48/100 in the low regime, with volatility and equity signal doing most of the work."
 }
