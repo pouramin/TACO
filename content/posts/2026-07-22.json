@@ -1,0 +1,48 @@
+{
+  "date": "2026-07-22",
+  "score": 32.22,
+  "regime": "ELEVATED",
+  "drivers": {
+    "equity": {
+      "label": "S&P 500 equity signal",
+      "raw": "-0.97% vs 5 sessions | pressure 19.40 | relief 0.00",
+      "unit": "signed 5-session move",
+      "score": 19.4,
+      "pressure_score": 19.4,
+      "relief_score": 0.0,
+      "latest_value": 7498.9599609375,
+      "latest_date": "2026-07-22",
+      "note": "A 5-session drawdown adds pressure. A 5-session rally adds relief and can partially offset the composite score."
+    },
+    "rates": {
+      "label": "2Y Treasury rate pressure",
+      "raw": "4.31% level, +18.00 bp vs 5 sessions",
+      "unit": "60% level + 40% change",
+      "score": 63.73,
+      "latest_value": 4.31,
+      "latest_date": "2026-07-22",
+      "note": "Rates pressure reflects both the current 2Y level and any fresh 5-session rise."
+    },
+    "inflation": {
+      "label": "Inflation expectations pressure",
+      "raw": "2.30% level, +5.00 bp vs 5 sessions",
+      "unit": "60% level + 40% change",
+      "score": 28.0,
+      "latest_value": 2.3000000000000003,
+      "latest_date": "2026-07-22",
+      "note": "Inflation pressure reflects both the breakeven level and any fresh 5-session rise."
+    },
+    "volatility": {
+      "label": "VIX volatility pressure",
+      "raw": 16.64,
+      "unit": "index level",
+      "score": 17.76,
+      "latest_value": 16.64,
+      "latest_date": "2026-07-22",
+      "note": "Higher implied volatility usually means greater market stress."
+    }
+  },
+  "title": "2026-07-22 TACO Pressure Index Update: Elevated at 32.22",
+  "description": "Daily pressure check for 2026-07-22: the TACO Pressure Index closed at 32.22/100, signaling a elevated pressure regime as front-end rate pressure and inflation expectations shaped the daily read. Explore the score history, daily post, and the four-factor dashboard.",
+  "hero_summary": "This custom framework combines equities, front-end rates, inflation expectations, and volatility into one daily score. On 2026-07-22, the score printed 32.22/100 in the elevated regime, with front-end rate pressure and inflation expectations doing most of the work."
+}
