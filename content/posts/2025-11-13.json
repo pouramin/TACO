@@ -1,31 +1,31 @@
 {
   "date": "2025-11-13",
-  "score": 21.7,
+  "score": 15.73,
   "regime": "LOW",
   "drivers": {
     "equity": {
       "label": "S&P 500 equity signal",
-      "raw": "-0.87% vs 5 sessions | pressure 17.30 | relief 0.00",
+      "raw": "+0.26% vs 5 sessions | pressure 0.00 | relief 5.11",
       "unit": "signed 5-session move",
-      "score": 17.3,
-      "pressure_score": 17.3,
-      "relief_score": 0.0,
+      "score": -2.55,
+      "pressure_score": 0.0,
+      "relief_score": 5.11,
       "latest_value": 6737.490234375,
       "latest_date": "2025-11-13",
       "note": "A 5-session drawdown adds pressure. A 5-session rally adds relief and can partially offset the composite score."
     },
     "rates": {
       "label": "2Y Treasury rate pressure",
-      "raw": "3.58% level, -5.00 bp vs 5 sessions",
+      "raw": "3.58% level, +1.00 bp vs 5 sessions",
       "unit": "60% level + 40% change",
-      "score": 15.47,
+      "score": 17.07,
       "latest_value": 3.58,
       "latest_date": "2025-11-13",
       "note": "Rates pressure reflects both the current 2Y level and any fresh 5-session rise."
     },
     "inflation": {
       "label": "Inflation expectations pressure",
-      "raw": "2.37% level, -2.00 bp vs 5 sessions",
+      "raw": "2.37% level, +0.00 bp vs 5 sessions",
       "unit": "60% level + 40% change",
       "score": 22.2,
       "latest_value": 2.37,
@@ -36,13 +36,13 @@
       "label": "VIX volatility pressure",
       "raw": 20.0,
       "unit": "index level",
-      "score": 31.81,
+      "score": 26.22,
       "latest_value": 20.0,
       "latest_date": "2025-11-13",
       "note": "Higher implied volatility usually means greater market stress."
     }
   },
-  "title": "2025-11-13 TACO Pressure Index Update: Low at 21.70",
-  "description": "Fresh macro pressure read for 2025-11-13: the TACO Pressure Index closed at 21.70/100, signaling a low pressure regime as volatility and inflation expectations shaped the daily read. Includes charts, a component breakdown, and a narrative summary.",
-  "hero_summary": "The index is designed to approximate how market stress can build pressure for a softer policy posture. On 2025-11-13, the score printed 21.70/100 in the low regime, with volatility and inflation expectations doing most of the work."
+  "title": "2025-11-13 TACO Pressure Index Update: Low at 15.73",
+  "description": "Fresh macro pressure read for 2025-11-13: the TACO Pressure Index closed at 15.73/100, signaling a low pressure regime as volatility and inflation expectations shaped the daily read. Includes charts, a component breakdown, and a narrative summary.",
+  "hero_summary": "The index is designed to approximate how market stress can build pressure for a softer policy posture. On 2025-11-13, the score printed 15.73/100 in the low regime, with volatility and inflation expectations doing most of the work."
 }

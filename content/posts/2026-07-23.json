@@ -1,0 +1,48 @@
+{
+  "date": "2026-07-23",
+  "score": 39.66,
+  "regime": "ELEVATED",
+  "drivers": {
+    "equity": {
+      "label": "S&P 500 equity signal",
+      "raw": "-1.67% vs 5 sessions | pressure 33.31 | relief 0.00",
+      "unit": "signed 5-session move",
+      "score": 33.31,
+      "pressure_score": 33.31,
+      "relief_score": 0.0,
+      "latest_value": 7408.2998046875,
+      "latest_date": "2026-07-23",
+      "note": "A 5-session drawdown adds pressure. A 5-session rally adds relief and can partially offset the composite score."
+    },
+    "rates": {
+      "label": "2Y Treasury rate pressure",
+      "raw": "4.37% level, +21.00 bp vs 5 sessions",
+      "unit": "60% level + 40% change",
+      "score": 70.13,
+      "latest_value": 4.37,
+      "latest_date": "2026-07-23",
+      "note": "Rates pressure reflects both the current 2Y level and any fresh 5-session rise."
+    },
+    "inflation": {
+      "label": "Inflation expectations pressure",
+      "raw": "2.29% level, +5.00 bp vs 5 sessions",
+      "unit": "60% level + 40% change",
+      "score": 27.4,
+      "latest_value": 2.29,
+      "latest_date": "2026-07-23",
+      "note": "Inflation pressure reflects both the breakeven level and any fresh 5-session rise."
+    },
+    "volatility": {
+      "label": "VIX volatility pressure",
+      "raw": 18.7,
+      "unit": "index level",
+      "score": 27.78,
+      "latest_value": 18.7,
+      "latest_date": "2026-07-23",
+      "note": "Higher implied volatility usually means greater market stress."
+    }
+  },
+  "title": "2026-07-23 TACO Pressure Index Update: Elevated at 39.66",
+  "description": "Fresh macro pressure read for 2026-07-23: the TACO Pressure Index closed at 39.66/100, signaling a elevated pressure regime as front-end rate pressure and equity signal shaped the daily read. See the chart pack, score regime, and what drove the latest reading.",
+  "hero_summary": "The daily signal helps separate noise from persistent multi-factor stress. On 2026-07-23, the score printed 39.66/100 in the elevated regime, with front-end rate pressure and equity signal doing most of the work."
+}
