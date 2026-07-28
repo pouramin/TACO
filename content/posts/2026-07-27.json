@@ -1,0 +1,48 @@
+{
+  "date": "2026-07-27",
+  "score": 22.55,
+  "regime": "LOW",
+  "drivers": {
+    "equity": {
+      "label": "S&P 500 equity signal",
+      "raw": "-0.40% vs 5 sessions | pressure 8.09 | relief 0.00",
+      "unit": "signed 5-session move",
+      "score": 8.09,
+      "pressure_score": 8.09,
+      "relief_score": 0.0,
+      "latest_value": 7413.18017578125,
+      "latest_date": "2026-07-27",
+      "note": "A 5-session drawdown adds pressure. A 5-session rally adds relief and can partially offset the composite score."
+    },
+    "rates": {
+      "label": "2Y Treasury rate pressure",
+      "raw": "4.31% level, +10.00 bp vs 5 sessions",
+      "unit": "60% level + 40% change",
+      "score": 50.93,
+      "latest_value": 4.31,
+      "latest_date": "2026-07-27",
+      "note": "Rates pressure reflects both the current 2Y level and any fresh 5-session rise."
+    },
+    "inflation": {
+      "label": "Inflation expectations pressure",
+      "raw": "2.18% level, -10.00 bp vs 5 sessions",
+      "unit": "60% level + 40% change",
+      "score": 10.8,
+      "latest_value": 2.18,
+      "latest_date": "2026-07-27",
+      "note": "Inflation pressure reflects both the breakeven level and any fresh 5-session rise."
+    },
+    "volatility": {
+      "label": "VIX volatility pressure",
+      "raw": 18.67,
+      "unit": "index level",
+      "score": 20.38,
+      "latest_value": 18.67,
+      "latest_date": "2026-07-27",
+      "note": "Higher implied volatility usually means greater market stress."
+    }
+  },
+  "title": "2026-07-27 TACO Pressure Index Update: Low at 22.55",
+  "description": "New daily signal for 2026-07-27: the TACO Pressure Index closed at 22.55/100, signaling a low pressure regime as front-end rate pressure and volatility shaped the daily read. Includes charts, a component breakdown, and a narrative summary.",
+  "hero_summary": "The index is designed to approximate how market stress can build pressure for a softer policy posture. On 2026-07-27, the score printed 22.55/100 in the low regime, with front-end rate pressure and volatility doing most of the work."
+}
