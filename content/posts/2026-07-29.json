@@ -1,0 +1,48 @@
+{
+  "date": "2026-07-29",
+  "score": 34.28,
+  "regime": "ELEVATED",
+  "drivers": {
+    "equity": {
+      "label": "S&P 500 equity signal",
+      "raw": "-2.44% vs 5 sessions | pressure 48.76 | relief 0.00",
+      "unit": "signed 5-session move",
+      "score": 48.76,
+      "pressure_score": 48.76,
+      "relief_score": 0.0,
+      "latest_value": 7316.14990234375,
+      "latest_date": "2026-07-29",
+      "note": "A 5-session drawdown adds pressure. A 5-session rally adds relief and can partially offset the composite score."
+    },
+    "rates": {
+      "label": "2Y Treasury rate pressure",
+      "raw": "4.22% level, -9.00 bp vs 5 sessions",
+      "unit": "60% level + 40% change",
+      "score": 32.53,
+      "latest_value": 4.22,
+      "latest_date": "2026-07-29",
+      "note": "Rates pressure reflects both the current 2Y level and any fresh 5-session rise."
+    },
+    "inflation": {
+      "label": "Inflation expectations pressure",
+      "raw": "2.24% level, -6.00 bp vs 5 sessions",
+      "unit": "60% level + 40% change",
+      "score": 14.4,
+      "latest_value": 2.24,
+      "latest_date": "2026-07-29",
+      "note": "Inflation pressure reflects both the breakeven level and any fresh 5-session rise."
+    },
+    "volatility": {
+      "label": "VIX volatility pressure",
+      "raw": 20.66,
+      "unit": "index level",
+      "score": 41.43,
+      "latest_value": 20.66,
+      "latest_date": "2026-07-29",
+      "note": "Higher implied volatility usually means greater market stress."
+    }
+  },
+  "title": "2026-07-29 TACO Pressure Index Update: Elevated at 34.28",
+  "description": "Daily pressure check for 2026-07-29: the TACO Pressure Index closed at 34.28/100, signaling a elevated pressure regime as equity signal and volatility shaped the daily read. See the chart pack, score regime, and what drove the latest reading.",
+  "hero_summary": "The index is designed to approximate how market stress can build pressure for a softer policy posture. On 2026-07-29, the score printed 34.28/100 in the elevated regime, with equity signal and volatility doing most of the work."
+}
