@@ -1,7 +1,7 @@
 [
   {
-    "date": "2025-11-12",
-    "score": 13.47,
+    "date": "2025-11-13",
+    "score": 15.51,
     "regime": "LOW",
     "drivers": {
       "equity": {
@@ -11,66 +11,15 @@
         "score": 0.0,
         "pressure_score": 0.0,
         "relief_score": 0.0,
-        "latest_value": 6850.919921875,
-        "latest_date": "2025-11-12",
-        "note": "A 5-session drawdown adds pressure. A 5-session rally adds relief and can partially offset the composite score."
-      },
-      "rates": {
-        "label": "2Y Treasury rate pressure",
-        "raw": "3.56% level, +0.00 bp vs 5 sessions",
-        "unit": "60% level + 40% change",
-        "score": 14.93,
-        "latest_value": 3.56,
-        "latest_date": "2025-11-12",
-        "note": "Rates pressure reflects both the current 2Y level and any fresh 5-session rise."
-      },
-      "inflation": {
-        "label": "Inflation expectations pressure",
-        "raw": "2.37% level, +0.00 bp vs 5 sessions",
-        "unit": "60% level + 40% change",
-        "score": 22.2,
-        "latest_value": 2.37,
-        "latest_date": "2025-11-12",
-        "note": "Inflation pressure reflects both the breakeven level and any fresh 5-session rise."
-      },
-      "volatility": {
-        "label": "VIX volatility pressure",
-        "raw": 17.51,
-        "unit": "index level",
-        "score": 16.77,
-        "latest_value": 17.51,
-        "latest_date": "2025-11-12",
-        "note": "Higher implied volatility usually means greater market stress."
-      }
-    },
-    "inputs": {
-      "sp500": 6850.919921875,
-      "dgs2": 3.56,
-      "t5yie": 2.37,
-      "vix": 17.51
-    }
-  },
-  {
-    "date": "2025-11-13",
-    "score": 26.92,
-    "regime": "ELEVATED",
-    "drivers": {
-      "equity": {
-        "label": "S&P 500 equity signal",
-        "raw": "-1.66% vs 5 sessions | pressure 33.11 | relief 0.00",
-        "unit": "signed 5-session move",
-        "score": 33.11,
-        "pressure_score": 33.11,
-        "relief_score": 0.0,
         "latest_value": 6737.490234375,
         "latest_date": "2025-11-13",
         "note": "A 5-session drawdown adds pressure. A 5-session rally adds relief and can partially offset the composite score."
       },
       "rates": {
         "label": "2Y Treasury rate pressure",
-        "raw": "3.58% level, +2.00 bp vs 5 sessions",
+        "raw": "3.58% level, +0.00 bp vs 5 sessions",
         "unit": "60% level + 40% change",
-        "score": 18.67,
+        "score": 15.47,
         "latest_value": 3.58,
         "latest_date": "2025-11-13",
         "note": "Rates pressure reflects both the current 2Y level and any fresh 5-session rise."
@@ -88,7 +37,7 @@
         "label": "VIX volatility pressure",
         "raw": 20.0,
         "unit": "index level",
-        "score": 33.69,
+        "score": 24.35,
         "latest_value": 20.0,
         "latest_date": "2025-11-13",
         "note": "Higher implied volatility usually means greater market stress."
@@ -103,15 +52,15 @@
   },
   {
     "date": "2025-11-14",
-    "score": 29.39,
-    "regime": "ELEVATED",
+    "score": 18.14,
+    "regime": "LOW",
     "drivers": {
       "equity": {
         "label": "S&P 500 equity signal",
-        "raw": "-1.71% vs 5 sessions | pressure 34.10 | relief 0.00",
+        "raw": "-0.05% vs 5 sessions | pressure 1.00 | relief 0.00",
         "unit": "signed 5-session move",
-        "score": 34.1,
-        "pressure_score": 34.1,
+        "score": 1.0,
+        "pressure_score": 1.0,
         "relief_score": 0.0,
         "latest_value": 6734.10986328125,
         "latest_date": "2025-11-14",
@@ -119,9 +68,9 @@
       },
       "rates": {
         "label": "2Y Treasury rate pressure",
-        "raw": "3.62% level, +6.00 bp vs 5 sessions",
+        "raw": "3.62% level, +4.00 bp vs 5 sessions",
         "unit": "60% level + 40% change",
-        "score": 26.13,
+        "score": 22.93,
         "latest_value": 3.62,
         "latest_date": "2025-11-14",
         "note": "Rates pressure reflects both the current 2Y level and any fresh 5-session rise."
@@ -139,7 +88,7 @@
         "label": "VIX volatility pressure",
         "raw": 19.83,
         "unit": "index level",
-        "score": 32.53,
+        "score": 23.83,
         "latest_value": 19.83,
         "latest_date": "2025-11-14",
         "note": "Higher implied volatility usually means greater market stress."
@@ -154,15 +103,15 @@
   },
   {
     "date": "2025-11-17",
-    "score": 36.64,
+    "score": 25.31,
     "regime": "ELEVATED",
     "drivers": {
       "equity": {
         "label": "S&P 500 equity signal",
-        "raw": "-2.61% vs 5 sessions | pressure 52.11 | relief 0.00",
+        "raw": "-0.97% vs 5 sessions | pressure 19.32 | relief 0.00",
         "unit": "signed 5-session move",
-        "score": 52.11,
-        "pressure_score": 52.11,
+        "score": 19.32,
+        "pressure_score": 19.32,
         "relief_score": 0.0,
         "latest_value": 6672.41015625,
         "latest_date": "2025-11-17",
@@ -170,9 +119,9 @@
       },
       "rates": {
         "label": "2Y Treasury rate pressure",
-        "raw": "3.60% level, +4.00 bp vs 5 sessions",
+        "raw": "3.60% level, +2.00 bp vs 5 sessions",
         "unit": "60% level + 40% change",
-        "score": 22.4,
+        "score": 19.2,
         "latest_value": 3.6,
         "latest_date": "2025-11-17",
         "note": "Rates pressure reflects both the current 2Y level and any fresh 5-session rise."
@@ -190,7 +139,7 @@
         "label": "VIX volatility pressure",
         "raw": 22.38,
         "unit": "index level",
-        "score": 49.85,
+        "score": 40.52,
         "latest_value": 22.38,
         "latest_date": "2025-11-17",
         "note": "Higher implied volatility usually means greater market stress."
@@ -205,15 +154,15 @@
   },
   {
     "date": "2025-11-18",
-    "score": 43.5,
+    "score": 32.24,
     "regime": "ELEVATED",
     "drivers": {
       "equity": {
         "label": "S&P 500 equity signal",
-        "raw": "-3.41% vs 5 sessions | pressure 68.20 | relief 0.00",
+        "raw": "-1.78% vs 5 sessions | pressure 35.67 | relief 0.00",
         "unit": "signed 5-session move",
-        "score": 68.2,
-        "pressure_score": 68.2,
+        "score": 35.67,
+        "pressure_score": 35.67,
         "relief_score": 0.0,
         "latest_value": 6617.31982421875,
         "latest_date": "2025-11-18",
@@ -221,9 +170,9 @@
       },
       "rates": {
         "label": "2Y Treasury rate pressure",
-        "raw": "3.58% level, +2.00 bp vs 5 sessions",
+        "raw": "3.58% level, +0.00 bp vs 5 sessions",
         "unit": "60% level + 40% change",
-        "score": 18.67,
+        "score": 15.47,
         "latest_value": 3.58,
         "latest_date": "2025-11-18",
         "note": "Rates pressure reflects both the current 2Y level and any fresh 5-session rise."
@@ -241,7 +190,7 @@
         "label": "VIX volatility pressure",
         "raw": 24.69,
         "unit": "index level",
-        "score": 65.55,
+        "score": 56.21,
         "latest_value": 24.69,
         "latest_date": "2025-11-18",
         "note": "Higher implied volatility usually means greater market stress."
@@ -256,15 +205,15 @@
   },
   {
     "date": "2025-11-19",
-    "score": 39.94,
+    "score": 28.65,
     "regime": "ELEVATED",
     "drivers": {
       "equity": {
         "label": "S&P 500 equity signal",
-        "raw": "-3.05% vs 5 sessions | pressure 60.94 | relief 0.00",
+        "raw": "-1.41% vs 5 sessions | pressure 28.30 | relief 0.00",
         "unit": "signed 5-session move",
-        "score": 60.94,
-        "pressure_score": 60.94,
+        "score": 28.3,
+        "pressure_score": 28.3,
         "relief_score": 0.0,
         "latest_value": 6642.16015625,
         "latest_date": "2025-11-19",
@@ -272,9 +221,9 @@
       },
       "rates": {
         "label": "2Y Treasury rate pressure",
-        "raw": "3.58% level, +2.00 bp vs 5 sessions",
+        "raw": "3.58% level, +0.00 bp vs 5 sessions",
         "unit": "60% level + 40% change",
-        "score": 18.67,
+        "score": 15.47,
         "latest_value": 3.58,
         "latest_date": "2025-11-19",
         "note": "Rates pressure reflects both the current 2Y level and any fresh 5-session rise."
@@ -292,7 +241,7 @@
         "label": "VIX volatility pressure",
         "raw": 23.66,
         "unit": "index level",
-        "score": 58.55,
+        "score": 49.21,
         "latest_value": 23.66,
         "latest_date": "2025-11-19",
         "note": "Higher implied volatility usually means greater market stress."
@@ -9024,6 +8973,57 @@
       "dgs2": 4.22,
       "t5yie": 2.24,
       "vix": 20.66
+    }
+  },
+  {
+    "date": "2026-07-30",
+    "score": 14.68,
+    "regime": "LOW",
+    "drivers": {
+      "equity": {
+        "label": "S&P 500 equity signal",
+        "raw": "+0.40% vs 5 sessions | pressure 0.00 | relief 7.92",
+        "unit": "signed 5-session move",
+        "score": -3.96,
+        "pressure_score": 0.0,
+        "relief_score": 7.92,
+        "latest_value": 7437.6298828125,
+        "latest_date": "2026-07-30",
+        "note": "A 5-session drawdown adds pressure. A 5-session rally adds relief and can partially offset the composite score."
+      },
+      "rates": {
+        "label": "2Y Treasury rate pressure",
+        "raw": "4.23% level, -14.00 bp vs 5 sessions",
+        "unit": "60% level + 40% change",
+        "score": 32.8,
+        "latest_value": 4.23,
+        "latest_date": "2026-07-30",
+        "note": "Rates pressure reflects both the current 2Y level and any fresh 5-session rise."
+      },
+      "inflation": {
+        "label": "Inflation expectations pressure",
+        "raw": "2.24% level, -5.00 bp vs 5 sessions",
+        "unit": "60% level + 40% change",
+        "score": 14.4,
+        "latest_value": 2.2399999999999998,
+        "latest_date": "2026-07-30",
+        "note": "Inflation pressure reflects both the breakeven level and any fresh 5-session rise."
+      },
+      "volatility": {
+        "label": "VIX volatility pressure",
+        "raw": 17.09,
+        "unit": "index level",
+        "score": 15.49,
+        "latest_value": 17.09,
+        "latest_date": "2026-07-30",
+        "note": "Higher implied volatility usually means greater market stress."
+      }
+    },
+    "inputs": {
+      "sp500": 7437.6298828125,
+      "dgs2": 4.23,
+      "t5yie": 2.2399999999999998,
+      "vix": 17.09
     }
   }
 ]

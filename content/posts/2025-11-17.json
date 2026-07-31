@@ -1,14 +1,14 @@
 {
   "date": "2025-11-17",
-  "score": 36.64,
+  "score": 25.31,
   "regime": "ELEVATED",
   "drivers": {
     "equity": {
       "label": "S&P 500 equity signal",
-      "raw": "-2.61% vs 5 sessions | pressure 52.11 | relief 0.00",
+      "raw": "-0.97% vs 5 sessions | pressure 19.32 | relief 0.00",
       "unit": "signed 5-session move",
-      "score": 52.11,
-      "pressure_score": 52.11,
+      "score": 19.32,
+      "pressure_score": 19.32,
       "relief_score": 0.0,
       "latest_value": 6672.41015625,
       "latest_date": "2025-11-17",
@@ -16,9 +16,9 @@
     },
     "rates": {
       "label": "2Y Treasury rate pressure",
-      "raw": "3.60% level, +4.00 bp vs 5 sessions",
+      "raw": "3.60% level, +2.00 bp vs 5 sessions",
       "unit": "60% level + 40% change",
-      "score": 22.4,
+      "score": 19.2,
       "latest_value": 3.6,
       "latest_date": "2025-11-17",
       "note": "Rates pressure reflects both the current 2Y level and any fresh 5-session rise."
@@ -36,13 +36,13 @@
       "label": "VIX volatility pressure",
       "raw": 22.38,
       "unit": "index level",
-      "score": 49.85,
+      "score": 40.52,
       "latest_value": 22.38,
       "latest_date": "2025-11-17",
       "note": "Higher implied volatility usually means greater market stress."
     }
   },
-  "title": "2025-11-17 TACO Pressure Index Update: Elevated at 36.64",
-  "description": "New daily signal for 2025-11-17: the TACO Pressure Index closed at 36.64/100, signaling a elevated pressure regime as equity signal and volatility shaped the daily read. See the chart pack, score regime, and what drove the latest reading.",
-  "hero_summary": "The index is designed to approximate how market stress can build pressure for a softer policy posture. On 2025-11-17, the score printed 36.64/100 in the elevated regime, with equity signal and volatility doing most of the work."
+  "title": "2025-11-17 TACO Pressure Index Update: Elevated at 25.31",
+  "description": "New daily signal for 2025-11-17: the TACO Pressure Index closed at 25.31/100, signaling a elevated pressure regime as volatility and inflation expectations shaped the daily read. See the chart pack, score regime, and what drove the latest reading.",
+  "hero_summary": "The index is designed to approximate how market stress can build pressure for a softer policy posture. On 2025-11-17, the score printed 25.31/100 in the elevated regime, with volatility and inflation expectations doing most of the work."
 }
