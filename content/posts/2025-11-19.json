@@ -1,15 +1,15 @@
 {
   "date": "2025-11-19",
-  "score": 17.2,
+  "score": 18.14,
   "regime": "LOW",
   "drivers": {
     "equity": {
       "label": "S&P 500 equity signal",
-      "raw": "+0.38% vs 5 sessions | pressure 0.00 | relief 7.51",
+      "raw": "+0.00% vs 5 sessions | pressure 0.00 | relief 0.00",
       "unit": "signed 5-session move",
-      "score": -3.75,
+      "score": 0.0,
       "pressure_score": 0.0,
-      "relief_score": 7.51,
+      "relief_score": 0.0,
       "latest_value": 6642.16015625,
       "latest_date": "2025-11-19",
       "note": "A 5-session drawdown adds pressure. A 5-session rally adds relief and can partially offset the composite score."
@@ -25,7 +25,7 @@
     },
     "inflation": {
       "label": "Inflation expectations pressure",
-      "raw": "2.36% level, -0.00 bp vs 5 sessions",
+      "raw": "2.36% level, +0.00 bp vs 5 sessions",
       "unit": "60% level + 40% change",
       "score": 21.6,
       "latest_value": 2.36,
@@ -42,7 +42,7 @@
       "note": "Higher implied volatility usually means greater market stress."
     }
   },
-  "title": "2025-11-19 TACO Pressure Index Update: Low at 17.20",
-  "description": "Policy pressure tracker for 2025-11-19: the TACO Pressure Index closed at 17.20/100, signaling a low pressure regime as volatility and inflation expectations shaped the daily read. Includes charts, a component breakdown, and a narrative summary.",
-  "hero_summary": "It is not a forecast of policy decisions; it is a structured way to monitor pressure building across markets. On 2025-11-19, the score printed 17.20/100 in the low regime, with volatility and inflation expectations doing most of the work."
+  "title": "2025-11-19 TACO Pressure Index Update: Low at 18.14",
+  "description": "Policy pressure tracker for 2025-11-19: the TACO Pressure Index closed at 18.14/100, signaling a low pressure regime as volatility and inflation expectations shaped the daily read. Includes charts, a component breakdown, and a narrative summary.",
+  "hero_summary": "It is not a forecast of policy decisions; it is a structured way to monitor pressure building across markets. On 2025-11-19, the score printed 18.14/100 in the low regime, with volatility and inflation expectations doing most of the work."
 }
