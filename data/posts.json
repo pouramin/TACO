@@ -1,103 +1,52 @@
 [
   {
-    "date": "2026-08-05",
-    "score": 0.97,
+    "date": "2026-08-06",
+    "score": 5.83,
     "regime": "LOW",
     "drivers": {
       "equity": {
         "label": "S&P 500 equity signal",
-        "raw": "+5.57% vs 5 sessions | pressure 0.00 | relief 100.00",
+        "raw": "+3.66% vs 5 sessions | pressure 0.00 | relief 73.23",
         "unit": "signed 5-session move",
-        "score": -50.0,
+        "score": -36.62,
         "pressure_score": 0.0,
-        "relief_score": 100.0,
-        "latest_value": 7723.5498046875,
-        "latest_date": "2026-08-05",
+        "relief_score": 73.23,
+        "latest_value": 7709.9599609375,
+        "latest_date": "2026-08-06",
         "note": "A 5-session drawdown adds pressure. A 5-session rally adds relief and can partially offset the composite score."
       },
       "rates": {
         "label": "2Y Treasury rate pressure",
-        "raw": "4.18% level, -4.00 bp vs 5 sessions",
+        "raw": "4.25% level, +2.00 bp vs 5 sessions",
         "unit": "60% level + 40% change",
-        "score": 31.47,
-        "latest_value": 4.18,
-        "latest_date": "2026-08-05",
+        "score": 36.53,
+        "latest_value": 4.25,
+        "latest_date": "2026-08-06",
         "note": "Rates pressure reflects both the current 2Y level and any fresh 5-session rise."
       },
       "inflation": {
         "label": "Inflation expectations pressure",
-        "raw": "2.18% level, -6.00 bp vs 5 sessions",
+        "raw": "2.23% level, -1.00 bp vs 5 sessions",
         "unit": "60% level + 40% change",
-        "score": 10.8,
-        "latest_value": 2.18,
-        "latest_date": "2026-08-05",
+        "score": 13.8,
+        "latest_value": 2.2300000000000004,
+        "latest_date": "2026-08-06",
         "note": "Inflation pressure reflects both the breakeven level and any fresh 5-session rise."
       },
       "volatility": {
         "label": "VIX volatility pressure",
-        "raw": 15.81,
+        "raw": 15.15,
         "unit": "index level",
-        "score": 11.6,
-        "latest_value": 15.81,
-        "latest_date": "2026-08-05",
+        "score": 9.59,
+        "latest_value": 15.15,
+        "latest_date": "2026-08-06",
         "note": "Higher implied volatility usually means greater market stress."
       }
     },
-    "title": "2026-08-05 TACO Pressure Index Update: Low at 0.97",
-    "description": "Fresh macro pressure read for 2026-08-05: the TACO Pressure Index closed at 0.97/100, signaling a low pressure regime as front-end rate pressure and volatility shaped the daily read. A positive 5-session S&P move also added equity relief. Read the charts, latest moves, and a concise market interpretation.",
-    "hero_summary": "The daily signal helps separate noise from persistent multi-factor stress. On 2026-08-05, the score printed 0.97/100 in the low regime, with front-end rate pressure and volatility doing most of the work. Equities also provided visible relief through a positive 5-session move.",
+    "title": "2026-08-06 TACO Pressure Index Update: Low at 5.83",
+    "description": "New daily signal for 2026-08-06: the TACO Pressure Index closed at 5.83/100, signaling a low pressure regime as front-end rate pressure and inflation expectations shaped the daily read. A positive 5-session S&P move also added equity relief. Includes charts, a component breakdown, and a narrative summary.",
+    "hero_summary": "This custom framework combines equities, front-end rates, inflation expectations, and volatility into one daily score. On 2026-08-06, the score printed 5.83/100 in the low regime, with front-end rate pressure and inflation expectations doing most of the work. Equities also provided visible relief through a positive 5-session move.",
     "recent_history": [
-      {
-        "date": "2026-03-27",
-        "score": 43.34,
-        "regime": "ELEVATED",
-        "drivers": {
-          "equity": {
-            "label": "S&P 500 equity signal",
-            "raw": "-2.12% vs 5 sessions | pressure 42.31 | relief 0.00",
-            "unit": "signed 5-session move",
-            "score": 42.31,
-            "pressure_score": 42.31,
-            "relief_score": 0.0,
-            "latest_value": 6368.85009765625,
-            "latest_date": "2026-03-27",
-            "note": "A 5-session drawdown adds pressure. A 5-session rally adds relief and can partially offset the composite score."
-          },
-          "rates": {
-            "label": "2Y Treasury rate pressure",
-            "raw": "3.88% level, +0.00 bp vs 5 sessions",
-            "unit": "60% level + 40% change",
-            "score": 23.47,
-            "latest_value": 3.88,
-            "latest_date": "2026-03-27",
-            "note": "Rates pressure reflects both the current 2Y level and any fresh 5-session rise."
-          },
-          "inflation": {
-            "label": "Inflation expectations pressure",
-            "raw": "2.56% level, -7.00 bp vs 5 sessions",
-            "unit": "60% level + 40% change",
-            "score": 33.6,
-            "latest_value": 2.5599999999999996,
-            "latest_date": "2026-03-27",
-            "note": "Inflation pressure reflects both the breakeven level and any fresh 5-session rise."
-          },
-          "volatility": {
-            "label": "VIX volatility pressure",
-            "raw": 31.05,
-            "unit": "index level",
-            "score": 73.99,
-            "latest_value": 31.05,
-            "latest_date": "2026-03-27",
-            "note": "Higher implied volatility usually means greater market stress."
-          }
-        },
-        "inputs": {
-          "sp500": 6368.85009765625,
-          "dgs2": 3.88,
-          "t5yie": 2.5599999999999996,
-          "vix": 31.05
-        }
-      },
       {
         "date": "2026-03-30",
         "score": 52.39,
@@ -4636,9 +4585,108 @@
           "t5yie": 2.18,
           "vix": 15.81
         }
+      },
+      {
+        "date": "2026-08-06",
+        "score": 5.83,
+        "regime": "LOW",
+        "drivers": {
+          "equity": {
+            "label": "S&P 500 equity signal",
+            "raw": "+3.66% vs 5 sessions | pressure 0.00 | relief 73.23",
+            "unit": "signed 5-session move",
+            "score": -36.62,
+            "pressure_score": 0.0,
+            "relief_score": 73.23,
+            "latest_value": 7709.9599609375,
+            "latest_date": "2026-08-06",
+            "note": "A 5-session drawdown adds pressure. A 5-session rally adds relief and can partially offset the composite score."
+          },
+          "rates": {
+            "label": "2Y Treasury rate pressure",
+            "raw": "4.25% level, +2.00 bp vs 5 sessions",
+            "unit": "60% level + 40% change",
+            "score": 36.53,
+            "latest_value": 4.25,
+            "latest_date": "2026-08-06",
+            "note": "Rates pressure reflects both the current 2Y level and any fresh 5-session rise."
+          },
+          "inflation": {
+            "label": "Inflation expectations pressure",
+            "raw": "2.23% level, -1.00 bp vs 5 sessions",
+            "unit": "60% level + 40% change",
+            "score": 13.8,
+            "latest_value": 2.2300000000000004,
+            "latest_date": "2026-08-06",
+            "note": "Inflation pressure reflects both the breakeven level and any fresh 5-session rise."
+          },
+          "volatility": {
+            "label": "VIX volatility pressure",
+            "raw": 15.15,
+            "unit": "index level",
+            "score": 9.59,
+            "latest_value": 15.15,
+            "latest_date": "2026-08-06",
+            "note": "Higher implied volatility usually means greater market stress."
+          }
+        },
+        "inputs": {
+          "sp500": 7709.9599609375,
+          "dgs2": 4.25,
+          "t5yie": 2.2300000000000004,
+          "vix": 15.15
+        }
       }
     ],
-    "latest_score_history_token": "223c0c0f8f"
+    "latest_score_history_token": "12f137caad"
+  },
+  {
+    "date": "2026-08-05",
+    "score": 0.97,
+    "regime": "LOW",
+    "drivers": {
+      "equity": {
+        "label": "S&P 500 equity signal",
+        "raw": "+5.57% vs 5 sessions | pressure 0.00 | relief 100.00",
+        "unit": "signed 5-session move",
+        "score": -50.0,
+        "pressure_score": 0.0,
+        "relief_score": 100.0,
+        "latest_value": 7723.5498046875,
+        "latest_date": "2026-08-05",
+        "note": "A 5-session drawdown adds pressure. A 5-session rally adds relief and can partially offset the composite score."
+      },
+      "rates": {
+        "label": "2Y Treasury rate pressure",
+        "raw": "4.18% level, -4.00 bp vs 5 sessions",
+        "unit": "60% level + 40% change",
+        "score": 31.47,
+        "latest_value": 4.18,
+        "latest_date": "2026-08-05",
+        "note": "Rates pressure reflects both the current 2Y level and any fresh 5-session rise."
+      },
+      "inflation": {
+        "label": "Inflation expectations pressure",
+        "raw": "2.18% level, -6.00 bp vs 5 sessions",
+        "unit": "60% level + 40% change",
+        "score": 10.8,
+        "latest_value": 2.18,
+        "latest_date": "2026-08-05",
+        "note": "Inflation pressure reflects both the breakeven level and any fresh 5-session rise."
+      },
+      "volatility": {
+        "label": "VIX volatility pressure",
+        "raw": 15.81,
+        "unit": "index level",
+        "score": 11.6,
+        "latest_value": 15.81,
+        "latest_date": "2026-08-05",
+        "note": "Higher implied volatility usually means greater market stress."
+      }
+    },
+    "title": "2026-08-05 TACO Pressure Index Update: Low at 0.97",
+    "description": "Fresh macro pressure read for 2026-08-05: the TACO Pressure Index closed at 0.97/100, signaling a low pressure regime as front-end rate pressure and volatility shaped the daily read. A positive 5-session S&P move also added equity relief. Read the charts, latest moves, and a concise market interpretation.",
+    "hero_summary": "The daily signal helps separate noise from persistent multi-factor stress. On 2026-08-05, the score printed 0.97/100 in the low regime, with front-end rate pressure and volatility doing most of the work. Equities also provided visible relief through a positive 5-session move."
   },
   {
     "date": "2026-08-04",
@@ -12802,23 +12850,23 @@
   },
   {
     "date": "2025-11-26",
-    "score": 4.88,
+    "score": 0.83,
     "regime": "LOW",
     "drivers": {
       "equity": {
         "label": "S&P 500 equity signal",
-        "raw": "+2.57% vs 5 sessions | pressure 0.00 | relief 51.32",
+        "raw": "+4.19% vs 5 sessions | pressure 0.00 | relief 83.76",
         "unit": "signed 5-session move",
-        "score": -25.66,
+        "score": -41.88,
         "pressure_score": 0.0,
-        "relief_score": 51.32,
+        "relief_score": 83.76,
         "latest_value": 6812.60986328125,
         "latest_date": "2025-11-26",
         "note": "A 5-session drawdown adds pressure. A 5-session rally adds relief and can partially offset the composite score."
       },
       "rates": {
         "label": "2Y Treasury rate pressure",
-        "raw": "3.45% level, -13.00 bp vs 5 sessions",
+        "raw": "3.45% level, -10.00 bp vs 5 sessions",
         "unit": "60% level + 40% change",
         "score": 12.0,
         "latest_value": 3.45,
@@ -12827,7 +12875,7 @@
       },
       "inflation": {
         "label": "Inflation expectations pressure",
-        "raw": "2.29% level, -7.00 bp vs 5 sessions",
+        "raw": "2.29% level, -5.00 bp vs 5 sessions",
         "unit": "60% level + 40% change",
         "score": 17.4,
         "latest_value": 2.29,
@@ -12844,29 +12892,29 @@
         "note": "Higher implied volatility usually means greater market stress."
       }
     },
-    "title": "2025-11-26 TACO Pressure Index Update: Low at 4.88",
-    "description": "Automated market-pressure update for 2025-11-26: the TACO Pressure Index closed at 4.88/100, signaling a low pressure regime as inflation expectations and volatility shaped the daily read. A positive 5-session S&P move also added equity relief. Includes charts, a component breakdown, and a narrative summary.",
-    "hero_summary": "This custom framework combines equities, front-end rates, inflation expectations, and volatility into one daily score. On 2025-11-26, the score printed 4.88/100 in the low regime, with inflation expectations and volatility doing most of the work. Equities also provided visible relief through a positive 5-session move."
+    "title": "2025-11-26 TACO Pressure Index Update: Low at 0.83",
+    "description": "Automated market-pressure update for 2025-11-26: the TACO Pressure Index closed at 0.83/100, signaling a low pressure regime as inflation expectations and volatility shaped the daily read. A positive 5-session S&P move also added equity relief. Includes charts, a component breakdown, and a narrative summary.",
+    "hero_summary": "This custom framework combines equities, front-end rates, inflation expectations, and volatility into one daily score. On 2025-11-26, the score printed 0.83/100 in the low regime, with inflation expectations and volatility doing most of the work. Equities also provided visible relief through a positive 5-session move."
   },
   {
     "date": "2025-11-25",
-    "score": 7.25,
+    "score": 3.23,
     "regime": "LOW",
     "drivers": {
       "equity": {
         "label": "S&P 500 equity signal",
-        "raw": "+1.86% vs 5 sessions | pressure 0.00 | relief 37.25",
+        "raw": "+3.47% vs 5 sessions | pressure 0.00 | relief 69.47",
         "unit": "signed 5-session move",
-        "score": -18.63,
+        "score": -34.73,
         "pressure_score": 0.0,
-        "relief_score": 37.25,
+        "relief_score": 69.47,
         "latest_value": 6765.8798828125,
         "latest_date": "2025-11-25",
         "note": "A 5-session drawdown adds pressure. A 5-session rally adds relief and can partially offset the composite score."
       },
       "rates": {
         "label": "2Y Treasury rate pressure",
-        "raw": "3.43% level, -15.00 bp vs 5 sessions",
+        "raw": "3.43% level, -12.00 bp vs 5 sessions",
         "unit": "60% level + 40% change",
         "score": 11.47,
         "latest_value": 3.43,
@@ -12875,7 +12923,7 @@
       },
       "inflation": {
         "label": "Inflation expectations pressure",
-        "raw": "2.27% level, -9.00 bp vs 5 sessions",
+        "raw": "2.27% level, -7.00 bp vs 5 sessions",
         "unit": "60% level + 40% change",
         "score": 16.2,
         "latest_value": 2.2699999999999996,
@@ -12892,29 +12940,29 @@
         "note": "Higher implied volatility usually means greater market stress."
       }
     },
-    "title": "2025-11-25 TACO Pressure Index Update: Low at 7.25",
-    "description": "Automated market-pressure update for 2025-11-25: the TACO Pressure Index closed at 7.25/100, signaling a low pressure regime as volatility and inflation expectations shaped the daily read. A positive 5-session S&P move also added equity relief. Explore the score history, daily post, and the four-factor dashboard.",
-    "hero_summary": "This custom framework combines equities, front-end rates, inflation expectations, and volatility into one daily score. On 2025-11-25, the score printed 7.25/100 in the low regime, with volatility and inflation expectations doing most of the work. Equities also provided visible relief through a positive 5-session move."
+    "title": "2025-11-25 TACO Pressure Index Update: Low at 3.23",
+    "description": "Automated market-pressure update for 2025-11-25: the TACO Pressure Index closed at 3.23/100, signaling a low pressure regime as volatility and inflation expectations shaped the daily read. A positive 5-session S&P move also added equity relief. Explore the score history, daily post, and the four-factor dashboard.",
+    "hero_summary": "This custom framework combines equities, front-end rates, inflation expectations, and volatility into one daily score. On 2025-11-25, the score printed 3.23/100 in the low regime, with volatility and inflation expectations doing most of the work. Equities also provided visible relief through a positive 5-session move."
   },
   {
     "date": "2025-11-24",
-    "score": 11.68,
+    "score": 7.69,
     "regime": "LOW",
     "drivers": {
       "equity": {
         "label": "S&P 500 equity signal",
-        "raw": "+0.95% vs 5 sessions | pressure 0.00 | relief 18.96",
+        "raw": "+2.54% vs 5 sessions | pressure 0.00 | relief 50.88",
         "unit": "signed 5-session move",
-        "score": -9.48,
+        "score": -25.44,
         "pressure_score": 0.0,
-        "relief_score": 18.96,
+        "relief_score": 50.88,
         "latest_value": 6705.1201171875,
         "latest_date": "2025-11-24",
         "note": "A 5-session drawdown adds pressure. A 5-session rally adds relief and can partially offset the composite score."
       },
       "rates": {
         "label": "2Y Treasury rate pressure",
-        "raw": "3.46% level, -12.00 bp vs 5 sessions",
+        "raw": "3.46% level, -9.00 bp vs 5 sessions",
         "unit": "60% level + 40% change",
         "score": 12.27,
         "latest_value": 3.46,
@@ -12923,7 +12971,7 @@
       },
       "inflation": {
         "label": "Inflation expectations pressure",
-        "raw": "2.30% level, -6.00 bp vs 5 sessions",
+        "raw": "2.30% level, -4.00 bp vs 5 sessions",
         "unit": "60% level + 40% change",
         "score": 18.0,
         "latest_value": 2.3,
@@ -12940,29 +12988,29 @@
         "note": "Higher implied volatility usually means greater market stress."
       }
     },
-    "title": "2025-11-24 TACO Pressure Index Update: Low at 11.68",
-    "description": "Fresh macro pressure read for 2025-11-24: the TACO Pressure Index closed at 11.68/100, signaling a low pressure regime as volatility and inflation expectations shaped the daily read. A positive 5-session S&P move also added equity relief. See the chart pack, score regime, and what drove the latest reading.",
-    "hero_summary": "It is not a forecast of policy decisions; it is a structured way to monitor pressure building across markets. On 2025-11-24, the score printed 11.68/100 in the low regime, with volatility and inflation expectations doing most of the work. Equities also provided visible relief through a positive 5-session move."
+    "title": "2025-11-24 TACO Pressure Index Update: Low at 7.69",
+    "description": "Fresh macro pressure read for 2025-11-24: the TACO Pressure Index closed at 7.69/100, signaling a low pressure regime as volatility and inflation expectations shaped the daily read. A positive 5-session S&P move also added equity relief. See the chart pack, score regime, and what drove the latest reading.",
+    "hero_summary": "It is not a forecast of policy decisions; it is a structured way to monitor pressure building across markets. On 2025-11-24, the score printed 7.69/100 in the low regime, with volatility and inflation expectations doing most of the work. Equities also provided visible relief through a positive 5-session move."
   },
   {
     "date": "2025-11-21",
-    "score": 19.84,
+    "score": 14.44,
     "regime": "LOW",
     "drivers": {
       "equity": {
         "label": "S&P 500 equity signal",
-        "raw": "-0.59% vs 5 sessions | pressure 11.79 | relief 0.00",
+        "raw": "+0.98% vs 5 sessions | pressure 0.00 | relief 19.65",
         "unit": "signed 5-session move",
-        "score": 11.79,
-        "pressure_score": 11.79,
-        "relief_score": 0.0,
+        "score": -9.82,
+        "pressure_score": 0.0,
+        "relief_score": 19.65,
         "latest_value": 6602.990234375,
         "latest_date": "2025-11-21",
         "note": "A 5-session drawdown adds pressure. A 5-session rally adds relief and can partially offset the composite score."
       },
       "rates": {
         "label": "2Y Treasury rate pressure",
-        "raw": "3.51% level, -7.00 bp vs 5 sessions",
+        "raw": "3.51% level, -4.00 bp vs 5 sessions",
         "unit": "60% level + 40% change",
         "score": 13.6,
         "latest_value": 3.51,
@@ -12971,7 +13019,7 @@
       },
       "inflation": {
         "label": "Inflation expectations pressure",
-        "raw": "2.32% level, -4.00 bp vs 5 sessions",
+        "raw": "2.32% level, -2.00 bp vs 5 sessions",
         "unit": "60% level + 40% change",
         "score": 19.2,
         "latest_value": 2.3200000000000003,
@@ -12988,21 +13036,21 @@
         "note": "Higher implied volatility usually means greater market stress."
       }
     },
-    "title": "2025-11-21 TACO Pressure Index Update: Low at 19.84",
-    "description": "Fresh macro pressure read for 2025-11-21: the TACO Pressure Index closed at 19.84/100, signaling a low pressure regime as volatility and inflation expectations shaped the daily read. Includes charts, a component breakdown, and a narrative summary.",
-    "hero_summary": "The index is designed to approximate how market stress can build pressure for a softer policy posture. On 2025-11-21, the score printed 19.84/100 in the low regime, with volatility and inflation expectations doing most of the work."
+    "title": "2025-11-21 TACO Pressure Index Update: Low at 14.44",
+    "description": "Fresh macro pressure read for 2025-11-21: the TACO Pressure Index closed at 14.44/100, signaling a low pressure regime as volatility and inflation expectations shaped the daily read. A positive 5-session S&P move also added equity relief. Includes charts, a component breakdown, and a narrative summary.",
+    "hero_summary": "The index is designed to approximate how market stress can build pressure for a softer policy posture. On 2025-11-21, the score printed 14.44/100 in the low regime, with volatility and inflation expectations doing most of the work. Equities also provided visible relief through a positive 5-session move."
   },
   {
     "date": "2025-11-20",
-    "score": 30.11,
-    "regime": "ELEVATED",
+    "score": 19.74,
+    "regime": "LOW",
     "drivers": {
       "equity": {
         "label": "S&P 500 equity signal",
-        "raw": "-1.56% vs 5 sessions | pressure 31.13 | relief 0.00",
+        "raw": "+0.00% vs 5 sessions | pressure 0.00 | relief 0.00",
         "unit": "signed 5-session move",
-        "score": 31.13,
-        "pressure_score": 31.13,
+        "score": 0.0,
+        "pressure_score": 0.0,
         "relief_score": 0.0,
         "latest_value": 6538.759765625,
         "latest_date": "2025-11-20",
@@ -13010,7 +13058,7 @@
       },
       "rates": {
         "label": "2Y Treasury rate pressure",
-        "raw": "3.55% level, -3.00 bp vs 5 sessions",
+        "raw": "3.55% level, +0.00 bp vs 5 sessions",
         "unit": "60% level + 40% change",
         "score": 14.67,
         "latest_value": 3.55,
@@ -13019,7 +13067,7 @@
       },
       "inflation": {
         "label": "Inflation expectations pressure",
-        "raw": "2.34% level, -2.00 bp vs 5 sessions",
+        "raw": "2.34% level, +0.00 bp vs 5 sessions",
         "unit": "60% level + 40% change",
         "score": 20.4,
         "latest_value": 2.34,
@@ -13030,62 +13078,14 @@
         "label": "VIX volatility pressure",
         "raw": 26.42,
         "unit": "index level",
-        "score": 54.24,
+        "score": 43.89,
         "latest_value": 26.42,
         "latest_date": "2025-11-20",
         "note": "Higher implied volatility usually means greater market stress."
       }
     },
-    "title": "2025-11-20 TACO Pressure Index Update: Elevated at 30.11",
-    "description": "New daily signal for 2025-11-20: the TACO Pressure Index closed at 30.11/100, signaling a elevated pressure regime as volatility and equity signal shaped the daily read. Includes charts, a component breakdown, and a narrative summary.",
-    "hero_summary": "The daily signal helps separate noise from persistent multi-factor stress. On 2025-11-20, the score printed 30.11/100 in the elevated regime, with volatility and equity signal doing most of the work."
-  },
-  {
-    "date": "2025-11-19",
-    "score": 18.14,
-    "regime": "LOW",
-    "drivers": {
-      "equity": {
-        "label": "S&P 500 equity signal",
-        "raw": "+0.00% vs 5 sessions | pressure 0.00 | relief 0.00",
-        "unit": "signed 5-session move",
-        "score": 0.0,
-        "pressure_score": 0.0,
-        "relief_score": 0.0,
-        "latest_value": 6642.16015625,
-        "latest_date": "2025-11-19",
-        "note": "A 5-session drawdown adds pressure. A 5-session rally adds relief and can partially offset the composite score."
-      },
-      "rates": {
-        "label": "2Y Treasury rate pressure",
-        "raw": "3.58% level, +0.00 bp vs 5 sessions",
-        "unit": "60% level + 40% change",
-        "score": 15.47,
-        "latest_value": 3.58,
-        "latest_date": "2025-11-19",
-        "note": "Rates pressure reflects both the current 2Y level and any fresh 5-session rise."
-      },
-      "inflation": {
-        "label": "Inflation expectations pressure",
-        "raw": "2.36% level, +0.00 bp vs 5 sessions",
-        "unit": "60% level + 40% change",
-        "score": 21.6,
-        "latest_value": 2.36,
-        "latest_date": "2025-11-19",
-        "note": "Inflation pressure reflects both the breakeven level and any fresh 5-session rise."
-      },
-      "volatility": {
-        "label": "VIX volatility pressure",
-        "raw": 23.66,
-        "unit": "index level",
-        "score": 35.49,
-        "latest_value": 23.66,
-        "latest_date": "2025-11-19",
-        "note": "Higher implied volatility usually means greater market stress."
-      }
-    },
-    "title": "2025-11-19 TACO Pressure Index Update: Low at 18.14",
-    "description": "Policy pressure tracker for 2025-11-19: the TACO Pressure Index closed at 18.14/100, signaling a low pressure regime as volatility and inflation expectations shaped the daily read. Includes charts, a component breakdown, and a narrative summary.",
-    "hero_summary": "It is not a forecast of policy decisions; it is a structured way to monitor pressure building across markets. On 2025-11-19, the score printed 18.14/100 in the low regime, with volatility and inflation expectations doing most of the work."
+    "title": "2025-11-20 TACO Pressure Index Update: Low at 19.74",
+    "description": "New daily signal for 2025-11-20: the TACO Pressure Index closed at 19.74/100, signaling a low pressure regime as volatility and inflation expectations shaped the daily read. Includes charts, a component breakdown, and a narrative summary.",
+    "hero_summary": "The daily signal helps separate noise from persistent multi-factor stress. On 2025-11-20, the score printed 19.74/100 in the low regime, with volatility and inflation expectations doing most of the work."
   }
 ]
